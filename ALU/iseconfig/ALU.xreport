@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-03-18T21:50:23</DateModified>
+  <DateModified>2017-03-19T00:06:52</DateModified>
   <ModuleName>ALU</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2017-03-18T21:57:10</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/iseconfig/ALU.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU\</ImplementationReportsDirectory>
   <DateInitialized>2017-03-04T19:40:26</DateInitialized>

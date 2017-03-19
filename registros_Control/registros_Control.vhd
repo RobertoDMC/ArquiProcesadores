@@ -12,7 +12,7 @@ entity registros_Control is
            CU : out  STD_LOGIC_VECTOR (15 downto 0));
 end registros_Control;
 
-architecture Behavioral of registros_Control is
+architecture Behavioral of registros_Control is	
 
 	COMPONENT registro_8bits
 	PORT(

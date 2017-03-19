@@ -1,0 +1,140 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml automata_Selector.twx automata_Selector.ncd -o
+automata_Selector.twr automata_Selector.pcf
+
+Design file:              automata_Selector.ncd
+Physical constraint file: automata_Selector.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clk            |clk_automata_0 |    7.942|
+clk            |clk_automata_1 |    6.593|
+clk            |clk_automata_2 |    6.319|
+clk            |clk_automata_3 |    6.466|
+clk            |clk_automata_4 |    7.477|
+clk            |clk_automata_5 |    6.569|
+clk            |clk_automata_6 |    7.326|
+clk            |clk_automata_7 |    7.320|
+clk            |clk_automata_8 |    7.112|
+clk            |clk_automata_9 |    6.832|
+clk            |clk_automata_10|    6.574|
+clk            |clk_automata_11|    6.436|
+clk            |clk_automata_12|    7.638|
+clk            |clk_automata_13|    7.378|
+clk            |clk_automata_14|    6.815|
+clk            |clk_automata_15|    6.859|
+opcode<0>      |clk_automata_0 |    7.969|
+opcode<0>      |clk_automata_1 |    7.555|
+opcode<0>      |clk_automata_2 |    7.132|
+opcode<0>      |clk_automata_3 |    8.312|
+opcode<0>      |clk_automata_4 |    7.504|
+opcode<0>      |clk_automata_5 |    7.596|
+opcode<0>      |clk_automata_6 |    7.553|
+opcode<0>      |clk_automata_7 |    8.115|
+opcode<0>      |clk_automata_8 |    7.139|
+opcode<0>      |clk_automata_9 |    7.351|
+opcode<0>      |clk_automata_10|    6.861|
+opcode<0>      |clk_automata_11|    8.251|
+opcode<0>      |clk_automata_12|    7.665|
+opcode<0>      |clk_automata_13|    8.017|
+opcode<0>      |clk_automata_14|    7.042|
+opcode<0>      |clk_automata_15|    8.627|
+opcode<1>      |clk_automata_0 |    6.569|
+opcode<1>      |clk_automata_1 |    8.073|
+opcode<1>      |clk_automata_2 |    7.827|
+opcode<1>      |clk_automata_3 |    7.786|
+opcode<1>      |clk_automata_4 |    6.238|
+opcode<1>      |clk_automata_5 |    8.114|
+opcode<1>      |clk_automata_6 |    8.248|
+opcode<1>      |clk_automata_7 |    7.589|
+opcode<1>      |clk_automata_8 |    6.062|
+opcode<1>      |clk_automata_9 |    7.869|
+opcode<1>      |clk_automata_10|    7.556|
+opcode<1>      |clk_automata_11|    7.725|
+opcode<1>      |clk_automata_12|    6.325|
+opcode<1>      |clk_automata_13|    8.535|
+opcode<1>      |clk_automata_14|    7.737|
+opcode<1>      |clk_automata_15|    8.101|
+opcode<2>      |clk_automata_0 |    6.430|
+opcode<2>      |clk_automata_1 |    6.609|
+opcode<2>      |clk_automata_2 |    6.892|
+opcode<2>      |clk_automata_3 |    7.457|
+opcode<2>      |clk_automata_4 |    7.470|
+opcode<2>      |clk_automata_5 |    6.612|
+opcode<2>      |clk_automata_6 |    8.217|
+opcode<2>      |clk_automata_7 |    7.606|
+opcode<2>      |clk_automata_8 |    6.468|
+opcode<2>      |clk_automata_9 |    7.908|
+opcode<2>      |clk_automata_10|    7.500|
+opcode<2>      |clk_automata_11|    7.389|
+opcode<2>      |clk_automata_12|    6.191|
+opcode<2>      |clk_automata_13|    7.896|
+opcode<2>      |clk_automata_14|    7.706|
+opcode<2>      |clk_automata_15|    7.583|
+opcode<3>      |clk_automata_0 |    6.610|
+opcode<3>      |clk_automata_1 |    6.969|
+opcode<3>      |clk_automata_2 |    6.769|
+opcode<3>      |clk_automata_3 |    7.711|
+opcode<3>      |clk_automata_4 |    7.494|
+opcode<3>      |clk_automata_5 |    7.003|
+opcode<3>      |clk_automata_6 |    7.864|
+opcode<3>      |clk_automata_7 |    7.366|
+opcode<3>      |clk_automata_8 |    7.396|
+opcode<3>      |clk_automata_9 |    7.648|
+opcode<3>      |clk_automata_10|    7.107|
+opcode<3>      |clk_automata_11|    7.708|
+opcode<3>      |clk_automata_12|    6.331|
+opcode<3>      |clk_automata_13|    8.205|
+opcode<3>      |clk_automata_14|    7.353|
+opcode<3>      |clk_automata_15|    7.957|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Mar 18 23:41:00 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 175 MB
+
+
+
