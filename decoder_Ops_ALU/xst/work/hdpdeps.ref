@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/decoder_Ops_ALU/decoder_Ops_ALU.vhd 2017/03/04.21:19:09 P.20131013
+EN work/decoder_Ops_ALU 1488676753 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/decoder_Ops_ALU/decoder_Ops_ALU.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/decoder_Ops_ALU/Behavioral 1488676754 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/decoder_Ops_ALU/decoder_Ops_ALU.vhd \
+      EN work/decoder_Ops_ALU 1488676753

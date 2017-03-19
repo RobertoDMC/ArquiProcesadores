@@ -1,0 +1,10 @@
+[Inputs]
+=RA[7:0]=
+=RB[7:0]=
+=operacion[2:0]=
+[Outputs]
+Z
+C
+clk_AC
+=AC[7:0]=
+[BiDir]

@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registro/registro.vhd 2017/03/04.22:01:41 P.20131013
+EN work/registro 1488679304 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registro/registro.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/registro/Behavioral 1488679305 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registro/registro.vhd \
+      EN work/registro 1488679304

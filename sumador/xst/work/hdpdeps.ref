@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/sumador/sumador.vhd 2017/03/04.17:16:47 P.20131013
+EN work/sumador 1488662215 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/sumador/sumador.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/sumador/Behavioral 1488662216 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/sumador/sumador.vhd \
+      EN work/sumador 1488662215

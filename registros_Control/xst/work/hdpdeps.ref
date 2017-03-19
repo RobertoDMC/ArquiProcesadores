@@ -1,0 +1,29 @@
+V3 15
+FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/demux2_1/demux2_1.vhd 2017/03/18.21:15:12 P.20131013
+EN work/demux2_1 1489886368 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/demux2_1/demux2_1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/demux2_1/Behavioral 1489886369 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/demux2_1/demux2_1.vhd \
+      EN work/demux2_1 1489886368
+FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registro/registro.vhd 2017/03/05.17:13:34 P.20131013
+EN work/registro 1489886370 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registro/registro.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/registro/Behavioral 1489886371 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registro/registro.vhd \
+      EN work/registro 1489886370
+FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.vhd 2017/03/18.21:19:21 P.20131013
+EN work/registros_Clk 1489886366 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/registros_Clk/Behavioral 1489886367 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.vhd \
+      EN work/registros_Clk 1489886366
+FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/registros_Control.vhd 2017/03/18.21:18:03 P.20131013
+EN work/registros_Control 1489886372 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/registros_Control.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/registros_Control/Behavioral 1489886373 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/registros_Control.vhd \
+      EN work/registros_Control 1489886372 CP registros_Clk CP demux2_1 CP registro

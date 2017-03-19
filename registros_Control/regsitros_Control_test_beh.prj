@@ -1,0 +1,4 @@
+vhdl work "../registros_Clk/registros_Clk.vhd"
+vhdl work "../registro/registro.vhd"
+vhdl work "registros_Control.vhd"
+vhdl work "regsitros_Control_test.vhd"

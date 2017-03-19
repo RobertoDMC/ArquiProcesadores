@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/decoder_Ops_ALU/decoder_Ops_ALU.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/decoder_Ops_ALU/decoder_Ops_ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/decoder_Ops_ALU/decoder_Ops_ALU.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/decoder_Ops_ALU/decoder_Ops_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 decoder_Ops_ALU.ngc decoder_Ops_ALU.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o decoder_Ops_ALU_map.ncd decoder_Ops_ALU.ngd decoder_Ops_ALU.pcf 
+par -w -intstyle ise -ol high -t 1 decoder_Ops_ALU_map.ncd decoder_Ops_ALU.ncd decoder_Ops_ALU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml decoder_Ops_ALU.twx decoder_Ops_ALU.ncd -o decoder_Ops_ALU.twr decoder_Ops_ALU.pcf 
+bitgen -intstyle ise -f decoder_Ops_ALU.ut decoder_Ops_ALU.ncd 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/decoder_Ops_ALU/decoder_Ops_ALU.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/decoder_Ops_ALU/decoder_Ops_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 decoder_Ops_ALU.ngc decoder_Ops_ALU.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o decoder_Ops_ALU_map.ncd decoder_Ops_ALU.ngd decoder_Ops_ALU.pcf 
+par -w -intstyle ise -ol high -t 1 decoder_Ops_ALU_map.ncd decoder_Ops_ALU.ncd decoder_Ops_ALU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml decoder_Ops_ALU.twx decoder_Ops_ALU.ncd -o decoder_Ops_ALU.twr decoder_Ops_ALU.pcf 
+bitgen -intstyle ise -f decoder_Ops_ALU.ut decoder_Ops_ALU.ncd 
+vhdtdtfi -prj decoder_Ops_ALU -o C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/decoder_Ops_ALU/decoder_Ops_ALU.vhi -module decoder_Ops_ALU -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work decoder_Ops_ALU.vhd 

@@ -1,0 +1,5 @@
+vhdl work "C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\sumador\sumador.vhd"
+vhdl work "C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\modulo_Logico\modulo_Logico.vhd"
+vhdl work "C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\demux_ALU\demux_ALU.vhd"
+vhdl work "C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\decoder_Ops_ALU\decoder_Ops_ALU.vhd"
+vhdl work "C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\ALU\ALU.vhd"

@@ -1,0 +1,381 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: modulo_Logico.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "modulo_Logico.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "modulo_Logico"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : modulo_Logico
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd" in Library work.
+Entity <modulo_logico> compiled.
+Entity <modulo_logico> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <modulo_Logico> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <modulo_Logico> in library <work> (Architecture <behavioral>).
+WARNING:Xst:1610 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd" line 30: Width mismatch. <output_ModLog> has a width of 8 bits but assigned expression is 6-bit wide.
+WARNING:Xst:1610 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd" line 31: Width mismatch. <output_ModLog> has a width of 8 bits but assigned expression is 6-bit wide.
+WARNING:Xst:1610 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd" line 32: Width mismatch. <output_ModLog> has a width of 8 bits but assigned expression is 6-bit wide.
+INFO:Xst:1561 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd" line 42: Mux is complete : default of case is discarded
+Entity <modulo_Logico> analyzed. Unit <modulo_Logico> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <modulo_Logico>.
+    Related source file is "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd".
+    Found 8-bit register for signal <output_ModLog>.
+    Found 2-bit register for signal <output_Compare>.
+    Found 6-bit comparator equal for signal <output_Compare$cmp_eq0001> created at line 36.
+    Found 6-bit comparator greater for signal <output_Compare$cmp_gt0000> created at line 39.
+    Found 8-bit 4-to-1 multiplexer for signal <output_ModLog$mux0000> created at line 29.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <modulo_Logico> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 2
+ 2-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 2
+ 6-bit comparator equal                                : 1
+ 6-bit comparator greater                              : 1
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+# Comparators                                          : 2
+ 6-bit comparator equal                                : 1
+ 6-bit comparator greater                              : 1
+# Multiplexers                                         : 8
+ 1-bit 4-to-1 multiplexer                              : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <output_ModLog_6> (without init value) has a constant value of 0 in block <modulo_Logico>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_ModLog_7> (without init value) has a constant value of 0 in block <modulo_Logico>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <modulo_Logico> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block modulo_Logico, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : modulo_Logico.ngr
+Top Level Output File Name         : modulo_Logico
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 25
+
+Cell Usage :
+# BELS                             : 40
+#      GND                         : 1
+#      LUT2                        : 7
+#      LUT3                        : 13
+#      LUT4                        : 5
+#      MUXCY                       : 6
+#      MUXF5                       : 7
+#      VCC                         : 1
+# FlipFlops/Latches                : 8
+#      FD                          : 6
+#      FDE                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 24
+#      IBUF                        : 14
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       13  out of   4656     0%  
+ Number of Slice Flip Flops:              6  out of   9312     0%  
+ Number of 4 input LUTs:                 25  out of   9312     0%  
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of    232    10%  
+    IOB Flip Flops:                       2
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 8     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 2.406ns (Maximum Frequency: 415.628MHz)
+   Minimum input arrival time before clock: 6.801ns
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.406ns (frequency: 415.628MHz)
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Delay:               2.406ns (Levels of Logic = 2)
+  Source:            output_ModLog_0 (FF)
+  Destination:       output_ModLog_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: output_ModLog_0 to output_ModLog_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.482  output_ModLog_0 (output_ModLog_0)
+     LUT3:I2->O            1   0.704   0.000  mux_3 (mux_3)
+     MUXF5:I1->O           1   0.321   0.000  mux_2_f5 (output_ModLog_mux0000<0>)
+     FD:D                      0.308          output_ModLog_0
+    ----------------------------------------
+    Total                      2.406ns (1.924ns logic, 0.482ns route)
+                                       (80.0% logic, 20.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 114 / 10
+-------------------------------------------------------------------------
+Offset:              6.801ns (Levels of Logic = 6)
+  Source:            RA<4> (PAD)
+  Destination:       output_Compare_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: RA<4> to output_Compare_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.706  RA_4_IBUF (RA_4_IBUF)
+     LUT4:I0->O            2   0.704   0.451  output_Compare_mux0001<0>61 (output_Compare_mux0001<0>_bdd8)
+     LUT4:I3->O            1   0.704   0.000  output_Compare_mux0001<0>411 (output_Compare_mux0001<0>41)
+     MUXF5:I1->O           1   0.321   0.455  output_Compare_mux0001<0>41_f5 (output_Compare_mux0001<0>_bdd4)
+     LUT3:I2->O            2   0.704   0.526  output_Compare_mux0001<0>31 (output_Compare_mux0001<0>_bdd2)
+     LUT4:I1->O            1   0.704   0.000  output_Compare_mux0001<1>11 (output_Compare_mux0001<1>)
+     FDE:D                     0.308          output_Compare_0
+    ----------------------------------------
+    Total                      6.801ns (4.663ns logic, 2.138ns route)
+                                       (68.6% logic, 31.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            output_ModLog_5 (FF)
+  Destination:       output_ModLog<5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: output_ModLog_5 to output_ModLog<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  output_ModLog_5 (output_ModLog_5)
+     OBUF:I->O                 3.272          output_ModLog_5_OBUF (output_ModLog<5>)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.28 secs
+ 
+--> 
+
+Total memory usage is 235292 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

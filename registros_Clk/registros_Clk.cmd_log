@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.syr" 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.syr" 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.syr" 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.syr" 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.syr" 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.syr" 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 registros_Clk.ngc registros_Clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o registros_Clk_map.ncd registros_Clk.ngd registros_Clk.pcf 
+par -w -intstyle ise -ol high -t 1 registros_Clk_map.ncd registros_Clk.ncd registros_Clk.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml registros_Clk.twx registros_Clk.ncd -o registros_Clk.twr registros_Clk.pcf 
+bitgen -intstyle ise -f registros_Clk.ut registros_Clk.ncd 
+vhdtdtfi -prj registros_Clk -o C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.vhi -module registros_Clk -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work registros_Clk.vhd 

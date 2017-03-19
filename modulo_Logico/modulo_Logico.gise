@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="modulo_Logico.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="modulo_Logico.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="modulo_Logico.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="modulo_Logico.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="modulo_Logico.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="modulo_Logico.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="modulo_Logico.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="modulo_Logico.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="modulo_Logico.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="modulo_Logico.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="modulo_Logico.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="modulo_Logico.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="modulo_Logico.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="modulo_Logico.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="modulo_Logico.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="modulo_Logico.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="modulo_Logico.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="modulo_Logico.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="modulo_Logico.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="modulo_Logico.vhi"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="modulo_Logico.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="modulo_Logico.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="modulo_Logico_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="modulo_Logico_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="modulo_Logico_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="modulo_Logico_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="modulo_Logico_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="modulo_Logico_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="modulo_Logico_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="modulo_Logico_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="modulo_Logico_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="modulo_Logico_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="modulo_Logico_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="modulo_Logico_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="modulo_Logico_summary.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="modulo_Logico_test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="modulo_Logico_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="modulo_Logico_test_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="modulo_Logico_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="modulo_Logico_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="modulo_Logico_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="modulo_logico.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="modulo_logico.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="modulo_logico.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1488669000" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1488669000">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1488669184" xil_pn:in_ck="2649048890926457975" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1488669183">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="modulo_Logico.vhd"/>
+      <outfile xil_pn:name="modulo_Logico_test.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1488669184" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3140007857678883201" xil_pn:start_ts="1488669184">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1488669184" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1216322173029289411" xil_pn:start_ts="1488669184">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1488669000" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-394821494722512937" xil_pn:start_ts="1488669000">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1488669184" xil_pn:in_ck="2649048890926457975" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1488669184">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="modulo_Logico.vhd"/>
+      <outfile xil_pn:name="modulo_Logico_test.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1488669190" xil_pn:in_ck="2649048890926457975" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6082643444356488124" xil_pn:start_ts="1488669184">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="modulo_Logico_test_beh.prj"/>
+      <outfile xil_pn:name="modulo_Logico_test_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1488669191" xil_pn:in_ck="3804034832680476890" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3211888381605038991" xil_pn:start_ts="1488669190">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="modulo_Logico_test_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1488667317" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1488667317">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1488667317" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2465397432357676719" xil_pn:start_ts="1488667317">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1488667317" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-394821494722512937" xil_pn:start_ts="1488667317">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1488667317" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1488667317">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1488667317" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-2562921904184513201" xil_pn:start_ts="1488667317">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1488667317" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1488667317">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1488667317" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-7800550254596914015" xil_pn:start_ts="1488667317">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1489634250" xil_pn:in_ck="-2502927903756330532" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6460770141169142252" xil_pn:start_ts="1489634242">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="modulo_Logico.lso"/>
+      <outfile xil_pn:name="modulo_Logico.ngc"/>
+      <outfile xil_pn:name="modulo_Logico.ngr"/>
+      <outfile xil_pn:name="modulo_Logico.prj"/>
+      <outfile xil_pn:name="modulo_Logico.stx"/>
+      <outfile xil_pn:name="modulo_Logico.syr"/>
+      <outfile xil_pn:name="modulo_Logico.xst"/>
+      <outfile xil_pn:name="modulo_Logico_test_beh.prj"/>
+      <outfile xil_pn:name="modulo_Logico_vhdl.prj"/>
+      <outfile xil_pn:name="modulo_Logico_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1488667331" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8112668454831590748" xil_pn:start_ts="1488667331">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1489634340" xil_pn:in_ck="-2502927903756339278" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3007240248063211196" xil_pn:start_ts="1489634331">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="modulo_Logico.bld"/>
+      <outfile xil_pn:name="modulo_Logico.ngd"/>
+      <outfile xil_pn:name="modulo_Logico_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1489634351" xil_pn:in_ck="-2502927903756339277" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1489634340">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="modulo_Logico.pcf"/>
+      <outfile xil_pn:name="modulo_Logico_map.map"/>
+      <outfile xil_pn:name="modulo_Logico_map.mrp"/>
+      <outfile xil_pn:name="modulo_Logico_map.ncd"/>
+      <outfile xil_pn:name="modulo_Logico_map.ngm"/>
+      <outfile xil_pn:name="modulo_Logico_map.xrpt"/>
+      <outfile xil_pn:name="modulo_Logico_summary.xml"/>
+      <outfile xil_pn:name="modulo_Logico_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1489634370" xil_pn:in_ck="-9173647930887755700" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1489634351">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="modulo_Logico.ncd"/>
+      <outfile xil_pn:name="modulo_Logico.pad"/>
+      <outfile xil_pn:name="modulo_Logico.par"/>
+      <outfile xil_pn:name="modulo_Logico.ptwx"/>
+      <outfile xil_pn:name="modulo_Logico.unroutes"/>
+      <outfile xil_pn:name="modulo_Logico.xpi"/>
+      <outfile xil_pn:name="modulo_Logico_pad.csv"/>
+      <outfile xil_pn:name="modulo_Logico_pad.txt"/>
+      <outfile xil_pn:name="modulo_Logico_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1489634529" xil_pn:in_ck="-2502927903756339409" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1489634370">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="modulo_Logico.ut"/>
+      <outfile xil_pn:name="modulo_logico.bgn"/>
+      <outfile xil_pn:name="modulo_logico.bit"/>
+      <outfile xil_pn:name="modulo_logico.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1489634370" xil_pn:in_ck="-2502927903756339409" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1489634365">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="modulo_Logico.twr"/>
+      <outfile xil_pn:name="modulo_Logico.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

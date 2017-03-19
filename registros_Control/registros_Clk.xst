@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/xst"
+elaborate
+-ifn registros_Clk.prj
+-ifmt mixed

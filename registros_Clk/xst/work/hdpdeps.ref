@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.vhd 2017/03/05.17:10:33 P.20131013
+EN work/registros_Clk 1488748235 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/registros_Clk/Behavioral 1488748236 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.vhd \
+      EN work/registros_Clk 1488748235

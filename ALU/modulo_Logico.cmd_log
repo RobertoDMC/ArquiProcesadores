@@ -1,0 +1,2 @@
+vhdtdtfi -prj ALU -o C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ALU/modulo_Logico.vhi -module modulo_Logico -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../modulo_Logico/modulo_Logico.vhd 
+vhdtdtfi -prj ALU -o C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ALU/modulo_Logico.vhi -module modulo_Logico -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../modulo_Logico/modulo_Logico.vhd 

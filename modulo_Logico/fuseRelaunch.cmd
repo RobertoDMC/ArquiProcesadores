@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico_test_isim_beh.exe" -prj "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico_test_beh.prj" "work.modulo_Logico_test" 

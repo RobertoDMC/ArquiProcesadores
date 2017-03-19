@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/regsitros_Control_test_isim_beh.exe" -prj "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/regsitros_Control_test_beh.prj" "work.regsitros_Control_test" 

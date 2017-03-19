@@ -1,0 +1,29 @@
+Command line:
+   modulo_Logico_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  48770
+
+Sat Mar 04 19:13:13 2017
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 362.443 Meg
+
+ Total Signals          : 12
+ Total Nets             : 28
+ Total Signal Drivers   : 6
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 2
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 512
+Total Line Count : 65
+
+ Total Simulation Time: 0.1875 sec
+
+ Current Memory Usage: 362.443 Meg
+
+Sat Mar 04 19:15:41 2017
+

@@ -1,0 +1,1 @@
+vhdtdtfi -prj ALU -o C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ALU/decoder_Ops_ALU.vhi -module decoder_Ops_ALU -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../decoder_Ops_ALU/decoder_Ops_ALU.vhd 

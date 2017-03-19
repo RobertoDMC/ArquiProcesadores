@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd 2017/03/15.23:17:22 P.20131013
+EN work/modulo_Logico 1489634245 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/modulo_Logico/Behavioral 1489634246 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd \
+      EN work/modulo_Logico 1489634245

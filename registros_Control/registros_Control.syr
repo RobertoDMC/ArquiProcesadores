@@ -1,0 +1,586 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: registros_Control.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "registros_Control.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "registros_Control"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : registros_Control
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.vhd" in Library work.
+Entity <registros_clk> compiled.
+Entity <registros_clk> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/demux2_1/demux2_1.vhd" in Library work.
+Architecture behavioral of Entity demux2_1 is up to date.
+Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registro/registro.vhd" in Library work.
+Architecture behavioral of Entity registro is up to date.
+Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/registros_Control.vhd" in Library work.
+Architecture behavioral of Entity registros_control is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <registros_Control> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <registros_Clk> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux2_1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <registro> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <registros_Control> in library <work> (Architecture <behavioral>).
+Entity <registros_Control> analyzed. Unit <registros_Control> generated.
+
+Analyzing Entity <registros_Clk> in library <work> (Architecture <behavioral>).
+Entity <registros_Clk> analyzed. Unit <registros_Clk> generated.
+
+Analyzing Entity <demux2_1> in library <work> (Architecture <behavioral>).
+Entity <demux2_1> analyzed. Unit <demux2_1> generated.
+
+Analyzing Entity <registro> in library <work> (Architecture <behavioral>).
+Entity <registro> analyzed. Unit <registro> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <registros_Clk>.
+    Related source file is "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Clk/registros_Clk.vhd".
+    Using one-hot encoding for signal <pr_state>.
+    Found 1-bit register for signal <rw_MAR>.
+    Found 1-bit register for signal <rw_MBR>.
+    Found 1-bit register for signal <clk_IR>.
+    Found 1-bit register for signal <clk_PC>.
+    Found 1-bit register for signal <clk_MAR>.
+    Found 1-bit register for signal <clk_MBR>.
+    Found 8-bit register for signal <input_PC>.
+    Found 1-bit register for signal <rw_IR>.
+    Found 1-bit register for signal <rw_PC>.
+    Found 8-bit adder for signal <input_PC$add0000> created at line 90.
+    Found 6-bit register for signal <nx_state>.
+    Found 32-bit up counter for signal <output_PC>.
+    Found 6-bit register for signal <pr_state>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <registros_Clk> synthesized.
+
+
+Synthesizing Unit <demux2_1>.
+    Related source file is "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/demux2_1/demux2_1.vhd".
+Unit <demux2_1> synthesized.
+
+
+Synthesizing Unit <registro>.
+    Related source file is "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registro/registro.vhd".
+WARNING:Xst:737 - Found 8-bit latch for signal <output>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <data>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <registro> synthesized.
+
+
+Synthesizing Unit <registros_Control>.
+    Related source file is "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/registros_Control.vhd".
+Unit <registros_Control> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 11
+ 1-bit register                                        : 8
+ 6-bit register                                        : 2
+ 8-bit register                                        : 1
+# Latches                                              : 8
+ 8-bit latch                                           : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <nx_state_1> in Unit <Inst_registros_Clk> is equivalent to the following FF/Latch, which will be removed : <rw_MAR> 
+INFO:Xst:2261 - The FF/Latch <nx_state_3> in Unit <Inst_registros_Clk> is equivalent to the following FF/Latch, which will be removed : <rw_MBR> 
+INFO:Xst:2261 - The FF/Latch <nx_state_4> in Unit <Inst_registros_Clk> is equivalent to the following FF/Latch, which will be removed : <rw_IR> 
+INFO:Xst:2261 - The FF/Latch <nx_state_0> in Unit <Inst_registros_Clk> is equivalent to the following FF/Latch, which will be removed : <rw_PC> 
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+# Latches                                              : 8
+ 8-bit latch                                           : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <nx_state_1> in Unit <registros_Clk> is equivalent to the following FF/Latch, which will be removed : <rw_MAR> 
+INFO:Xst:2261 - The FF/Latch <nx_state_3> in Unit <registros_Clk> is equivalent to the following FF/Latch, which will be removed : <rw_MBR> 
+INFO:Xst:2261 - The FF/Latch <nx_state_4> in Unit <registros_Clk> is equivalent to the following FF/Latch, which will be removed : <rw_IR> 
+INFO:Xst:2261 - The FF/Latch <nx_state_0> in Unit <registros_Clk> is equivalent to the following FF/Latch, which will be removed : <rw_PC> 
+WARNING:Xst:2677 - Node <output_PC_8> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_9> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_10> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_11> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_12> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_13> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_14> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_15> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_16> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_17> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_18> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_19> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_20> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_21> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_22> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_23> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_24> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_25> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_26> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_27> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_28> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_29> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_30> of sequential type is unconnected in block <registros_Clk>.
+WARNING:Xst:2677 - Node <output_PC_31> of sequential type is unconnected in block <registros_Clk>.
+
+Optimizing unit <registros_Control> ...
+
+Optimizing unit <registros_Clk> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block registros_Control, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : registros_Control.ngr
+Top Level Output File Name         : registros_Control
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 34
+
+Cell Usage :
+# BELS                             : 47
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 7
+#      LUT2                        : 2
+#      LUT2_L                      : 1
+#      LUT3                        : 10
+#      LUT4                        : 3
+#      LUT4_D                      : 1
+#      MUXCY                       : 7
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 96
+#      FD                          : 6
+#      FD_1                        : 6
+#      FDE                         : 16
+#      FDS                         : 4
+#      LDE                         : 64
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 33
+#      IBUF                        : 17
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       55  out of   4656     1%  
+ Number of Slice Flip Flops:             96  out of   9312     1%  
+ Number of 4 input LUTs:                 30  out of   9312     0%  
+ Number of IOs:                          34
+ Number of bonded IOBs:                  34  out of    232    14%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Inst_registros_Clk/clk_PC          | NONE(PC/data_0)        | 16    |
+Inst_registros_Clk/clk_MAR         | NONE(MAR/data_0)       | 16    |
+Inst_registros_Clk/clk_MBR         | NONE(MBR/data_0)       | 16    |
+Inst_registros_Clk/clk_IR          | NONE(IR/data_0)        | 16    |
+clk                                | BUFGP                  | 32    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.428ns (Maximum Frequency: 225.836MHz)
+   Minimum input arrival time before clock: 3.162ns
+   Maximum output required time after clock: 4.368ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_registros_Clk/clk_PC'
+  Clock period: 1.404ns (frequency: 712.251MHz)
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               1.404ns (Levels of Logic = 0)
+  Source:            PC/data_0 (LATCH)
+  Destination:       PC/output_0 (LATCH)
+  Source Clock:      Inst_registros_Clk/clk_PC falling
+  Destination Clock: Inst_registros_Clk/clk_PC falling
+
+  Data Path: PC/data_0 to PC/output_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              1   0.676   0.420  PC/data_0 (PC/data_0)
+     LDE:D                     0.308          PC/output_0
+    ----------------------------------------
+    Total                      1.404ns (0.984ns logic, 0.420ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_registros_Clk/clk_MAR'
+  Clock period: 1.404ns (frequency: 712.251MHz)
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               1.404ns (Levels of Logic = 0)
+  Source:            MAR/data_0 (LATCH)
+  Destination:       MAR/output_0 (LATCH)
+  Source Clock:      Inst_registros_Clk/clk_MAR falling
+  Destination Clock: Inst_registros_Clk/clk_MAR falling
+
+  Data Path: MAR/data_0 to MAR/output_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              1   0.676   0.420  MAR/data_0 (MAR/data_0)
+     LDE:D                     0.308          MAR/output_0
+    ----------------------------------------
+    Total                      1.404ns (0.984ns logic, 0.420ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_registros_Clk/clk_MBR'
+  Clock period: 1.404ns (frequency: 712.251MHz)
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               1.404ns (Levels of Logic = 0)
+  Source:            MBR/data_0 (LATCH)
+  Destination:       MBR/output_0 (LATCH)
+  Source Clock:      Inst_registros_Clk/clk_MBR falling
+  Destination Clock: Inst_registros_Clk/clk_MBR falling
+
+  Data Path: MBR/data_0 to MBR/output_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              1   0.676   0.420  MBR/data_0 (MBR/data_0)
+     LDE:D                     0.308          MBR/output_0
+    ----------------------------------------
+    Total                      1.404ns (0.984ns logic, 0.420ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_registros_Clk/clk_IR'
+  Clock period: 1.404ns (frequency: 712.251MHz)
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               1.404ns (Levels of Logic = 0)
+  Source:            IR/data_0 (LATCH)
+  Destination:       IR/output_0 (LATCH)
+  Source Clock:      Inst_registros_Clk/clk_IR falling
+  Destination Clock: Inst_registros_Clk/clk_IR falling
+
+  Data Path: IR/data_0 to IR/output_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              1   0.676   0.420  IR/data_0 (IR/data_0)
+     LDE:D                     0.308          IR/output_0
+    ----------------------------------------
+    Total                      1.404ns (0.984ns logic, 0.420ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.428ns (frequency: 225.836MHz)
+  Total number of paths / destination ports: 108 / 52
+-------------------------------------------------------------------------
+Delay:               2.214ns (Levels of Logic = 0)
+  Source:            Inst_registros_Clk/pr_state_5 (FF)
+  Destination:       Inst_registros_Clk/output_PC_7 (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk rising
+
+  Data Path: Inst_registros_Clk/pr_state_5 to Inst_registros_Clk/output_PC_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q            18   0.591   1.068  Inst_registros_Clk/pr_state_5 (Inst_registros_Clk/pr_state_5)
+     FDE:CE                    0.555          Inst_registros_Clk/input_PC_0
+    ----------------------------------------
+    Total                      2.214ns (1.146ns logic, 1.068ns route)
+                                       (51.8% logic, 48.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_registros_Clk/clk_PC'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              3.162ns (Levels of Logic = 2)
+  Source:            enable_Write_PC (PAD)
+  Destination:       PC/data_0 (LATCH)
+  Destination Clock: Inst_registros_Clk/clk_PC falling
+
+  Data Path: enable_Write_PC to PC/data_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.932  enable_Write_PC_IBUF (enable_Write_PC_IBUF)
+     LUT3:I0->O            1   0.704   0.000  Inst_demux2_1/output<7>1 (output_Demux<7>)
+     LDE:D                     0.308          PC/data_7
+    ----------------------------------------
+    Total                      3.162ns (2.230ns logic, 0.932ns route)
+                                       (70.5% logic, 29.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_registros_Clk/clk_MBR'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              1.946ns (Levels of Logic = 1)
+  Source:            input_From_Ram<0> (PAD)
+  Destination:       MBR/data_0 (LATCH)
+  Destination Clock: Inst_registros_Clk/clk_MBR falling
+
+  Data Path: input_From_Ram<0> to MBR/data_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  input_From_Ram_0_IBUF (input_From_Ram_0_IBUF)
+     LDE:D                     0.308          MBR/data_0
+    ----------------------------------------
+    Total                      1.946ns (1.526ns logic, 0.420ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_registros_Clk/clk_MAR'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            MAR/output_7 (LATCH)
+  Destination:       direccion_RAM<7> (PAD)
+  Source Clock:      Inst_registros_Clk/clk_MAR falling
+
+  Data Path: MAR/output_7 to direccion_RAM<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              1   0.676   0.420  MAR/output_7 (MAR/output_7)
+     OBUF:I->O                 3.272          direccion_RAM_7_OBUF (direccion_RAM<7>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_registros_Clk/clk_IR'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            IR/output_7 (LATCH)
+  Destination:       CU<7> (PAD)
+  Source Clock:      Inst_registros_Clk/clk_IR falling
+
+  Data Path: IR/output_7 to CU<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              1   0.676   0.420  IR/output_7 (IR/output_7)
+     OBUF:I->O                 3.272          CU_7_OBUF (CU<7>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.46 secs
+ 
+--> 
+
+Total memory usage is 251480 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   26 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

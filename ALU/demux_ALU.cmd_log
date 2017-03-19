@@ -1,0 +1,1 @@
+vhdtdtfi -prj ALU -o C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ALU/demux_ALU.vhi -module demux_ALU -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../demux_ALU/demux_ALU.vhd 

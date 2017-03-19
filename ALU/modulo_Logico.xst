@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ALU/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ALU/xst"
+elaborate
+-ifn modulo_Logico.prj
+-ifmt mixed

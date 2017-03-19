@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/demux2_1/demux2_1.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/demux2_1/demux2_1.syr" 
+vhdtdtfi -prj demux2_1 -o C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/demux2_1/demux2_1.vhi -module demux2_1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work demux2_1.vhd 
