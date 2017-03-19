@@ -1,4 +1,5 @@
+vhdl work "../registro_8bits/registro_8bits.vhd"
+vhdl work "../registro_16bits/registro_16bits.vhd"
 vhdl work "../registros_Clk/registros_Clk.vhd"
-vhdl work "../registro/registro.vhd"
 vhdl work "../demux2_1/demux2_1.vhd"
 vhdl work "registros_Control.vhd"

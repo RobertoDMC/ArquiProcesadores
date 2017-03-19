@@ -9,7 +9,7 @@ entity registros_Control is
 			  enable_Write_PC: in STD_LOGIC;
 			  clk: in STD_LOGIC;
            direccion_RAM : out  STD_LOGIC_VECTOR (7 downto 0);
-           CU : out  STD_LOGIC_VECTOR (7 downto 0));
+           CU : out  STD_LOGIC_VECTOR (15 downto 0));
 end registros_Control;
 
 architecture Behavioral of registros_Control is
@@ -56,7 +56,8 @@ architecture Behavioral of registros_Control is
 		);
 	END COMPONENT;
 	
-signal input_PC, input_MAR, input_IR, output_Demux: std_logic_vector(7 downto 0):="00000000";
+signal input_PC, input_MAR, output_Demux: std_logic_vector(7 downto 0):="00000000";
+signal input_IR: std_logic_vector(15 downto 0):="0000000000000000";
 signal clk_PC, clk_MAR, clk_MBR, clk_IR: std_logic:='0';
 signal rw_PC, rw_MAR, rw_MBR, rw_IR: std_logic:='0';
 
