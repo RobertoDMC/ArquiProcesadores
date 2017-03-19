@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: ALU.prj
 
@@ -104,18 +104,24 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+WARNING:HDLParsers:3607 - Unit work/ALU is now defined in a different file.  It was defined in "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ALU/ALU.vhd", and is now defined in "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU/Behavioral is now defined in a different file.  It was defined in "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ALU/ALU.vhd", and is now defined in "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.vhd".
+WARNING:HDLParsers:3607 - Unit work/demux_ALU is now defined in a different file.  It was defined in "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/demux_ALU/demux_ALU.vhd", and is now defined in "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux_ALU/demux_ALU.vhd".
+WARNING:HDLParsers:3607 - Unit work/demux_ALU/Behavioral is now defined in a different file.  It was defined in "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/demux_ALU/demux_ALU.vhd", and is now defined in "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux_ALU/demux_ALU.vhd".
+WARNING:HDLParsers:3607 - Unit work/modulo_Logico is now defined in a different file.  It was defined in "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd", and is now defined in "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/modulo_Logico/modulo_Logico.vhd".
+WARNING:HDLParsers:3607 - Unit work/modulo_Logico/Behavioral is now defined in a different file.  It was defined in "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd", and is now defined in "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/modulo_Logico/modulo_Logico.vhd".
+WARNING:HDLParsers:3607 - Unit work/sumador is now defined in a different file.  It was defined in "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/sumador/sumador.vhd", and is now defined in "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/sumador/sumador.vhd".
+WARNING:HDLParsers:3607 - Unit work/sumador/Behavioral is now defined in a different file.  It was defined in "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/sumador/sumador.vhd", and is now defined in "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/sumador/sumador.vhd".
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/decoder_Ops_ALU/decoder_Ops_ALU.vhd" in Library work.
-Entity <decoder_ops_alu> compiled.
-Entity <decoder_ops_alu> (Architecture <behavioral>) compiled.
-Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/sumador/sumador.vhd" in Library work.
+Architecture behavioral of Entity decoder_ops_alu is up to date.
+Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/sumador/sumador.vhd" in Library work.
 Architecture behavioral of Entity sumador is up to date.
-Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd" in Library work.
+Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/modulo_Logico/modulo_Logico.vhd" in Library work.
 Architecture behavioral of Entity modulo_logico is up to date.
-Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/demux_ALU/demux_ALU.vhd" in Library work.
+Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux_ALU/demux_ALU.vhd" in Library work.
 Architecture behavioral of Entity demux_alu is up to date.
-Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ALU/ALU.vhd" in Library work.
-Entity <alu> compiled.
-Entity <alu> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -145,10 +151,10 @@ INFO:Xst:2679 - Register <c> in unit <sumador> has a constant value of 0 during 
 Entity <sumador> analyzed. Unit <sumador> generated.
 
 Analyzing Entity <modulo_Logico> in library <work> (Architecture <behavioral>).
-WARNING:Xst:1610 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd" line 30: Width mismatch. <output_ModLog> has a width of 8 bits but assigned expression is 6-bit wide.
-WARNING:Xst:1610 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd" line 31: Width mismatch. <output_ModLog> has a width of 8 bits but assigned expression is 6-bit wide.
-WARNING:Xst:1610 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd" line 32: Width mismatch. <output_ModLog> has a width of 8 bits but assigned expression is 6-bit wide.
-INFO:Xst:1561 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd" line 42: Mux is complete : default of case is discarded
+WARNING:Xst:1610 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/modulo_Logico/modulo_Logico.vhd" line 30: Width mismatch. <output_ModLog> has a width of 8 bits but assigned expression is 6-bit wide.
+WARNING:Xst:1610 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/modulo_Logico/modulo_Logico.vhd" line 31: Width mismatch. <output_ModLog> has a width of 8 bits but assigned expression is 6-bit wide.
+WARNING:Xst:1610 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/modulo_Logico/modulo_Logico.vhd" line 32: Width mismatch. <output_ModLog> has a width of 8 bits but assigned expression is 6-bit wide.
+INFO:Xst:1561 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/modulo_Logico/modulo_Logico.vhd" line 42: Mux is complete : default of case is discarded
 Entity <modulo_Logico> analyzed. Unit <modulo_Logico> generated.
 
 Analyzing Entity <demux_ALU> in library <work> (Architecture <behavioral>).
@@ -173,7 +179,7 @@ Unit <decoder_Ops_ALU> synthesized.
 
 
 Synthesizing Unit <sumador>.
-    Related source file is "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/sumador/sumador.vhd".
+    Related source file is "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/sumador/sumador.vhd".
     Found 8-bit register for signal <SUM>.
     Found 6-bit adder carry out for signal <SUM$addsub0000> created at line 24.
     Summary:
@@ -183,7 +189,7 @@ Unit <sumador> synthesized.
 
 
 Synthesizing Unit <modulo_Logico>.
-    Related source file is "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/modulo_Logico/modulo_Logico.vhd".
+    Related source file is "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/modulo_Logico/modulo_Logico.vhd".
     Found 2-bit register for signal <output_Compare>.
     Found 8-bit register for signal <output_ModLog>.
     Found 6-bit comparator equal for signal <output_Compare$cmp_eq0001> created at line 36.
@@ -197,12 +203,12 @@ Unit <modulo_Logico> synthesized.
 
 
 Synthesizing Unit <demux_ALU>.
-    Related source file is "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/demux_ALU/demux_ALU.vhd".
+    Related source file is "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux_ALU/demux_ALU.vhd".
 Unit <demux_ALU> synthesized.
 
 
 Synthesizing Unit <ALU>.
-    Related source file is "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ALU/ALU.vhd".
+    Related source file is "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.vhd".
 Unit <ALU> synthesized.
 
 
@@ -540,13 +546,13 @@ Offset:              5.438ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.84 secs
+Total CPU time to Xst completion: 5.59 secs
  
 --> 
 
-Total memory usage is 251452 kilobytes
+Total memory usage is 251496 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    7 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
 Number of infos    :    3 (   0 filtered)
 

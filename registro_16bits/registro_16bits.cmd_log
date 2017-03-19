@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_16bits/registro_16bits.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_16bits/registro_16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 registro_16bits.ngc registro_16bits.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o registro_16bits_map.ncd registro_16bits.ngd registro_16bits.pcf 
+par -w -intstyle ise -ol high -t 1 registro_16bits_map.ncd registro_16bits.ncd registro_16bits.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml registro_16bits.twx registro_16bits.ncd -o registro_16bits.twr registro_16bits.pcf 

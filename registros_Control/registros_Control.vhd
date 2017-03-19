@@ -4,7 +4,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity registros_Control is
-    Port ( input_From_Ram : in  STD_LOGIC_VECTOR (7 downto 0);
+    Port ( input_From_Ram : in  STD_LOGIC_VECTOR (15 downto 0);
 			  input_PC_Branch: in STD_LOGIC_VECTOR(7 downto 0);
 			  enable_Write_PC: in STD_LOGIC;
 			  clk: in STD_LOGIC;
@@ -14,12 +14,21 @@ end registros_Control;
 
 architecture Behavioral of registros_Control is
 
-	COMPONENT registro
+	COMPONENT registro_8bits
 	PORT(
 		input : IN std_logic_vector(7 downto 0);
 		clk : IN std_logic;
 		rw : IN std_logic;          
 		output : OUT std_logic_vector(7 downto 0)
+		);
+	END COMPONENT;
+	
+	COMPONENT registro_16bits
+	PORT(
+		input : IN std_logic_vector(15 downto 0);
+		clk : IN std_logic;
+		rw : IN std_logic;          
+		output : OUT std_logic_vector(15 downto 0)
 		);
 	END COMPONENT;
 	
@@ -74,28 +83,28 @@ begin
 		output => output_Demux
 	);
 
-	PC: registro PORT MAP(
+	PC: registro_8bits PORT MAP(
 		input => output_Demux,
 		clk => clk_PC,
 		rw => rw_PC,
 		output => input_MAR
 	);
 	
-	MAR: registro PORT MAP(
+	MAR: registro_8bits PORT MAP(
 		input => input_MAR,
 		clk => clk_MAR,
 		rw => rw_MAR,
 		output => direccion_RAM
 	);
 	
-	MBR: registro PORT MAP(
+	MBR: registro_16bits PORT MAP(
 		input => input_From_Ram,
 		clk => clk_MBR,
 		rw => rw_MBR,
 		output => input_IR
 	);
 	
-	IR: registro PORT MAP(
+	IR: registro_16bits PORT MAP(
 		input => input_IR,
 		clk => clk_IR,
 		rw => rw_IR,

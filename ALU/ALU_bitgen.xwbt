@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\ALU\ALU.ncd
-OUTFILE=C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\ALU\ALU.bit
+INFILE=C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\ProyectoFinal\ALU\ALU.ncd
+OUTFILE=C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\ProyectoFinal\ALU\ALU.bit
 FAMILY=Spartan3E
 PART=xc3s500e-4fg320
-WORKINGDIR=C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\ALU
+WORKINGDIR=C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\ProyectoFinal\ALU
 LICENSE=WebPack
 USER_INFO=211266409_0_0_456

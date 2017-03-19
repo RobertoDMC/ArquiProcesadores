@@ -1,5 +1,5 @@
 vhdl work "../sumador/sumador.vhd"
 vhdl work "../modulo_Logico/modulo_Logico.vhd"
 vhdl work "../demux_ALU/demux_ALU.vhd"
-vhdl work "../decoder_Ops_ALU/decoder_Ops_ALU.vhd"
+vhdl work "../../decoder_Ops_ALU/decoder_Ops_ALU.vhd"
 vhdl work "ALU.vhd"

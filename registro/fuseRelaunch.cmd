@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registro/registro_test_isim_beh.exe" -prj "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registro/registro_test_beh.prj" "work.registro_test" 

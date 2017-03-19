@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-03-18T20:54:59</DateModified>
+  <DateModified>2017-03-18T22:08:25</DateModified>
   <ModuleName>registros_Control</ModuleName>
   <SummaryTimeStamp>2017-03-05T16:34:28</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/iseconfig/registros_Control.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/iseconfig/registros_Control.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control\</ImplementationReportsDirectory>
   <DateInitialized>2017-03-05T15:46:05</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

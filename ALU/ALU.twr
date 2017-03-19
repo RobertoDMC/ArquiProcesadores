@@ -39,226 +39,34 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Setup/Hold to clock operacion<0>
+Setup/Hold to clock clk
 ------------+------------+------------+------------------+--------+
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-RA<0>       |    2.409(R)|    0.337(R)|clk_Mod_Log       |   0.000|
-            |    1.534(R)|    1.203(R)|clk_Sumador       |   0.000|
-RA<1>       |    1.983(R)|    1.219(R)|clk_Mod_Log       |   0.000|
-            |    1.184(R)|    1.218(R)|clk_Sumador       |   0.000|
-RA<2>       |    2.605(R)|    1.209(R)|clk_Mod_Log       |   0.000|
-            |    1.333(R)|    1.270(R)|clk_Sumador       |   0.000|
-RA<3>       |    1.901(R)|    0.986(R)|clk_Mod_Log       |   0.000|
-            |    0.837(R)|    1.401(R)|clk_Sumador       |   0.000|
-RA<4>       |    2.465(R)|    0.535(R)|clk_Mod_Log       |   0.000|
-            |    1.277(R)|    1.020(R)|clk_Sumador       |   0.000|
-RA<5>       |    2.425(R)|    1.526(R)|clk_Mod_Log       |   0.000|
-            |    1.424(R)|    0.623(R)|clk_Sumador       |   0.000|
-RB<0>       |    3.269(R)|    0.740(R)|clk_Mod_Log       |   0.000|
-            |    1.429(R)|    1.288(R)|clk_Sumador       |   0.000|
-RB<1>       |    3.116(R)|    1.570(R)|clk_Mod_Log       |   0.000|
-            |    1.224(R)|    1.186(R)|clk_Sumador       |   0.000|
-RB<2>       |    2.180(R)|    1.107(R)|clk_Mod_Log       |   0.000|
-            |    1.233(R)|    1.350(R)|clk_Sumador       |   0.000|
-RB<3>       |    2.754(R)|    0.545(R)|clk_Mod_Log       |   0.000|
-            |    0.784(R)|    1.444(R)|clk_Sumador       |   0.000|
-RB<4>       |    2.247(R)|    0.843(R)|clk_Mod_Log       |   0.000|
-            |    0.320(R)|    1.786(R)|clk_Sumador       |   0.000|
-RB<5>       |    2.254(R)|    1.948(R)|clk_Mod_Log       |   0.000|
-            |    0.110(R)|    1.674(R)|clk_Sumador       |   0.000|
+operacion<0>|    3.284(R)|    0.450(R)|clk_BUFGP         |   0.000|
+operacion<1>|    2.482(R)|    1.112(R)|clk_BUFGP         |   0.000|
+operacion<2>|    2.699(R)|    0.726(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
-Setup/Hold to clock operacion<1>
-------------+------------+------------+------------------+--------+
-            |Max Setup to|Max Hold to |                  | Clock  |
-Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
-------------+------------+------------+------------------+--------+
-RA<0>       |    1.836(R)|    1.053(R)|clk_Mod_Log       |   0.000|
-            |    1.725(R)|    0.963(R)|clk_Sumador       |   0.000|
-RA<1>       |    1.410(R)|    1.935(R)|clk_Mod_Log       |   0.000|
-            |    1.375(R)|    0.978(R)|clk_Sumador       |   0.000|
-RA<2>       |    2.032(R)|    1.925(R)|clk_Mod_Log       |   0.000|
-            |    1.524(R)|    1.030(R)|clk_Sumador       |   0.000|
-RA<3>       |    1.328(R)|    1.702(R)|clk_Mod_Log       |   0.000|
-            |    1.028(R)|    1.161(R)|clk_Sumador       |   0.000|
-RA<4>       |    1.892(R)|    1.251(R)|clk_Mod_Log       |   0.000|
-            |    1.468(R)|    0.780(R)|clk_Sumador       |   0.000|
-RA<5>       |    1.852(R)|    2.242(R)|clk_Mod_Log       |   0.000|
-            |    1.615(R)|    0.383(R)|clk_Sumador       |   0.000|
-RB<0>       |    2.696(R)|    1.456(R)|clk_Mod_Log       |   0.000|
-            |    1.620(R)|    1.048(R)|clk_Sumador       |   0.000|
-RB<1>       |    2.543(R)|    2.286(R)|clk_Mod_Log       |   0.000|
-            |    1.415(R)|    0.946(R)|clk_Sumador       |   0.000|
-RB<2>       |    1.607(R)|    1.823(R)|clk_Mod_Log       |   0.000|
-            |    1.424(R)|    1.110(R)|clk_Sumador       |   0.000|
-RB<3>       |    2.181(R)|    1.261(R)|clk_Mod_Log       |   0.000|
-            |    0.975(R)|    1.204(R)|clk_Sumador       |   0.000|
-RB<4>       |    1.674(R)|    1.559(R)|clk_Mod_Log       |   0.000|
-            |    0.511(R)|    1.546(R)|clk_Sumador       |   0.000|
-RB<5>       |    1.681(R)|    2.664(R)|clk_Mod_Log       |   0.000|
-            |    0.301(R)|    1.434(R)|clk_Sumador       |   0.000|
-------------+------------+------------+------------------+--------+
-
-Setup/Hold to clock operacion<2>
-------------+------------+------------+------------------+--------+
-            |Max Setup to|Max Hold to |                  | Clock  |
-Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
-------------+------------+------------+------------------+--------+
-RA<0>       |    1.422(R)|    1.570(R)|clk_Mod_Log       |   0.000|
-            |    1.187(R)|    1.636(R)|clk_Sumador       |   0.000|
-RA<1>       |    0.996(R)|    2.452(R)|clk_Mod_Log       |   0.000|
-            |    0.837(R)|    1.651(R)|clk_Sumador       |   0.000|
-RA<2>       |    1.618(R)|    2.442(R)|clk_Mod_Log       |   0.000|
-            |    0.986(R)|    1.703(R)|clk_Sumador       |   0.000|
-RA<3>       |    0.914(R)|    2.219(R)|clk_Mod_Log       |   0.000|
-            |    0.490(R)|    1.834(R)|clk_Sumador       |   0.000|
-RA<4>       |    1.478(R)|    1.768(R)|clk_Mod_Log       |   0.000|
-            |    0.930(R)|    1.453(R)|clk_Sumador       |   0.000|
-RA<5>       |    1.438(R)|    2.759(R)|clk_Mod_Log       |   0.000|
-            |    1.077(R)|    1.056(R)|clk_Sumador       |   0.000|
-RB<0>       |    2.282(R)|    1.973(R)|clk_Mod_Log       |   0.000|
-            |    1.082(R)|    1.721(R)|clk_Sumador       |   0.000|
-RB<1>       |    2.129(R)|    2.803(R)|clk_Mod_Log       |   0.000|
-            |    0.877(R)|    1.619(R)|clk_Sumador       |   0.000|
-RB<2>       |    1.193(R)|    2.340(R)|clk_Mod_Log       |   0.000|
-            |    0.886(R)|    1.783(R)|clk_Sumador       |   0.000|
-RB<3>       |    1.767(R)|    1.778(R)|clk_Mod_Log       |   0.000|
-            |    0.437(R)|    1.877(R)|clk_Sumador       |   0.000|
-RB<4>       |    1.260(R)|    2.076(R)|clk_Mod_Log       |   0.000|
-            |   -0.027(R)|    2.219(R)|clk_Sumador       |   0.000|
-RB<5>       |    1.267(R)|    3.181(R)|clk_Mod_Log       |   0.000|
-            |   -0.237(R)|    2.107(R)|clk_Sumador       |   0.000|
-------------+------------+------------+------------------+--------+
-
-Clock operacion<0> to Pad
+Clock clk to Pad
 ------------+------------+------------------+--------+
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-AC<0>       |   10.107(R)|clk_Mod_Log       |   0.000|
-            |   10.363(R)|clk_Sumador       |   0.000|
-AC<1>       |   10.101(R)|clk_Mod_Log       |   0.000|
-            |   10.059(R)|clk_Sumador       |   0.000|
-AC<2>       |   10.694(R)|clk_Mod_Log       |   0.000|
-            |    9.786(R)|clk_Sumador       |   0.000|
-AC<3>       |    9.624(R)|clk_Mod_Log       |   0.000|
-            |   10.200(R)|clk_Sumador       |   0.000|
-AC<4>       |    9.968(R)|clk_Mod_Log       |   0.000|
-            |    9.841(R)|clk_Sumador       |   0.000|
-AC<5>       |   11.078(R)|clk_Mod_Log       |   0.000|
-            |    9.666(R)|clk_Sumador       |   0.000|
-AC<6>       |    9.181(R)|clk_Sumador       |   0.000|
-compare<0>  |    7.349(R)|clk_Mod_Log       |   0.000|
-compare<1>  |    7.349(R)|clk_Mod_Log       |   0.000|
+AC<0>       |    9.501(R)|clk_BUFGP         |   0.000|
+AC<1>       |    9.637(R)|clk_BUFGP         |   0.000|
+AC<2>       |    9.872(R)|clk_BUFGP         |   0.000|
+AC<3>       |    9.553(R)|clk_BUFGP         |   0.000|
+AC<4>       |    9.616(R)|clk_BUFGP         |   0.000|
+AC<5>       |   10.075(R)|clk_BUFGP         |   0.000|
+AC<6>       |    9.975(R)|clk_BUFGP         |   0.000|
+clk_AC      |    8.605(R)|clk_BUFGP         |   0.000|
+rw_AC       |    8.348(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
-Clock operacion<1> to Pad
-------------+------------+------------------+--------+
-            | clk (edge) |                  | Clock  |
-Destination |   to PAD   |Internal Clock(s) | Phase  |
-------------+------------+------------------+--------+
-AC<0>       |   10.823(R)|clk_Mod_Log       |   0.000|
-            |   10.123(R)|clk_Sumador       |   0.000|
-AC<1>       |   10.817(R)|clk_Mod_Log       |   0.000|
-            |    9.819(R)|clk_Sumador       |   0.000|
-AC<2>       |   11.410(R)|clk_Mod_Log       |   0.000|
-            |    9.546(R)|clk_Sumador       |   0.000|
-AC<3>       |   10.340(R)|clk_Mod_Log       |   0.000|
-            |    9.960(R)|clk_Sumador       |   0.000|
-AC<4>       |   10.684(R)|clk_Mod_Log       |   0.000|
-            |    9.601(R)|clk_Sumador       |   0.000|
-AC<5>       |   11.794(R)|clk_Mod_Log       |   0.000|
-            |    9.426(R)|clk_Sumador       |   0.000|
-AC<6>       |    8.941(R)|clk_Sumador       |   0.000|
-compare<0>  |    8.065(R)|clk_Mod_Log       |   0.000|
-compare<1>  |    8.065(R)|clk_Mod_Log       |   0.000|
-------------+------------+------------------+--------+
 
-Clock operacion<2> to Pad
-------------+------------+------------------+--------+
-            | clk (edge) |                  | Clock  |
-Destination |   to PAD   |Internal Clock(s) | Phase  |
-------------+------------+------------------+--------+
-AC<0>       |   11.340(R)|clk_Mod_Log       |   0.000|
-            |   10.796(R)|clk_Sumador       |   0.000|
-AC<1>       |   11.334(R)|clk_Mod_Log       |   0.000|
-            |   10.492(R)|clk_Sumador       |   0.000|
-AC<2>       |   11.927(R)|clk_Mod_Log       |   0.000|
-            |   10.219(R)|clk_Sumador       |   0.000|
-AC<3>       |   10.857(R)|clk_Mod_Log       |   0.000|
-            |   10.633(R)|clk_Sumador       |   0.000|
-AC<4>       |   11.201(R)|clk_Mod_Log       |   0.000|
-            |   10.274(R)|clk_Sumador       |   0.000|
-AC<5>       |   12.311(R)|clk_Mod_Log       |   0.000|
-            |   10.099(R)|clk_Sumador       |   0.000|
-AC<6>       |    9.614(R)|clk_Sumador       |   0.000|
-compare<0>  |    8.582(R)|clk_Mod_Log       |   0.000|
-compare<1>  |    8.582(R)|clk_Mod_Log       |   0.000|
-------------+------------+------------------+--------+
-
-Clock to Setup on destination clock operacion<0>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-operacion<0>   |    2.293|    2.089|         |         |
-operacion<1>   |    2.513|    2.513|         |         |
-operacion<2>   |    3.511|    3.511|         |         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock operacion<1>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-operacion<0>   |    2.293|    1.516|         |         |
-operacion<1>   |    2.293|    1.940|         |         |
-operacion<2>   |    2.938|    2.938|         |         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock operacion<2>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-operacion<0>   |    2.293|    1.102|         |         |
-operacion<1>   |    2.293|    1.526|         |         |
-operacion<2>   |    2.524|    2.524|         |         |
----------------+---------+---------+---------+---------+
-
-Pad to Pad
----------------+---------------+---------+
-Source Pad     |Destination Pad|  Delay  |
----------------+---------------+---------+
-operacion<0>   |AC<0>          |    7.497|
-operacion<0>   |AC<1>          |    7.976|
-operacion<0>   |AC<2>          |    7.890|
-operacion<0>   |AC<3>          |    8.073|
-operacion<0>   |AC<4>          |    8.116|
-operacion<0>   |AC<5>          |    7.422|
-operacion<0>   |AC<6>          |    6.192|
-operacion<1>   |AC<0>          |    8.691|
-operacion<1>   |AC<1>          |    9.170|
-operacion<1>   |AC<2>          |    9.084|
-operacion<1>   |AC<3>          |    9.267|
-operacion<1>   |AC<4>          |    9.310|
-operacion<1>   |AC<5>          |    8.616|
-operacion<1>   |AC<6>          |    7.429|
-operacion<2>   |AC<0>          |    8.719|
-operacion<2>   |AC<1>          |    8.433|
-operacion<2>   |AC<2>          |    8.115|
-operacion<2>   |AC<3>          |    7.845|
-operacion<2>   |AC<4>          |    7.655|
-operacion<2>   |AC<5>          |    8.005|
-operacion<2>   |AC<6>          |    7.450|
-operacion<2>   |clk_AC         |    6.362|
-operacion<2>   |rw_AC          |    6.362|
----------------+---------------+---------+
-
-
-Analysis completed Wed Mar 15 23:31:05 2017 
+Analysis completed Sat Mar 18 21:56:55 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:

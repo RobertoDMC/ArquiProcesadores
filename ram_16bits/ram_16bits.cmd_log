@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ram_16bits/ram_16bits.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ram_16bits/ram_16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 ram_16bits.ngc ram_16bits.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ram_16bits_map.ncd ram_16bits.ngd ram_16bits.pcf 
+par -w -intstyle ise -ol high -t 1 ram_16bits_map.ncd ram_16bits.ncd ram_16bits.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ram_16bits.twx ram_16bits.ncd -o ram_16bits.twr ram_16bits.pcf 
+bitgen -intstyle ise -f ram_16bits.ut ram_16bits.ncd 
