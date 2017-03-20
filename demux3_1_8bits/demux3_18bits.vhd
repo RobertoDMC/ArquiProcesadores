@@ -10,16 +10,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity demux3_1 is
-    Port ( input_0 : in  STD_LOGIC_VECTOR (15 downto 0);
-           input_1 : in  STD_LOGIC_VECTOR (15 downto 0);
-           input_2 : in  STD_LOGIC_VECTOR (15 downto 0);
+entity demux3_18bits is
+    Port ( input_0 : in  STD_LOGIC_VECTOR (7 downto 0);
+           input_1 : in  STD_LOGIC_VECTOR (7 downto 0);
+           input_2 : in  STD_LOGIC_VECTOR (7 downto 0);
            pos_0 : in  STD_LOGIC;
            pos_1 : in  STD_LOGIC;
-           output : out  STD_LOGIC_VECTOR (15 downto 0));
-end demux3_1;
+           output : out  STD_LOGIC_VECTOR (7 downto 0));
+end demux3_18bits;
 
-architecture Behavioral of demux3_1 is
+architecture Behavioral of demux3_18bits is
 
 begin
 process

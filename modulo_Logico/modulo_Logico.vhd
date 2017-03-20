@@ -11,10 +11,10 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity modulo_Logico is
-    Port ( RA : in  STD_LOGIC_VECTOR (5 downto 0);
-           RB : in  STD_LOGIC_VECTOR (5 downto 0);
+    Port ( RA : in  STD_LOGIC_VECTOR (15 downto 0);
+           RB : in  STD_LOGIC_VECTOR (15 downto 0);
 			  op : in  STD_LOGIC_VECTOR (1 downto 0);
-           output_ModLog : out  STD_LOGIC_VECTOR (7 downto 0);
+           output_ModLog : out  STD_LOGIC_VECTOR (15 downto 0);
 			  output_Compare: out STD_LOGIC_VECTOR(1 downto 0);
            clk : in  STD_LOGIC);
 end modulo_Logico;
@@ -42,7 +42,7 @@ begin
 								output_Compare<="01";
 							end if;
 						end if;
-		when others => output_ModLog<="XXXXXXXX";
+		when others => output_ModLog<="XXXXXXXXXXXXXXXX";
 		end case;
 	end if;
 end process;

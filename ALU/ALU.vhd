@@ -1,21 +1,14 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+use IEEE.NUMERIC_STD.ALL;
 
 entity ALU is
-    Port ( RA : in  STD_LOGIC_VECTOR (5 downto 0);
-           RB : in  STD_LOGIC_VECTOR (5 downto 0);
+    Port ( RA : in  STD_LOGIC_VECTOR (15 downto 0);
+           RB : in  STD_LOGIC_VECTOR (15 downto 0);
            operacion : in  STD_LOGIC_VECTOR (2 downto 0);
            clk : in  STD_LOGIC;
-           AC : out  STD_LOGIC_VECTOR (7 downto 0);
+           RC : out  STD_LOGIC_VECTOR (15 downto 0);
            C : out  STD_LOGIC;--CARRY
            compare : out  STD_LOGIC_VECTOR(1 downto 0);--COMPARE RESULT
 			  rw_AC: out STD_LOGIC;
@@ -38,31 +31,31 @@ architecture Behavioral of ALU is
 
 	COMPONENT sumador
 	PORT(
-		RA : IN std_logic_vector(5 downto 0);
-		RB : IN std_logic_vector(5 downto 0);
+		RA : IN std_logic_vector(15 downto 0);
+		RB : IN std_logic_vector(15 downto 0);
 		clk : IN std_logic;          
-		SUM : OUT std_logic_vector(7 downto 0);
+		SUM : OUT std_logic_vector(15 downto 0);
 		c : OUT std_logic
 		);
 	END COMPONENT;
 	
 	COMPONENT modulo_Logico
 	PORT(
-		RA : IN std_logic_vector(5 downto 0);
-		RB : IN std_logic_vector(5 downto 0);
+		RA : IN std_logic_vector(15 downto 0);
+		RB : IN std_logic_vector(15 downto 0);
 		op : IN std_logic_vector(1 downto 0);
 		clk : IN std_logic;          
-		output_ModLog : OUT std_logic_vector(7 downto 0);
+		output_ModLog : OUT std_logic_vector(15 downto 0);
 		output_Compare : OUT std_logic_vector(1 downto 0)
 		);
 	END COMPONENT;
 	
 	COMPONENT demux_ALU
 	PORT(
-		sumador : IN std_logic_vector(7 downto 0);
-		mod_Log : IN std_logic_vector(7 downto 0);
+		sumador : IN std_logic_vector(15 downto 0);
+		mod_Log : IN std_logic_vector(15 downto 0);
 		posicion : IN std_logic_vector(1 downto 0);          
-		output : OUT std_logic_vector(7 downto 0);
+		output : OUT std_logic_vector(15 downto 0);
 		rw_AC : OUT std_logic;
 		clk_AC : OUT std_logic
 		);
@@ -70,7 +63,7 @@ architecture Behavioral of ALU is
 	
 	signal clk_Sumador, clk_Mod_Log: std_logic;
 	signal op_Mod_Log, pos_Demux_Output: std_logic_vector(1 downto 0);
-	signal SUM, modLog: std_logic_vector(7 downto 0);
+	signal SUM, modLog: std_logic_vector(15 downto 0);
 
 	
 begin
@@ -106,7 +99,7 @@ begin
 		sumador => SUM,
 		mod_Log => modLog,
 		posicion => pos_Demux_Output,
-		output => AC,
+		output => RC,
 		rw_AC => rw_AC,
 		clk_AC => clk_AC 
 	);

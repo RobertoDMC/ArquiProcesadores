@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-03-19T21:31:39</DateModified>
+  <DateModified>2017-03-20T19:06:33</DateModified>
   <ModuleName>demux3_1</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux3_1/iseconfig/demux3_1.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux3_1</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux3_1\</ImplementationReportsDirectory>
   <DateInitialized>2017-03-19T21:31:39</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
