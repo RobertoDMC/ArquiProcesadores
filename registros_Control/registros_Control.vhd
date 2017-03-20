@@ -8,15 +8,18 @@ entity registros_Control is
 			  input_PC_Branch: in STD_LOGIC_VECTOR(7 downto 0);
 			  enable_Write_PC: in STD_LOGIC;
 			  clk: in STD_LOGIC;
+			  reset : in STD_LOGIC;
            direccion_RAM : out  STD_LOGIC_VECTOR (7 downto 0);
            CU : out  STD_LOGIC_VECTOR (15 downto 0));
 end registros_Control;
 
 architecture Behavioral of registros_Control is	
 
+	
 	COMPONENT registro_8bits
 	PORT(
 		input : IN std_logic_vector(7 downto 0);
+		reset : IN std_logic;
 		clk : IN std_logic;
 		rw : IN std_logic;          
 		output : OUT std_logic_vector(7 downto 0)
@@ -26,6 +29,7 @@ architecture Behavioral of registros_Control is
 	COMPONENT registro_16bits
 	PORT(
 		input : IN std_logic_vector(15 downto 0);
+		reset : IN std_logic;
 		clk : IN std_logic;
 		rw : IN std_logic;          
 		output : OUT std_logic_vector(15 downto 0)
@@ -83,9 +87,10 @@ begin
 		flag => enable_Write_PC,
 		output => output_Demux
 	);
-
+	
 	PC: registro_8bits PORT MAP(
 		input => output_Demux,
+		reset => reset,
 		clk => clk_PC,
 		rw => rw_PC,
 		output => input_MAR
@@ -93,13 +98,15 @@ begin
 	
 	MAR: registro_8bits PORT MAP(
 		input => input_MAR,
+		reset => reset,
 		clk => clk_MAR,
 		rw => rw_MAR,
 		output => direccion_RAM
 	);
-	
+		
 	MBR: registro_16bits PORT MAP(
 		input => input_From_Ram,
+		reset => reset,
 		clk => clk_MBR,
 		rw => rw_MBR,
 		output => input_IR
@@ -107,9 +114,10 @@ begin
 	
 	IR: registro_16bits PORT MAP(
 		input => input_IR,
+		reset => reset,
 		clk => clk_IR,
 		rw => rw_IR,
-		output => CU 
+		output => CU
 	);
 
 end Behavioral;

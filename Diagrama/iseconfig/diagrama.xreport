@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-03-19T00:47:14</DateModified>
+  <DateModified>2017-03-19T19:26:10</DateModified>
   <ModuleName>diagrama</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/Diagrama/iseconfig/diagrama.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/Diagrama</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/Diagrama\</ImplementationReportsDirectory>
   <DateInitialized>2017-03-19T00:47:14</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

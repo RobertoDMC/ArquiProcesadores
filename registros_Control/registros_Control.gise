@@ -35,6 +35,7 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="registro_16bits.vhi"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="registros_Clk.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="registros_Clk.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="registros_Clk.xst"/>
