@@ -5,6 +5,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity registros_Control is
     Port ( input_From_Ram : in  STD_LOGIC_VECTOR (15 downto 0);
+			  input_increase_PC: in STD_LOGIC_VECTOR(1 downto 0);
 			  input_PC_Branch: in STD_LOGIC_VECTOR(7 downto 0);
 			  enable_Write_PC: in STD_LOGIC;
 			  clk: in STD_LOGIC;
@@ -38,7 +39,11 @@ architecture Behavioral of registros_Control is
 	
 	COMPONENT registros_Clk
 	PORT(
-		clk : IN std_logic;          
+		clk : IN std_logic;
+		reset : IN std_logic;
+		increase_PC : IN std_logic_vector(1 downto 0);
+		enable_Change_PC : IN std_logic;
+		change_PC : IN std_logic_vector(7 downto 0);          
 		input_PC : OUT std_logic_vector(7 downto 0);
 		clk_PC : OUT std_logic;
 		clk_MAR : OUT std_logic;
@@ -51,14 +56,14 @@ architecture Behavioral of registros_Control is
 		);
 	END COMPONENT;
 
-	COMPONENT demux2_1
-	PORT(
-		input_0 : IN std_logic_vector(7 downto 0);
-		input_1 : IN std_logic_vector(7 downto 0);
-		flag : IN std_logic;          
-		output : OUT std_logic_vector(7 downto 0)
-		);
-	END COMPONENT;
+--	COMPONENT demux2_1
+--	PORT(
+--		input_0 : IN std_logic_vector(7 downto 0);
+--		input_1 : IN std_logic_vector(7 downto 0);
+--		flag : IN std_logic;          
+--		output : OUT std_logic_vector(7 downto 0)
+--		);
+--	END COMPONENT;
 	
 signal input_PC, input_MAR, output_Demux: std_logic_vector(7 downto 0):="00000000";
 signal input_IR: std_logic_vector(15 downto 0):="0000000000000000";
@@ -70,6 +75,10 @@ begin
 
 	Inst_registros_Clk: registros_Clk PORT MAP(
 		clk => clk,
+		reset => reset,
+		increase_PC => input_increase_PC,
+		enable_Change_PC => enable_Write_PC,
+		change_PC => input_PC_Branch,
 		input_PC => input_PC,
 		clk_PC => clk_PC,
 		clk_MAR => clk_MAR,
@@ -81,15 +90,16 @@ begin
 		rw_IR => rw_IR
 	);
 
-	Inst_demux2_1: demux2_1 PORT MAP(
-		input_0 => input_PC,
-		input_1 => input_PC_Branch,
-		flag => enable_Write_PC,
-		output => output_Demux
-	);
+
+--	Inst_demux2_1: demux2_1 PORT MAP(
+--		input_0 => input_PC,
+--		input_1 => input_PC_Branch,
+--		flag => enable_Write_PC,
+--		output => output_Demux
+--	);
 	
 	PC: registro_8bits PORT MAP(
-		input => output_Demux,
+		input => input_PC,
 		reset => reset,
 		clk => clk_PC,
 		rw => rw_PC,

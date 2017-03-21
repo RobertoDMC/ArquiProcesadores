@@ -10,7 +10,7 @@ Total CPU time to Xst completion: 0.14 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: registros_Control.prj
 
@@ -105,15 +105,14 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Clk/registros_Clk.vhd" in Library work.
-Architecture behavioral of Entity registros_clk is up to date.
+Entity <registros_clk> compiled.
+Entity <registros_clk> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux2_1/demux2_1.vhd" in Library work.
 Architecture behavioral of Entity demux2_1 is up to date.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_8bits/registro_8bits.vhd" in Library work.
-Entity <registro_8bits> compiled.
-Entity <registro_8bits> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity registro_8bits is up to date.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_16bits/registro_16bits.vhd" in Library work.
-Entity <registro_16bits> compiled.
-Entity <registro_16bits> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity registro_16bits is up to date.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control.vhd" in Library work.
 Architecture behavioral of Entity registros_control is up to date.
 
@@ -168,13 +167,12 @@ Synthesizing Unit <registros_Clk>.
     Found 8-bit register for signal <input_PC>.
     Found 1-bit register for signal <rw_IR>.
     Found 1-bit register for signal <rw_PC>.
-    Found 8-bit adder for signal <input_PC$add0000> created at line 90.
-    Found 6-bit register for signal <nx_state>.
-    Found 32-bit up counter for signal <output_PC>.
-    Found 6-bit register for signal <pr_state>.
+    Found 7-bit register for signal <nx_state>.
+    Found 32-bit register for signal <output_PC>.
+    Found 32-bit adder for signal <output_PC$addsub0000> created at line 110.
+    Found 7-bit register for signal <pr_state>.
     Summary:
-	inferred   1 Counter(s).
-	inferred  28 D-type flip-flop(s).
+	inferred  55 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
 Unit <registros_Clk> synthesized.
 
@@ -186,19 +184,15 @@ Unit <demux2_1> synthesized.
 
 Synthesizing Unit <registro_8bits>.
     Related source file is "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_8bits/registro_8bits.vhd".
-    Found 8-bit register for signal <output>.
-    Found 8-bit register for signal <data>.
-    Summary:
-	inferred  16 D-type flip-flop(s).
+WARNING:Xst:737 - Found 8-bit latch for signal <output>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <data>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 Unit <registro_8bits> synthesized.
 
 
 Synthesizing Unit <registro_16bits>.
     Related source file is "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_16bits/registro_16bits.vhd".
-    Found 16-bit register for signal <output>.
-    Found 16-bit register for signal <data>.
-    Summary:
-	inferred  32 D-type flip-flop(s).
+WARNING:Xst:737 - Found 16-bit latch for signal <output>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <data>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 Unit <registro_16bits> synthesized.
 
 
@@ -212,14 +206,15 @@ HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 1
- 8-bit adder                                           : 1
-# Counters                                             : 1
- 32-bit up counter                                     : 1
-# Registers                                            : 19
+ 32-bit adder                                          : 1
+# Registers                                            : 12
  1-bit register                                        : 8
- 16-bit register                                       : 4
- 6-bit register                                        : 2
- 8-bit register                                        : 5
+ 32-bit register                                       : 1
+ 7-bit register                                        : 2
+ 8-bit register                                        : 1
+# Latches                                              : 8
+ 16-bit latch                                          : 4
+ 8-bit latch                                           : 4
 
 =========================================================================
 
@@ -227,31 +222,24 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-INFO:Xst:2261 - The FF/Latch <nx_state_1> in Unit <Inst_registros_Clk> is equivalent to the following FF/Latch, which will be removed : <rw_MAR> 
-INFO:Xst:2261 - The FF/Latch <nx_state_3> in Unit <Inst_registros_Clk> is equivalent to the following FF/Latch, which will be removed : <rw_MBR> 
-INFO:Xst:2261 - The FF/Latch <nx_state_4> in Unit <Inst_registros_Clk> is equivalent to the following FF/Latch, which will be removed : <rw_IR> 
-INFO:Xst:2261 - The FF/Latch <nx_state_0> in Unit <Inst_registros_Clk> is equivalent to the following FF/Latch, which will be removed : <rw_PC> 
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 1
- 8-bit adder                                           : 1
-# Counters                                             : 1
- 32-bit up counter                                     : 1
-# Registers                                            : 124
- Flip-Flops                                            : 124
+ 32-bit adder                                          : 1
+# Registers                                            : 62
+ Flip-Flops                                            : 62
+# Latches                                              : 8
+ 16-bit latch                                          : 4
+ 8-bit latch                                           : 4
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <nx_state_1> in Unit <registros_Clk> is equivalent to the following FF/Latch, which will be removed : <rw_MAR> 
-INFO:Xst:2261 - The FF/Latch <nx_state_3> in Unit <registros_Clk> is equivalent to the following FF/Latch, which will be removed : <rw_MBR> 
-INFO:Xst:2261 - The FF/Latch <nx_state_4> in Unit <registros_Clk> is equivalent to the following FF/Latch, which will be removed : <rw_IR> 
-INFO:Xst:2261 - The FF/Latch <nx_state_0> in Unit <registros_Clk> is equivalent to the following FF/Latch, which will be removed : <rw_PC> 
 WARNING:Xst:2677 - Node <output_PC_8> of sequential type is unconnected in block <registros_Clk>.
 WARNING:Xst:2677 - Node <output_PC_9> of sequential type is unconnected in block <registros_Clk>.
 WARNING:Xst:2677 - Node <output_PC_10> of sequential type is unconnected in block <registros_Clk>.
@@ -288,6 +276,7 @@ Optimizing unit <registro_16bits> ...
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block registros_Control, actual ratio is 1.
+FlipFlop Inst_registros_Clk/pr_state_6 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -295,8 +284,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 128
- Flip-Flops                                            : 128
+# Registers                                            : 39
+ Flip-Flops                                            : 39
 
 =========================================================================
 
@@ -322,32 +311,33 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 51
+# IOs                              : 53
 
 Cell Usage :
-# BELS                             : 47
+# BELS                             : 134
 #      GND                         : 1
-#      INV                         : 2
-#      LUT1                        : 7
-#      LUT2                        : 6
-#      LUT2_L                      : 1
-#      LUT3                        : 10
-#      LUT4                        : 3
-#      LUT4_D                      : 1
+#      INV                         : 1
+#      LUT1                        : 5
+#      LUT2                        : 7
+#      LUT3                        : 73
+#      LUT3_L                      : 8
+#      LUT4                        : 16
 #      MUXCY                       : 7
-#      VCC                         : 1
+#      MUXF5                       : 8
 #      XORCY                       : 8
-# FlipFlops/Latches                : 128
-#      FD                          : 6
-#      FD_1                        : 6
-#      FDCE                        : 48
-#      FDE                         : 64
-#      FDS                         : 4
-# Clock Buffers                    : 3
-#      BUFG                        : 2
+# FlipFlops/Latches                : 135
+#      FD_1                        : 8
+#      FDC                         : 6
+#      FDCE                        : 8
+#      FDE                         : 16
+#      FDP                         : 1
+#      LDCE                        : 48
+#      LDE_1                       : 48
+# Clock Buffers                    : 2
+#      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 50
-#      IBUF                        : 26
+# IO Buffers                       : 52
+#      IBUF                        : 28
 #      OBUF                        : 24
 =========================================================================
 
@@ -356,12 +346,13 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                       74  out of   4656     1%  
- Number of Slice Flip Flops:            128  out of   9312     1%  
- Number of 4 input LUTs:                 30  out of   9312     0%  
- Number of IOs:                          51
- Number of bonded IOBs:                  51  out of    232    21%  
- Number of GCLKs:                         3  out of     24    12%  
+ Number of Slices:                       93  out of   4656     1%  
+ Number of Slice Flip Flops:            119  out of   9312     1%  
+ Number of 4 input LUTs:                110  out of   9312     1%  
+ Number of IOs:                          53
+ Number of bonded IOBs:                  53  out of    232    22%  
+    IOB Flip Flops:                      16
+ Number of GCLKs:                         2  out of     24     8%  
 
 ---------------------------
 Partition Resource Summary:
@@ -384,11 +375,12 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 32    |
-Inst_registros_Clk/clk_MAR         | NONE(MAR/output_7)     | 16    |
-Inst_registros_Clk/clk_PC          | NONE(PC/output_7)      | 16    |
-Inst_registros_Clk/clk_IR1         | BUFG                   | 32    |
-Inst_registros_Clk/clk_MBR1        | BUFG                   | 32    |
+clk                                | BUFGP                  | 39    |
+reset                              | IBUF+BUFG              | 48    |
+Inst_registros_Clk/clk_MAR         | NONE(MAR/data_7)       | 8     |
+Inst_registros_Clk/clk_PC          | NONE(PC/data_7)        | 8     |
+Inst_registros_Clk/clk_IR          | NONE(IR/data_15)       | 16    |
+Inst_registros_Clk/clk_MBR         | NONE(MBR/data_15)      | 16    |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -397,16 +389,16 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-reset                              | IBUF                   | 48    |
+reset                              | IBUF                   | 63    |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 4.428ns (Maximum Frequency: 225.836MHz)
-   Minimum input arrival time before clock: 4.955ns
-   Maximum output required time after clock: 4.283ns
+   Minimum period: 8.698ns (Maximum Frequency: 114.963MHz)
+   Minimum input arrival time before clock: 8.425ns
+   Maximum output required time after clock: 4.395ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -415,238 +407,151 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.428ns (frequency: 225.836MHz)
-  Total number of paths / destination ports: 108 / 52
+  Clock period: 8.698ns (frequency: 114.963MHz)
+  Total number of paths / destination ports: 322 / 46
 -------------------------------------------------------------------------
-Delay:               2.214ns (Levels of Logic = 0)
-  Source:            Inst_registros_Clk/pr_state_5 (FF)
-  Destination:       Inst_registros_Clk/output_PC_7 (FF)
+Delay:               4.349ns (Levels of Logic = 3)
+  Source:            Inst_registros_Clk/pr_state_6_1 (FF)
+  Destination:       Inst_registros_Clk/input_PC_7 (FF)
   Source Clock:      clk falling
   Destination Clock: clk rising
 
-  Data Path: Inst_registros_Clk/pr_state_5 to Inst_registros_Clk/output_PC_7
+  Data Path: Inst_registros_Clk/pr_state_6_1 to Inst_registros_Clk/input_PC_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD_1:C->Q            18   0.591   1.068  Inst_registros_Clk/pr_state_5 (Inst_registros_Clk/pr_state_5)
-     FDE:CE                    0.555          Inst_registros_Clk/input_PC_0
+     FD_1:C->Q            32   0.591   1.297  Inst_registros_Clk/pr_state_6_1 (Inst_registros_Clk/pr_state_6_1)
+     LUT3:I2->O            1   0.704   0.000  Inst_registros_Clk/input_PC_mux0000<0>1_SW0_G (N27)
+     MUXF5:I1->O           1   0.321   0.424  Inst_registros_Clk/input_PC_mux0000<0>1_SW0 (N2)
+     LUT4:I3->O            1   0.704   0.000  Inst_registros_Clk/input_PC_mux0000<7>1 (Inst_registros_Clk/input_PC_mux0000<7>)
+     FDE:D                     0.308          Inst_registros_Clk/input_PC_0
     ----------------------------------------
-    Total                      2.214ns (1.146ns logic, 1.068ns route)
-                                       (51.8% logic, 48.2% route)
+    Total                      4.349ns (2.628ns logic, 1.721ns route)
+                                       (60.4% logic, 39.6% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'Inst_registros_Clk/clk_MAR'
-  Clock period: 1.319ns (frequency: 758.150MHz)
-  Total number of paths / destination ports: 8 / 8
+Timing constraint: Default period analysis for Clock 'reset'
+  Clock period: 2.170ns (frequency: 460.829MHz)
+  Total number of paths / destination ports: 48 / 48
 -------------------------------------------------------------------------
-Delay:               1.319ns (Levels of Logic = 0)
-  Source:            MAR/data_7 (FF)
-  Destination:       MAR/output_7 (FF)
-  Source Clock:      Inst_registros_Clk/clk_MAR rising
-  Destination Clock: Inst_registros_Clk/clk_MAR rising
+Delay:               2.170ns (Levels of Logic = 1)
+  Source:            MAR/output_7 (LATCH)
+  Destination:       MAR/output_7 (LATCH)
+  Source Clock:      reset rising
+  Destination Clock: reset rising
 
-  Data Path: MAR/data_7 to MAR/output_7
+  Data Path: MAR/output_7 to MAR/output_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             1   0.591   0.420  MAR/data_7 (MAR/data_7)
-     FDE:D                     0.308          MAR/output_7
+     LDE_1:G->Q            2   0.676   0.482  MAR/output_7 (MAR/output_7)
+     LUT3:I2->O            1   0.704   0.000  MAR/output_mux0002<7>1 (MAR/output_mux0002<7>)
+     LDE_1:D                   0.308          MAR/output_7
     ----------------------------------------
-    Total                      1.319ns (0.899ns logic, 0.420ns route)
-                                       (68.2% logic, 31.8% route)
+    Total                      2.170ns (1.688ns logic, 0.482ns route)
+                                       (77.8% logic, 22.2% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'Inst_registros_Clk/clk_PC'
-  Clock period: 1.319ns (frequency: 758.150MHz)
-  Total number of paths / destination ports: 8 / 8
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 140 / 32
 -------------------------------------------------------------------------
-Delay:               1.319ns (Levels of Logic = 0)
-  Source:            PC/data_7 (FF)
-  Destination:       PC/output_7 (FF)
-  Source Clock:      Inst_registros_Clk/clk_PC rising
-  Destination Clock: Inst_registros_Clk/clk_PC rising
+Offset:              8.425ns (Levels of Logic = 14)
+  Source:            input_increase_PC<0> (PAD)
+  Destination:       Inst_registros_Clk/input_PC_7 (FF)
+  Destination Clock: clk rising
 
-  Data Path: PC/data_7 to PC/output_7
+  Data Path: input_increase_PC<0> to Inst_registros_Clk/input_PC_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             1   0.591   0.420  PC/data_7 (PC/data_7)
-     FDE:D                     0.308          PC/output_7
+     IBUF:I->O             1   1.218   0.595  input_increase_PC_0_IBUF (input_increase_PC_0_IBUF)
+     LUT2:I0->O            1   0.704   0.000  Inst_registros_Clk/Madd_output_PC_addsub0000_lut<0> (Inst_registros_Clk/Madd_output_PC_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Inst_registros_Clk/Madd_output_PC_addsub0000_cy<0> (Inst_registros_Clk/Madd_output_PC_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_registros_Clk/Madd_output_PC_addsub0000_cy<1> (Inst_registros_Clk/Madd_output_PC_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_registros_Clk/Madd_output_PC_addsub0000_cy<2> (Inst_registros_Clk/Madd_output_PC_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_registros_Clk/Madd_output_PC_addsub0000_cy<3> (Inst_registros_Clk/Madd_output_PC_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_registros_Clk/Madd_output_PC_addsub0000_cy<4> (Inst_registros_Clk/Madd_output_PC_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_registros_Clk/Madd_output_PC_addsub0000_cy<5> (Inst_registros_Clk/Madd_output_PC_addsub0000_cy<5>)
+     MUXCY:CI->O           0   0.059   0.000  Inst_registros_Clk/Madd_output_PC_addsub0000_cy<6> (Inst_registros_Clk/Madd_output_PC_addsub0000_cy<6>)
+     XORCY:CI->O           1   0.804   0.455  Inst_registros_Clk/Madd_output_PC_addsub0000_xor<7> (Inst_registros_Clk/output_PC_addsub0000<7>)
+     LUT3:I2->O            4   0.704   0.666  Inst_registros_Clk/output_PC_mux0000<7>1 (Inst_registros_Clk/output_PC_mux0000<7>)
+     LUT3:I1->O            1   0.704   0.000  Inst_registros_Clk/input_PC_mux0000<0>1_SW14_G (N41)
+     MUXF5:I1->O           1   0.321   0.424  Inst_registros_Clk/input_PC_mux0000<0>1_SW14 (N23)
+     LUT4:I3->O            1   0.704   0.000  Inst_registros_Clk/input_PC_mux0000<0>2 (Inst_registros_Clk/input_PC_mux0000<0>)
+     FDE:D                     0.308          Inst_registros_Clk/input_PC_7
     ----------------------------------------
-    Total                      1.319ns (0.899ns logic, 0.420ns route)
-                                       (68.2% logic, 31.8% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'Inst_registros_Clk/clk_IR1'
-  Clock period: 1.319ns (frequency: 758.150MHz)
-  Total number of paths / destination ports: 16 / 16
--------------------------------------------------------------------------
-Delay:               1.319ns (Levels of Logic = 0)
-  Source:            IR/data_15 (FF)
-  Destination:       IR/output_15 (FF)
-  Source Clock:      Inst_registros_Clk/clk_IR1 rising
-  Destination Clock: Inst_registros_Clk/clk_IR1 rising
-
-  Data Path: IR/data_15 to IR/output_15
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDCE:C->Q             1   0.591   0.420  IR/data_15 (IR/data_15)
-     FDE:D                     0.308          IR/output_15
-    ----------------------------------------
-    Total                      1.319ns (0.899ns logic, 0.420ns route)
-                                       (68.2% logic, 31.8% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'Inst_registros_Clk/clk_MBR1'
-  Clock period: 1.319ns (frequency: 758.150MHz)
-  Total number of paths / destination ports: 16 / 16
--------------------------------------------------------------------------
-Delay:               1.319ns (Levels of Logic = 0)
-  Source:            MBR/data_15 (FF)
-  Destination:       MBR/output_15 (FF)
-  Source Clock:      Inst_registros_Clk/clk_MBR1 rising
-  Destination Clock: Inst_registros_Clk/clk_MBR1 rising
-
-  Data Path: MBR/data_15 to MBR/output_15
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDCE:C->Q             1   0.591   0.420  MBR/data_15 (MBR/data_15)
-     FDE:D                     0.308          MBR/output_15
-    ----------------------------------------
-    Total                      1.319ns (0.899ns logic, 0.420ns route)
-                                       (68.2% logic, 31.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_registros_Clk/clk_MAR'
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Offset:              4.678ns (Levels of Logic = 2)
-  Source:            reset (PAD)
-  Destination:       MAR/output_7 (FF)
-  Destination Clock: Inst_registros_Clk/clk_MAR rising
-
-  Data Path: reset to MAR/output_7
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            52   1.218   1.444  reset_IBUF (reset_IBUF)
-     LUT2:I0->O            8   0.704   0.757  MAR/output_and00001 (MAR/output_not0001_inv)
-     FDE:CE                    0.555          MAR/output_0
-    ----------------------------------------
-    Total                      4.678ns (2.477ns logic, 2.201ns route)
-                                       (53.0% logic, 47.0% route)
+    Total                      8.425ns (6.285ns logic, 2.140ns route)
+                                       (74.6% logic, 25.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_registros_Clk/clk_PC'
-  Total number of paths / destination ports: 24 / 16
+  Total number of paths / destination ports: 16 / 8
 -------------------------------------------------------------------------
-Offset:              4.678ns (Levels of Logic = 2)
-  Source:            reset (PAD)
-  Destination:       PC/output_7 (FF)
-  Destination Clock: Inst_registros_Clk/clk_PC rising
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            enable_Write_PC (PAD)
+  Destination:       PC/data_7 (LATCH)
+  Destination Clock: Inst_registros_Clk/clk_PC falling
 
-  Data Path: reset to PC/output_7
+  Data Path: enable_Write_PC to PC/data_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            52   1.218   1.444  reset_IBUF (reset_IBUF)
-     LUT2:I0->O            8   0.704   0.757  PC/output_and00001 (PC/output_not0001_inv)
-     FDE:CE                    0.555          PC/output_0
+     IBUF:I->O            16   1.218   1.209  enable_Write_PC_IBUF (enable_Write_PC_IBUF)
+     LUT3:I0->O            1   0.704   0.000  Inst_demux2_1/output<7>1 (output_Demux<7>)
+     LDCE:D                    0.308          PC/data_7
     ----------------------------------------
-    Total                      4.678ns (2.477ns logic, 2.201ns route)
-                                       (53.0% logic, 47.0% route)
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_registros_Clk/clk_IR1'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_registros_Clk/clk_MBR'
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
-Offset:              4.955ns (Levels of Logic = 2)
-  Source:            reset (PAD)
-  Destination:       IR/output_15 (FF)
-  Destination Clock: Inst_registros_Clk/clk_IR1 rising
+Offset:              1.946ns (Levels of Logic = 1)
+  Source:            input_From_Ram<15> (PAD)
+  Destination:       MBR/data_15 (LATCH)
+  Destination Clock: Inst_registros_Clk/clk_MBR falling
 
-  Data Path: reset to IR/output_15
+  Data Path: input_From_Ram<15> to MBR/data_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            52   1.218   1.444  reset_IBUF (reset_IBUF)
-     LUT2:I0->O           16   0.704   1.034  IR/output_and00001 (IR/output_not0001_inv)
-     FDE:CE                    0.555          IR/output_0
+     IBUF:I->O             1   1.218   0.420  input_From_Ram_15_IBUF (input_From_Ram_15_IBUF)
+     LDCE:D                    0.308          MBR/data_15
     ----------------------------------------
-    Total                      4.955ns (2.477ns logic, 2.478ns route)
-                                       (50.0% logic, 50.0% route)
+    Total                      1.946ns (1.526ns logic, 0.420ns route)
+                                       (78.4% logic, 21.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_registros_Clk/clk_MBR1'
-  Total number of paths / destination ports: 32 / 32
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset'
+  Total number of paths / destination ports: 24 / 24
 -------------------------------------------------------------------------
-Offset:              4.955ns (Levels of Logic = 2)
-  Source:            reset (PAD)
-  Destination:       MBR/output_15 (FF)
-  Destination Clock: Inst_registros_Clk/clk_MBR1 rising
-
-  Data Path: reset to MBR/output_15
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            52   1.218   1.444  reset_IBUF (reset_IBUF)
-     LUT2:I0->O           16   0.704   1.034  MBR/output_and00001 (MBR/output_not0001_inv)
-     FDE:CE                    0.555          MBR/output_0
-    ----------------------------------------
-    Total                      4.955ns (2.477ns logic, 2.478ns route)
-                                       (50.0% logic, 50.0% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_registros_Clk/clk_MAR'
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Offset:              4.283ns (Levels of Logic = 1)
-  Source:            MAR/output_7 (FF)
+Offset:              4.395ns (Levels of Logic = 1)
+  Source:            MAR/output_7 (LATCH)
   Destination:       direccion_RAM<7> (PAD)
-  Source Clock:      Inst_registros_Clk/clk_MAR rising
+  Source Clock:      reset rising
 
   Data Path: MAR/output_7 to direccion_RAM<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              1   0.591   0.420  MAR/output_7 (MAR/output_7)
+     LDE_1:G->Q            2   0.676   0.447  MAR/output_7 (MAR/output_7)
      OBUF:I->O                 3.272          direccion_RAM_7_OBUF (direccion_RAM<7>)
     ----------------------------------------
-    Total                      4.283ns (3.863ns logic, 0.420ns route)
-                                       (90.2% logic, 9.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_registros_Clk/clk_IR1'
-  Total number of paths / destination ports: 16 / 16
--------------------------------------------------------------------------
-Offset:              4.283ns (Levels of Logic = 1)
-  Source:            IR/output_15 (FF)
-  Destination:       CU<15> (PAD)
-  Source Clock:      Inst_registros_Clk/clk_IR1 rising
-
-  Data Path: IR/output_15 to CU<15>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDE:C->Q              1   0.591   0.420  IR/output_15 (IR/output_15)
-     OBUF:I->O                 3.272          CU_15_OBUF (CU<15>)
-    ----------------------------------------
-    Total                      4.283ns (3.863ns logic, 0.420ns route)
-                                       (90.2% logic, 9.8% route)
+    Total                      4.395ns (3.948ns logic, 0.447ns route)
+                                       (89.8% logic, 10.2% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.10 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.72 secs
  
 --> 
 
-Total memory usage is 251488 kilobytes
+Total memory usage is 251164 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   24 (   0 filtered)
-Number of infos    :    9 (   0 filtered)
+Number of warnings :   28 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

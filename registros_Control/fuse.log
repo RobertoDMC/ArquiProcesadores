@@ -6,7 +6,6 @@ Determining compilation order of HDL files
 Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/../registro_8bits/registro_8bits.vhd" into library work
 Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/../registro_16bits/registro_16bits.vhd" into library work
 Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/../registros_Clk/registros_Clk.vhd" into library work
-Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/../demux2_1/demux2_1.vhd" into library work
 Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control.vhd" into library work
 Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control_test.vhd" into library work
 Starting static elaboration
@@ -15,14 +14,13 @@ Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling architecture behavioral of entity registros_Clk [registros_clk_default]
-Compiling architecture behavioral of entity demux2_1 [demux2_1_default]
 Compiling architecture behavioral of entity registro_8bits [registro_8bits_default]
 Compiling architecture behavioral of entity registro_16bits [registro_16bits_default]
 Compiling architecture behavioral of entity registros_Control [registros_control_default]
 Compiling architecture behavior of entity registros_control_test
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 14 VHDL Units
+Compiled 12 VHDL Units
 Built simulation executable C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control_test_isim_beh.exe
-Fuse Memory Usage: 34104 KB
-Fuse CPU Usage: 577 ms
+Fuse Memory Usage: 33892 KB
+Fuse CPU Usage: 640 ms
