@@ -1,41 +1,41 @@
 V3 25
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/demux2_1/demux2_1.vhd 2017/03/18.21:15:12 P.20131013
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux2_1/demux2_1.vhd 2017/03/18.21:15:12 P.20131013
-EN work/demux2_1 1489889662 \
+EN work/demux2_1 1490069425 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux2_1/demux2_1.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/demux2_1/Behavioral 1489889663 \
+AR work/demux2_1/Behavioral 1490069426 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux2_1/demux2_1.vhd \
-      EN work/demux2_1 1489889662
+      EN work/demux2_1 1490069425
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Clk/registros_Clk.vhd 2017/03/18.21:19:21 P.20131013
-EN work/registros_Clk 1489889660 \
+EN work/registros_Clk 1490069423 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Clk/registros_Clk.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/registros_Clk/Behavioral 1489889661 \
+AR work/registros_Clk/Behavioral 1490069424 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Clk/registros_Clk.vhd \
-      EN work/registros_Clk 1489889660
-FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control.vhd 2017/03/18.22:14:18 P.20131013
-EN work/registros_Control 1489889668 \
+      EN work/registros_Clk 1490069423
+FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control.vhd 2017/03/19.20:18:47 P.20131013
+EN work/registros_Control 1490069431 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/registros_Control/Behavioral 1489889669 \
+AR work/registros_Control/Behavioral 1490069432 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control.vhd \
-      EN work/registros_Control 1489889668 CP registros_Clk CP demux2_1 \
+      EN work/registros_Control 1490069431 CP registros_Clk CP demux2_1 \
       CP registro_8bits CP registro_16bits
-FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_16bits/registro_16bits.vhd 2017/03/18.22:05:11 P.20131013
-EN work/registro_16bits 1489889666 \
+FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_16bits/registro_16bits.vhd 2017/03/21.00:10:06 P.20131013
+EN work/registro_16bits 1490069429 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_16bits/registro_16bits.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/registro_16bits/Behavioral 1489889667 \
+AR work/registro_16bits/Behavioral 1490069430 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_16bits/registro_16bits.vhd \
-      EN work/registro_16bits 1489889666
-FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_8bits/registro_8bits.vhd 2017/03/18.22:04:13 P.20131013
-EN work/registro_8bits 1489889664 \
+      EN work/registro_16bits 1490069429
+FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_8bits/registro_8bits.vhd 2017/03/21.00:10:21 P.20131013
+EN work/registro_8bits 1490069427 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_8bits/registro_8bits.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/registro_8bits/Behavioral 1489889665 \
+AR work/registro_8bits/Behavioral 1490069428 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_8bits/registro_8bits.vhd \
-      EN work/registro_8bits 1489889664
+      EN work/registro_8bits 1490069427
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registro/registro.vhd 2017/03/05.17:13:34 P.20131013
 EN work/registro 1489886370 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registro/registro.vhd \

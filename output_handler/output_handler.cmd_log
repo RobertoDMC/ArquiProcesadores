@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/output_handler/output_handler.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/output_handler/output_handler.syr" 

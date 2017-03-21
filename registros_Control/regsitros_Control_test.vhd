@@ -10,11 +10,13 @@ ARCHITECTURE behavior OF regsitros_Control_test IS
  
     COMPONENT registros_Control
     PORT(
-         input : IN  std_logic_vector(7 downto 0);
-         clk : IN  std_logic;
-         direccion_RAM : OUT  std_logic_vector(7 downto 0);
-         CU : OUT  std_logic_vector(7 downto 0)
-        );
+         input_From_Ram : in  STD_LOGIC_VECTOR (15 downto 0);
+			input_PC_Branch: in STD_LOGIC_VECTOR(7 downto 0);
+			enable_Write_PC: in STD_LOGIC;
+			clk: in STD_LOGIC;
+			reset : in STD_LOGIC;
+         direccion_RAM : out  STD_LOGIC_VECTOR (7 downto 0);
+         CU : out  STD_LOGIC_VECTOR (15 downto 0));
     END COMPONENT;
     
 

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-VAIO::  Sat Mar 18 22:15:00 2017
+VAIO::  Tue Mar 21 00:10:51 2017
 
 par -w -intstyle ise -ol high -t 1 registros_Control_map.ncd
 registros_Control.ncd registros_Control.pcf 
@@ -25,11 +25,11 @@ Device speed data version:  "PRODUCTION 1.27 2013-10-13".
 
 Design Summary Report:
 
- Number of External IOBs                          50 out of 232    21%
+ Number of External IOBs                          51 out of 232    21%
 
-   Number of External Input IOBs                 26
+   Number of External Input IOBs                 27
 
-      Number of External Input IBUFs             26
+      Number of External Input IBUFs             27
 
    Number of External Output IOBs                24
 
@@ -39,7 +39,7 @@ Design Summary Report:
 
 
    Number of BUFGMUXs                        3 out of 24     12%
-   Number of Slices                         67 out of 4656    1%
+   Number of Slices                         69 out of 4656    1%
       Number of SLICEMs                      0 out of 2328    0%
 
 
@@ -58,44 +58,44 @@ Total REAL time at the beginning of Placer: 1 secs
 Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:1be9) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:1d54) REAL time: 1 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:1be9) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:1d54) REAL time: 1 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:1be9) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:1d54) REAL time: 1 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 ........
-Phase 4.2  Initial Clock and IO Placement (Checksum:add062c0) REAL time: 1 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:b0daed66) REAL time: 1 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:add062c0) REAL time: 1 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:b0daed66) REAL time: 1 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:add062c0) REAL time: 1 secs 
+Phase 6.36  Local Placement Optimization (Checksum:b0daed66) REAL time: 1 secs 
 
 Phase 7.3  Local Placement Optimization
 ........
-Phase 7.3  Local Placement Optimization (Checksum:b10dcf47) REAL time: 1 secs 
+Phase 7.3  Local Placement Optimization (Checksum:b40bd004) REAL time: 1 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:b10dcf47) REAL time: 1 secs 
+Phase 8.5  Local Placement Optimization (Checksum:b40bd004) REAL time: 1 secs 
 
 Phase 9.8  Global Placement
 ......
-......
-Phase 9.8  Global Placement (Checksum:ac917186) REAL time: 3 secs 
+.......
+Phase 9.8  Global Placement (Checksum:1dd1babf) REAL time: 3 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:ac917186) REAL time: 3 secs 
+Phase 10.5  Local Placement Optimization (Checksum:1dd1babf) REAL time: 3 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:604121c7) REAL time: 3 secs 
+Phase 11.18  Placement Optimization (Checksum:5d1c8367) REAL time: 3 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:604121c7) REAL time: 3 secs 
+Phase 12.5  Local Placement Optimization (Checksum:5d1c8367) REAL time: 3 secs 
 
 Total REAL time to Placer completion: 3 secs 
 Total CPU  time to Placer completion: 3 secs 
@@ -106,21 +106,23 @@ Writing design to file registros_Control.ncd
 Starting Router
 
 
-Phase  1  : 327 unrouted;      REAL time: 7 secs 
+Phase  1  : 359 unrouted;      REAL time: 6 secs 
 
-Phase  2  : 259 unrouted;      REAL time: 7 secs 
+Phase  2  : 291 unrouted;      REAL time: 6 secs 
 
-Phase  3  : 15 unrouted;      REAL time: 7 secs 
+Phase  3  : 20 unrouted;      REAL time: 6 secs 
 
-Phase  4  : 12 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  4  : 20 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
 Updating file: registros_Control.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
 Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+
+Updating file: registros_Control.ncd with current fully routed design.
 
 Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
 
@@ -151,19 +153,19 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|           clk_BUFGP | BUFGMUX_X2Y10| No   |   19 |  0.036     |  0.154      |
+|           clk_BUFGP | BUFGMUX_X2Y10| No   |   19 |  0.015     |  0.135      |
 +---------------------+--------------+------+------+------------+-------------+
 |Inst_registros_Clk/c |              |      |      |            |             |
-|               lk_IR |  BUFGMUX_X1Y0| No   |   16 |  0.062     |  0.190      |
+|               lk_IR |  BUFGMUX_X1Y0| No   |   16 |  0.061     |  0.194      |
 +---------------------+--------------+------+------+------------+-------------+
 |Inst_registros_Clk/c |              |      |      |            |             |
-|              lk_MBR | BUFGMUX_X1Y10| No   |   16 |  0.055     |  0.180      |
+|              lk_MBR | BUFGMUX_X1Y10| No   |   16 |  0.060     |  0.194      |
 +---------------------+--------------+------+------+------------+-------------+
 |Inst_registros_Clk/c |              |      |      |            |             |
-|               lk_PC |         Local|      |    8 |  0.087     |  2.016      |
+|               lk_PC |         Local|      |    8 |  0.013     |  2.014      |
 +---------------------+--------------+------+------+------------+-------------+
 |Inst_registros_Clk/c |              |      |      |            |             |
-|              lk_MAR |         Local|      |    8 |  0.017     |  1.633      |
+|              lk_MAR |         Local|      |    8 |  0.016     |  2.039      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -183,20 +185,22 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.497ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     1.308ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.487ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     1.379ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     1.738ns|     N/A|           0
-  t_registros_Clk/clk_IR                    | HOLD        |     1.007ns|            |       0|           0
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     1.966ns|     N/A|           0
+  t_registros_Clk/clk_IR                    | HOLD        |     0.904ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     1.764ns|     N/A|           0
-  t_registros_Clk/clk_MBR                   | HOLD        |     1.017ns|            |       0|           0
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     1.609ns|     N/A|           0
+  t_registros_Clk/clk_MBR                   | HOLD        |     0.931ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.652ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     1.716ns|     N/A|           0
-  t_registros_Clk/clk_PC                    | HOLD        |     0.981ns|            |       0|           0
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     1.506ns|     N/A|           0
+  t_registros_Clk/clk_PC                    | HOLD        |     0.913ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.652ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     1.744ns|     N/A|           0
-  t_registros_Clk/clk_MAR                   | HOLD        |     0.987ns|            |       0|           0
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     1.986ns|     N/A|           0
+  t_registros_Clk/clk_MAR                   | HOLD        |     0.916ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -212,8 +216,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 10 secs 
-Total CPU time to PAR completion: 10 secs 
+Total REAL time to PAR completion: 11 secs 
+Total CPU time to PAR completion: 11 secs 
 
 Peak Memory Usage:  278 MB
 

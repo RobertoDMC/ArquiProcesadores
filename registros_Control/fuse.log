@@ -1,24 +1,28 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/regsitros_Control_test_isim_beh.exe -prj C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/regsitros_Control_test_beh.prj work.regsitros_Control_test 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control_test_isim_beh.exe -prj C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control_test_beh.prj work.registros_Control_test 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/../registros_Clk/registros_Clk.vhd" into library work
-Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/../registro/registro.vhd" into library work
-Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/registros_Control.vhd" into library work
-Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/regsitros_Control_test.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/../registro_8bits/registro_8bits.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/../registro_16bits/registro_16bits.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/../registros_Clk/registros_Clk.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/../demux2_1/demux2_1.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control_test.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling architecture behavioral of entity registros_Clk [registros_clk_default]
-Compiling architecture behavioral of entity registro [registro_default]
+Compiling architecture behavioral of entity demux2_1 [demux2_1_default]
+Compiling architecture behavioral of entity registro_8bits [registro_8bits_default]
+Compiling architecture behavioral of entity registro_16bits [registro_16bits_default]
 Compiling architecture behavioral of entity registros_Control [registros_control_default]
-Compiling architecture behavior of entity regsitros_control_test
+Compiling architecture behavior of entity registros_control_test
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 10 VHDL Units
-Built simulation executable C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/registros_Control/regsitros_Control_test_isim_beh.exe
-Fuse Memory Usage: 33760 KB
-Fuse CPU Usage: 562 ms
+Compiled 14 VHDL Units
+Built simulation executable C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control_test_isim_beh.exe
+Fuse Memory Usage: 34104 KB
+Fuse CPU Usage: 577 ms

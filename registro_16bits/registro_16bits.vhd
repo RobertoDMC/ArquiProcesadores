@@ -12,12 +12,12 @@ end registro_16bits;
 architecture Behavioral of registro_16bits is
 signal data:std_logic_vector(15 downto 0);
 begin
-process(clk, input, rw, data)
+process(clk, input, rw, data, reset)
 begin
 	if(reset = '1') then
 		data<="0000000000000000";
 	else
-		if(rising_edge(clk)) then
+		if(clk='1') then
 			if(rw = '1') then
 				--1 WRITE
 				data<=input;

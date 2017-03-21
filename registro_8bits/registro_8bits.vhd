@@ -10,14 +10,14 @@ entity registro_8bits is
 end registro_8bits;
 
 architecture Behavioral of registro_8bits is
-signal data:std_logic_vector(7 downto 0);
+signal data:std_logic_vector(7 downto 0):="00000000";
 begin
-process(clk, input, rw, data)
+process(clk, input, rw, data, reset)
 begin
 	if(reset = '1') then
 		data<="00000000";
 	else
-		if(rising_edge(clk)) then
+		if(clk='1') then
 			if(rw = '1') then
 				--1 WRITE
 				data<=input;

@@ -38,3 +38,13 @@ map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o registr
 par -w -intstyle ise -ol high -t 1 registros_Control_map.ncd registros_Control.ncd registros_Control.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml registros_Control.twx registros_Control.ncd -o registros_Control.twr registros_Control.pcf 
 bitgen -intstyle ise -f registros_Control.ut registros_Control.ncd 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 registros_Control.ngc registros_Control.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o registros_Control_map.ncd registros_Control.ngd registros_Control.pcf 
+par -w -intstyle ise -ol high -t 1 registros_Control_map.ncd registros_Control.ncd registros_Control.pcf 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 registros_Control.ngc registros_Control.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o registros_Control_map.ncd registros_Control.ngd registros_Control.pcf 
+par -w -intstyle ise -ol high -t 1 registros_Control_map.ncd registros_Control.ncd registros_Control.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml registros_Control.twx registros_Control.ncd -o registros_Control.twr registros_Control.pcf 
+bitgen -intstyle ise -f registros_Control.ut registros_Control.ncd 

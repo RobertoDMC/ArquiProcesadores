@@ -9,33 +9,31 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Sat Mar 18 22:14:56 2017
+Mapped Date    : Tue Mar 21 00:10:47 2017
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Total Number Slice Registers:         128 out of   9,312    1%
-    Number used as Flip Flops:           32
-    Number used as Latches:              96
-  Number of 4 input LUTs:                18 out of   9,312    1%
+  Number of Slice Flip Flops:           128 out of   9,312    1%
+  Number of 4 input LUTs:                22 out of   9,312    1%
 Logic Distribution:
-  Number of occupied Slices:             67 out of   4,656    1%
-    Number of Slices containing only related logic:      67 out of      67 100%
-    Number of Slices containing unrelated logic:          0 out of      67   0%
+  Number of occupied Slices:             69 out of   4,656    1%
+    Number of Slices containing only related logic:      69 out of      69 100%
+    Number of Slices containing unrelated logic:          0 out of      69   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:          25 out of   9,312    1%
-    Number used as logic:                18
+  Total Number of 4 input LUTs:          29 out of   9,312    1%
+    Number used as logic:                22
     Number used as a route-thru:          7
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 50 out of     232   21%
+  Number of bonded IOBs:                 51 out of     232   21%
   Number of BUFGMUXs:                     3 out of      24   12%
 
-Average Fanout of Non-Clock Nets:                2.00
+Average Fanout of Non-Clock Nets:                2.29
 
 Peak Memory Usage:  259 MB
 Total REAL time to MAP completion:  1 secs 
@@ -160,6 +158,7 @@ Section 6 - IOB Properties
 | input_PC_Branch<5>                 | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | input_PC_Branch<6>                 | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | input_PC_Branch<7>                 | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| reset                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

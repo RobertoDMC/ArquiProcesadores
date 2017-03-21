@@ -19,7 +19,7 @@ end registros_Clk;
 architecture Behavioral of registros_Clk is
 
 
-type state is (q0,q1,q2,q3,q4,q5);
+type state is (e1,q0,q1,q2,q3,q4,q5);
 signal pr_state, nx_state: state;
 
 begin
@@ -28,8 +28,19 @@ variable output_PC: integer:=0;
 begin
 	if(rising_edge(clk)) then
 		
-		case pr_state is 
-		when q0=>
+		case pr_state is
+		when e1=>
+					clk_PC<='1';
+					clk_MAR<='0';
+					clk_MBR<='0';
+					clk_IR<='0';
+					input_PC<="00000000";
+					rw_PC<='1';
+					rw_MAR<='1';
+					rw_MBR<='0';
+					rw_IR<='0';
+					nx_state<=q0;
+		when q0=>	
 		--ESCRIBIR EN MAR EL VALOR PC
 					clk_PC<='1';
 					clk_MAR<='1';
