@@ -176,39 +176,81 @@ BEGIN
 		clk <= '1';
 		wait for clk_period/2;
 	-------------------------
-	--RESET
+	--ESCRIBIR EN MAR EL VALOR DE PC
 		clk <= '0';
 		wait for clk_period/2;
 		clk <= '1';
-		reset<='1';
 		wait for clk_period/2;
 	-------------------------
-	--RESET
+	--LEER EL VALOR DE MAR
 		clk <= '0';
 		wait for clk_period/2;
 		clk <= '1';
-		reset<='0';
 		wait for clk_period/2;
 	-------------------------
-	--RESET
+	--Guardar en MBR lo que esta en la RAM en la posicion del MAR
 		clk <= '0';
+		input_From_Ram<="1010000000000001";
 		wait for clk_period/2;
 		clk <= '1';
-		reset<='0';
 		wait for clk_period/2;
 	-------------------------
-	--RESET
+	--GUARDAR EN IR LO QUE ESTA EN MBR
 		clk <= '0';
 		wait for clk_period/2;
 		clk <= '1';
-		reset<='0';
 		wait for clk_period/2;
 	-------------------------
-	--RESET
+	--MANDAR LA INSTRUCCION DEL IR A LA CU
 		clk <= '0';
 		wait for clk_period/2;
 		clk <= '1';
-		reset<='0';
+		wait for clk_period/2;
+	-------------------------
+	--AUMENTAR EL VALOR DEL PC O CAMBIAR
+		clk <= '0';
+		wait for clk_period/2;
+		clk <= '1';
+		input_PC_Branch<="00011111";
+		enable_Write_PC<='1';
+		wait for clk_period/2;
+	-------------------------
+	--ESCRIBIR EN MAR EL VALOR DE PC
+		clk <= '0';
+		enable_Write_PC<='0';
+		wait for clk_period/2;
+		clk <= '1';
+		wait for clk_period/2;
+	-------------------------
+	--LEER EL VALOR DE MAR
+		clk <= '0';
+		wait for clk_period/2;
+		clk <= '1';
+		wait for clk_period/2;
+	-------------------------
+	--Guardar en MBR lo que esta en la RAM en la posicion del MAR
+		clk <= '0';
+		input_From_Ram<="1011111111111101";
+		wait for clk_period/2;
+		clk <= '1';
+		wait for clk_period/2;
+	-------------------------
+	--GUARDAR EN IR LO QUE ESTA EN MBR
+		clk <= '0';
+		wait for clk_period/2;
+		clk <= '1';
+		wait for clk_period/2;
+	-------------------------
+	--MANDAR LA INSTRUCCION DEL IR A LA CU
+		clk <= '0';
+		wait for clk_period/2;
+		clk <= '1';
+		wait for clk_period/2;
+	-------------------------
+	--AUMENTAR EL VALOR DEL PC O CAMBIAR
+		clk <= '0';
+		wait for clk_period/2;
+		clk <= '1';
 		wait for clk_period/2;
 	-------------------------
    end process;
