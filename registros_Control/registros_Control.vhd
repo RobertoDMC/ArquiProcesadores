@@ -55,15 +55,6 @@ architecture Behavioral of registros_Control is
 		rw_IR : OUT std_logic
 		);
 	END COMPONENT;
-
---	COMPONENT demux2_1
---	PORT(
---		input_0 : IN std_logic_vector(7 downto 0);
---		input_1 : IN std_logic_vector(7 downto 0);
---		flag : IN std_logic;          
---		output : OUT std_logic_vector(7 downto 0)
---		);
---	END COMPONENT;
 	
 signal input_PC, input_MAR, output_Demux: std_logic_vector(7 downto 0):="00000000";
 signal input_IR: std_logic_vector(15 downto 0):="0000000000000000";
@@ -89,14 +80,6 @@ begin
 		rw_MBR => rw_MBR,
 		rw_IR => rw_IR
 	);
-
-
---	Inst_demux2_1: demux2_1 PORT MAP(
---		input_0 => input_PC,
---		input_1 => input_PC_Branch,
---		flag => enable_Write_PC,
---		output => output_Demux
---	);
 	
 	PC: registro_8bits PORT MAP(
 		input => input_PC,
