@@ -15,10 +15,10 @@ architecture Behavioral of sumador is
 
 begin
 
-process (clk)
+process (clk, RA, RB)
 variable ra_int, rb_int, ac_int: integer;
 begin
-	if(rising_edge(clk)) then
+	if(clk='1') then
 		ra_int:=to_integer(unsigned(RA));
 		rb_int:=to_integer(unsigned(RB));
 		ac_int:=ra_int+rb_int;

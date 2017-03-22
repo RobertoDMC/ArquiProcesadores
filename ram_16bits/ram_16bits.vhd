@@ -23,24 +23,24 @@ begin
 process(clk, ram_memory, direccion)
 variable posicion: integer range 0 to 255; 
 begin
-	if(rising_edge(clk)) then
-		if(reset='1') then
-			ram_memory <= (others =>(others =>'0'));
-		else
-			posicion:= to_integer(unsigned(direccion));
-			if(rw = '0') then
-				--0 es read
-			output<=ram_memory(posicion);
-			else
-				if(doi = '0')	then
-					if(posicion >127) then
-						--1 es write
-						ram_memory(posicion)<=input;
-					else
-						--QUIERE ESCRIBIR EN INSTRUCCION EN MODO READ, PROHIBIR
+	if(reset='1') then
+				ram_memory <= (others =>(others =>'0'));
+	else
+		if(clk='1') then
+				posicion:= to_integer(unsigned(direccion));
+				if(rw = '0') then
+					--0 es read
+				output<=ram_memory(posicion);
+				else
+					if(doi = '0')	then
+						if(posicion <127) then
+							--1 es write
+							ram_memory(posicion)<=input;
+						else
+							--QUIERE ESCRIBIR EN INSTRUCCION EN MODO READ, PROHIBIR
+						end if;
 					end if;
 				end if;
-			end if;
 		end if;
 	end if;
 end process;

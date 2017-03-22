@@ -22,10 +22,10 @@ end modulo_Logico;
 architecture Behavioral of modulo_Logico is
 
 begin
-process(clk)
+process(clk, RA, RB, op)
 variable RA_int, RB_int:integer;
 begin
-	if(rising_edge(clk)) then
+	if(clk='1') then
 		case op is
 		when "00" =>output_ModLog<= (RA and RB);
 		when "01" =>output_ModLog<= not RA;

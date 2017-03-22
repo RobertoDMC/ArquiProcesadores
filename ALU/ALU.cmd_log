@@ -49,3 +49,5 @@ xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/
 xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.syr" 
 xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.syr" 
 xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.syr" 

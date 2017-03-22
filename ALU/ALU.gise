@@ -58,6 +58,9 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ALU_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="ALU_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="ALU_summary.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU_test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALU_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ALU_test_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="ALU_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ALU_xst.xrpt"/>
@@ -79,6 +82,10 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="demux_ALU.stx"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="demux_ALU.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="demux_ALU.xst"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="modulo_Logico.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="modulo_Logico.stx"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="modulo_Logico.vhi"/>
@@ -89,11 +96,69 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1490139841" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1490139841">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1490140270" xil_pn:in_ck="2732696946287601948" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1490140270">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../../decoder_Ops_ALU/decoder_Ops_ALU.vhd"/>
+      <outfile xil_pn:name="../demux_ALU/demux_ALU.vhd"/>
+      <outfile xil_pn:name="../modulo_Logico/modulo_Logico.vhd"/>
+      <outfile xil_pn:name="../sumador/sumador.vhd"/>
+      <outfile xil_pn:name="ALU.vhd"/>
+      <outfile xil_pn:name="ALU_test.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1490139919" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3333577357502480905" xil_pn:start_ts="1490139919">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1490139919" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8997704324947153849" xil_pn:start_ts="1490139919">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1490139841" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-7226581985337602035" xil_pn:start_ts="1490139841">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1490140270" xil_pn:in_ck="2732696946287601948" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1490140270">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../../decoder_Ops_ALU/decoder_Ops_ALU.vhd"/>
+      <outfile xil_pn:name="../demux_ALU/demux_ALU.vhd"/>
+      <outfile xil_pn:name="../modulo_Logico/modulo_Logico.vhd"/>
+      <outfile xil_pn:name="../sumador/sumador.vhd"/>
+      <outfile xil_pn:name="ALU.vhd"/>
+      <outfile xil_pn:name="ALU_test.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1490140274" xil_pn:in_ck="2732696946287601948" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4418351307626016080" xil_pn:start_ts="1490140270">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ALU_test_beh.prj"/>
+      <outfile xil_pn:name="ALU_test_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1490140274" xil_pn:in_ck="-5556151106647696816" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3271623361256848989" xil_pn:start_ts="1490140274">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ALU_test_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
     <transform xil_pn:end_ts="1488678553" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1488678553">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -122,9 +187,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1490137863" xil_pn:in_ck="-9083312515056863669" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-5811607178620301302" xil_pn:start_ts="1490137854">
+    <transform xil_pn:end_ts="1490140256" xil_pn:in_ck="-9083312515056863669" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-5811607178620301302" xil_pn:start_ts="1490140248">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="ALU.lso"/>
       <outfile xil_pn:name="ALU.ngc"/>
@@ -133,6 +201,7 @@
       <outfile xil_pn:name="ALU.stx"/>
       <outfile xil_pn:name="ALU.syr"/>
       <outfile xil_pn:name="ALU.xst"/>
+      <outfile xil_pn:name="ALU_test_beh.prj"/>
       <outfile xil_pn:name="ALU_vhdl.prj"/>
       <outfile xil_pn:name="ALU_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>

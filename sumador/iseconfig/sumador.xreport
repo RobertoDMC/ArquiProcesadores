@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-03-04T19:15:47</DateModified>
+  <DateModified>2017-03-21T19:49:24</DateModified>
   <ModuleName>sumador</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/sumador/iseconfig/sumador.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/sumador\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/sumador/iseconfig/sumador.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/sumador\</ImplementationReportsDirectory>
   <DateInitialized>2017-03-04T17:00:01</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
