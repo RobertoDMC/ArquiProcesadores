@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: Control_Unit.prj
 
@@ -106,13 +106,15 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd" in Library work.
 Entity <control_unit> compiled.
-ERROR:HDLParsers:813 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd" Line 397. Enumerated value jumps0 is missing in case.
-WARNING:HDLParsers:1406 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd" Line 83. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd" Line 161. Undefined symbol 'jumps0'.
+ERROR:HDLParsers:1209 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd" Line 161. jumps0: Undefined symbol (last report in this block)
+ERROR:HDLParsers:813 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd" Line 450. Enumerated value add0 is missing in case.
+WARNING:HDLParsers:1406 - "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd" Line 84. No sensitivity list and no wait in the process
 --> 
 
-Total memory usage is 232720 kilobytes
+Total memory usage is 232716 kilobytes
 
-Number of errors   :    1 (   0 filtered)
+Number of errors   :    3 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

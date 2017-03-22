@@ -5,10 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLParsers" num="813" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd</arg>&quot; Line <arg fmt="%d" index="2">397</arg>. Enumerated value <arg fmt="%s" index="3">jumps0</arg> is missing in <arg fmt="%s" index="4">case</arg>.
+<msg type="error" file="HDLParsers" num="3312" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd</arg>&quot; Line <arg fmt="%d" index="2">161</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">jumps0</arg>&apos;.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="1406" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd</arg>&quot; Line <arg fmt="%d" index="2">83</arg>. No sensitivity list and no wait in the process
+<msg type="error" file="HDLParsers" num="1209" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd</arg>&quot; Line <arg fmt="%d" index="2">161</arg>. <arg fmt="%s" index="3">jumps0</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="813" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd</arg>&quot; Line <arg fmt="%d" index="2">450</arg>. Enumerated value <arg fmt="%s" index="3">add0</arg> is missing in <arg fmt="%s" index="4">case</arg>.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="1406" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd</arg>&quot; Line <arg fmt="%d" index="2">84</arg>. No sensitivity list and no wait in the process
 </msg>
 
 </messages>

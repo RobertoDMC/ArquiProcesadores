@@ -30,6 +30,7 @@ entity Control_Unit is
            RB_demux_pos : out  STD_LOGIC;
            RC_rw : out  STD_LOGIC;
            RC_clk : out  STD_LOGIC;
+			  output_Register_clk: out STD_LOGIC;
 			  ----------------------------------------------
 			  --CONTROL---REGISTERS-------------------------
 			  CR_clk: out STD_LOGIC;
@@ -56,17 +57,17 @@ type estado is (init0,init1,init2,init3,init4,init5,init6,init7,init8,init9,init
 					 moveFromRamToRA0, moveFromRamToRA1,
 					 moveFromRamToRB0, moveFromRamToRB1,
 					 moveFromRCToRam0, moveFromRCToRam1,
-					 jumps0,
+					 --jumps0,
 					 mov,
 					 moveRBToRA0, moveRBToRA1,
 					 moveRAToRB0, moveRAToRB1,
-					 out0,
-					 add0,
-					 equal0,
-					 lessThan0,
-					 greaterThan0,
-					 and0,
-					 not0,
+					 out0, out1,
+					 add0, add2, add3,
+					 compare0, compare1,
+					 and0, and1,
+					 not_state,
+					 notA0, notA1,
+					 notB0, notB1,
 					 moveToOut0,
 					 branch0,
 					 return0,
@@ -165,15 +166,11 @@ begin
 							when "0110" =>
 											nx_state<=add0;
 							when "0111" =>
-											nx_state<=equal0;
-							when "1000" =>
-											nx_state<=lessThan0;
-							when "1001" =>
-											nx_state<=greaterThan0;
+											nx_state<=compare0;
 							when "1010" =>
 											nx_state<=and0;
 							when "1011" =>
-											nx_state<=not0;
+											nx_state<=not_state;
 							when "1100" =>
 											nx_state<=moveToOut0;
 							when "1101" =>
@@ -382,25 +379,20 @@ begin
 --------------------PROCESS TO MOVE FROM RC TO RAM(ADDRESS)-----------------------------------------
 		--READ RC----------------------------------------
 		when moveFromRCToRam0=>
-						arg2_int:=to_integer(unsigned(arg2));
 						ram_clk<='0';
 						ram_rw<='0';
-						--ram_demux_data_pos1<='1';
 						ram_demux_dir_pos1<='1';
-						ram_addr<=std_logic_vector(to_unsigned(arg2_int,8));
-						--ram_data<="0000000000000000";
 						nx_state<=moveFromRCToRam1;
 						rc_clk<='1';
 						rc_rw<='0';
 		-------------------------------------------------
 		--WRITES IN RAM(ADDRESS)-------------------------
 		when moveFromRCToRam1=>
-						arg2_int:=to_integer(unsigned(arg2));
 						ram_clk<='1';
 						ram_rw<='0';
 						ram_demux_data_pos1<='0';
 						ram_demux_dir_pos1<='1';
-						ram_addr<=std_logic_vector(to_unsigned(arg2_int,8));
+						ram_addr<="11111111";
 						rb_clk<='1';
 						rb_rw<='1';
 						nx_state<=addPCByOne0;
@@ -441,7 +433,103 @@ begin
 							RB_rw<='1';
 							nx_state<=addPCByOne0;
 ----------------------------------------------------------------------------------------------------
-
+----------------------------------------------------------------------------------------------------
+---PROCESS TO MOVE RAM(255) TO OUTPUT---------------------------------------------------------------
+		when out0=>
+					ram_clk<='1';
+					ram_rw<='0';
+					--ram_demux_data_pos1<='1';
+					ram_demux_dir_pos1<='1';
+					ram_addr<="11111111";
+					--ram_data<="0000000000000000";
+					nx_state<=out1;
+		when out1=>
+					output_Register_clk<='1';
+					nx_state<=addPCByOne0;
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+-----PROCESS TO ADD IN ALU--------------------------------------------------------------------------
+		when add0=>
+					ra_clk<='1';
+					ra_rw<='0';
+					rb_clk<='1';
+					rb_rw<='0';
+					nx_state<=add1;
+		when add1=>
+					ALU_clk<='1';
+					ALU_inst<="000";
+					rc_clk<='1';
+					rc_rw<='1';
+					nx_state<=add1;
+		when add2=>
+					rc_clk<='1';
+					rc_rw<='1';
+					nx_state<=addPCByOne0;
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+-----PROCESS TO COMPARE REGISTERS RA AND RB---------------------------------------------------------
+		when compare0=>
+					ra_clk<='1';
+					ra_rw<='0';
+					rb_clk<='1';
+					rb_rw<='0';
+					nx_state<=compare1;
+		when compare1=>
+					ALU_clk<='1';
+					ALU_inst<="100";
+					nx_state<=addPCByOne0;
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------PROCESS TO EXECUTE (RA AND RB)--------------------------------------------------------------
+		when and0=>
+					ra_clk<='1';
+					ra_rw<='0';
+					rb_clk<='1';
+					rb_rw<='0';
+					nx_state<=and1;
+		when and1=>
+					ALU_clk<='1';
+					ALU_inst<="011";
+					rc_clk<='1';
+					rc_rw<='1';
+					nx_state<=addPCByOne0;
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--PROCESS TO SELECT WHICH NOT OPERATION TO EXECUTE--------------------------------------------------
+		when not_state=>
+					case arg1 is
+							when "000000"=>
+											nx_state<=notA0;
+							when "000001"=>
+											nx_state<=notB0;
+							when others=> 
+											nx_state<=halt0;
+					end case;
+----------------------------------------------------------------------------------------------------
+---------PROCESS TO NEGATE RA (~RA)-----------------------------------------------------------------
+		when notA0=>
+					ra_clk<='1';
+					ra_rw<='0';
+					nx_state<=notA1;
+		when notA1=>
+					ALU_clk<='1';
+					ALU_inst<="001";
+					rc_clk<='1';
+					rc_rw<='1';
+					nx_state<=addPCByOne0;
+----------------------------------------------------------------------------------------------------
+---------PROCESS TO NEGATE RB (~RB)-----------------------------------------------------------------
+		when notB0=>
+					rb_clk<='1';
+					rb_rw<='0';
+					nx_state<=notB1;
+		when notB1=>
+					ALU_clk<='1';
+					ALU_inst<="010";
+					rc_clk<='1';
+					rc_rw<='1';
+					nx_state<=addPCByOne0;
+----------------------------------------------------------------------------------------------------
 -------------------------------------HALT PROCESS---------------------------------------------------
 		---INFINITE LOOP------------
 		when halt0 =>
