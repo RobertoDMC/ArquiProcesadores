@@ -1,0 +1,1 @@
+vhdtdtfi -prj demux3_1_8bits -o C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux3_1_8bits/demux3_18bits.vhi -module demux3_18bits -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work demux3_18bits.vhd 

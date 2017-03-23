@@ -1,20 +1,13 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+use IEEE.NUMERIC_STD.ALL;
 
 entity demux2_1 is
-    Port ( input_0: in  STD_LOGIC_VECTOR(7 downto 0);
-           input_1 : in  STD_LOGIC_VECTOR(7 downto 0);
+    Port ( input_0: in  STD_LOGIC_VECTOR(15 downto 0);
+           input_1 : in  STD_LOGIC_VECTOR(15 downto 0);
 			  flag : in std_logic;
-           output : out  STD_LOGIC_VECTOR(7 downto 0));
+           output : out  STD_LOGIC_VECTOR(15 downto 0));
 end demux2_1;
 
 architecture Behavioral of demux2_1 is

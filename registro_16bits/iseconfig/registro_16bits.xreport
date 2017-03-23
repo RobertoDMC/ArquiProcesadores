@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-03-18T22:04:52</DateModified>
+  <DateModified>2017-03-22T18:44:25</DateModified>
   <ModuleName>registro_16bits</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_16bits/iseconfig/registro_16bits.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_16bits</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_16bits\</ImplementationReportsDirectory>
   <DateInitialized>2017-03-18T22:04:51</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

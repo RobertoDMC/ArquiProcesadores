@@ -22,7 +22,7 @@ end demux3_1;
 architecture Behavioral of demux3_1 is
 
 begin
-process
+process(pos_0,pos_1, input_1, input_2, input_0)
 begin
 	if(pos_0='0') then
 		output<=input_0;

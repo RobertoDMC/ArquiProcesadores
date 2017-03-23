@@ -10,9 +10,7 @@ entity ALU is
            clk : in  STD_LOGIC;
            RC : out  STD_LOGIC_VECTOR (15 downto 0);
            C : out  STD_LOGIC;--CARRY
-           compare : out  STD_LOGIC_VECTOR(1 downto 0);--COMPARE RESULT
-			  rw_AC: out STD_LOGIC;
-			  clk_AC: out STD_LOGIC
+           compare : out  STD_LOGIC_VECTOR(1 downto 0)--COMPARE RESULT
 			  );
 end ALU;
 
@@ -55,9 +53,7 @@ architecture Behavioral of ALU is
 		sumador : IN std_logic_vector(15 downto 0);
 		mod_Log : IN std_logic_vector(15 downto 0);
 		posicion : IN std_logic_vector(1 downto 0);          
-		output : OUT std_logic_vector(15 downto 0);
-		rw_AC : OUT std_logic;
-		clk_AC : OUT std_logic
+		output : OUT std_logic_vector(15 downto 0)
 		);
 	END COMPONENT;
 	
@@ -99,9 +95,7 @@ begin
 		sumador => SUM,
 		mod_Log => modLog,
 		posicion => pos_Demux_Output,
-		output => RC,
-		rw_AC => rw_AC,
-		clk_AC => clk_AC 
+		output => RC
 	);
 	
 end Behavioral;

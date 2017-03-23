@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/MicroProcesador/micro_test_isim_beh.exe" -prj "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/MicroProcesador/micro_test_beh.prj" "work.micro_test" 

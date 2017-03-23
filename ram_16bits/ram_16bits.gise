@@ -50,6 +50,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="ram_16bits.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="ram_16bits.unroutes" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="ram_16bits.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="ram_16bits.vhi"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="ram_16bits.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ram_16bits.xst"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="ram_16bits_guide.ncd" xil_pn:origination="imported"/>

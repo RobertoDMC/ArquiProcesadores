@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/register_output/register_output.vhd 2017/03/22.18:46:43 P.20131013
+EN work/register_output 1490222805 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/register_output/register_output.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/register_output/Behavioral 1490222806 \
+      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/register_output/register_output.vhd \
+      EN work/register_output 1490222805

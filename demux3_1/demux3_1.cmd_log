@@ -1,0 +1,1 @@
+vhdtdtfi -prj demux3_1 -o C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux3_1/demux3_1.vhi -module demux3_1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work demux3_1.vhd 
