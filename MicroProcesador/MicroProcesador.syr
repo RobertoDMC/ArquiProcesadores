@@ -126,8 +126,7 @@ Architecture behavioral of Entity registros_control is up to date.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.vhd" in Library work.
 Architecture behavioral of Entity alu is up to date.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ram_16bits/ram_16bits.vhd" in Library work.
-Entity <ram_16bits> compiled.
-Entity <ram_16bits> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity ram_16bits is up to date.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux3_1/demux3_1.vhd" in Library work.
 Architecture behavioral of Entity demux3_1 is up to date.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux3_1_8bits/demux3_18bits.vhd" in Library work.
@@ -1292,6 +1291,14 @@ Optimizing unit <registro_8bits> ...
 Optimizing unit <sumador> ...
 
 Optimizing unit <modulo_Logico> ...
+WARNING:Xst:1710 - FF/Latch <RC_register/output_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RC_register/output_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RC_register/output_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RC_register/output_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RC_register/output_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RC_register/output_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RC_register/output_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RC_register/output_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <RB_register/output_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <RB_register/output_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <RB_register/output_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
@@ -1308,87 +1315,30 @@ WARNING:Xst:1710 - FF/Latch <RB_register/output_3> (without init value) has a co
 WARNING:Xst:1710 - FF/Latch <RB_register/output_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <RB_register/output_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <RB_register/output_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/output_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/output_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/output_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/output_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/output_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/output_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/output_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/output_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/output_11> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/output_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/output_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/output_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/output_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/data_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/data_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/data_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/data_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RC_register/output_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <output_register/output_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <output_register/output_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <output_register/output_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <output_register/output_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <output_register/output_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <output_register/output_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <output_register/output_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <output_register/output_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <output_register/output_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <output_register/output_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <output_register/output_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <output_register/output_11> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <output_register/output_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <output_register/output_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <output_register/output_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <output_register/output_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RC_register/output_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RC_register/output_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RC_register/output_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RC_register/output_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RC_register/output_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RC_register/output_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RC_register/output_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RC_register/output_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RC_register/output_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RC_register/output_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RC_register/output_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RC_register/output_11> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RC_register/output_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RC_register/output_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_sumador/SUM_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_sumador/SUM_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <output_register/output_11> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <output_register/output_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <output_register/output_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <output_register/output_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <output_register/output_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <output_register/output_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <output_register/output_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <output_register/output_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <output_register/output_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <output_register/output_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <output_register/output_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <output_register/output_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RC_register/output_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <RC_register/output_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_11> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/rw_MAR> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/clk_MAR> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/clk_IR> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_sumador/SUM_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_sumador/SUM_11> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_sumador/SUM_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_sumador/SUM_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Inst_Control_Unit/pr_state_FSM_FFd25> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Inst_Control_Unit/pr_state_FSM_FFd32> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Inst_Control_Unit/pr_state_FSM_FFd40> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Inst_Control_Unit/pr_state_FSM_FFd45> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Inst_Control_Unit/pr_state_FSM_FFd48> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_sumador/SUM_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_sumador/SUM_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_modulo_Logico/output_Compare_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_modulo_Logico/output_Compare_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/output_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/output_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <RA_register/output_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/rw_IR> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/rw_MBR> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/output_PC_0> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RC_register/output_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RC_register/output_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RC_register/output_11> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RC_register/output_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RC_register/output_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RC_register/output_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/rw_PC> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/input_PC_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/input_PC_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
@@ -1396,39 +1346,125 @@ WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/input_PC_
 WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/input_PC_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/input_PC_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/input_PC_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/clk_MBR> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/clk_PC> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/input_PC_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/input_PC_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/output_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/output_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/output_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/output_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/input_PC_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/clk_PC> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/clk_MBR> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/rw_MAR> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/clk_MAR> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/clk_IR> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_sumador/SUM_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_sumador/SUM_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_sumador/SUM_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_sumador/SUM_11> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_sumador/SUM_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_sumador/SUM_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_sumador/SUM_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_sumador/SUM_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_modulo_Logico/output_Compare_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ALU/Inst_modulo_Logico/output_Compare_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/data_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/data_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/data_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/data_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/data_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/data_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/output_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/output_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/output_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/output_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/output_11> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/output_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/output_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/output_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/output_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/output_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/output_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/output_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/output_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/output_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/output_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RA_register/output_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/rw_IR> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/rw_MBR> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_registros_Control/Inst_registros_Clk/output_PC_1> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_11> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_Control_Unit/pr_state_FSM_FFd24> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_Control_Unit/pr_state_FSM_FFd32> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_Control_Unit/pr_state_FSM_FFd45> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_Control_Unit/pr_state_FSM_FFd48> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ram_16bits/output_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/output_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_11> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/pr_state_FSM_FFd15> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/output_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/output_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/output_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/output_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/output_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/output_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/output_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/output_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/data_0> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/data_1> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/output_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/output_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/output_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/data_7> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/data_6> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/data_5> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/data_4> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/data_3> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/output_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/data_2> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/output_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/data_3> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/data_4> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/data_5> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/data_6> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/data_7> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/output_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/output_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/output_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/output_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/output_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/output_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/output_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/PC/output_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/output_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/output_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/output_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
@@ -1444,111 +1480,71 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Cont
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/output_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/output_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/output_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/pr_state_FSM_FFd28> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/pr_state_FSM_FFd22> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/pr_state_FSM_FFd15> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/pr_state_FSM_FFd5> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_11> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MBR/data_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_11> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/output_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/output_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/output_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/output_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/output_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/output_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/output_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/opcode_0> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/opcode_1> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/opcode_2> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/opcode_3> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg2_0> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg2_1> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg2_2> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg2_3> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg2_4> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg2_5> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg1_0> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg1_1> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg1_2> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg1_3> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg1_4> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg1_5> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg1_4> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg1_3> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg1_2> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg1_1> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg1_0> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/data_7> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/data_6> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/data_5> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/data_4> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/data_3> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/data_2> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/data_1> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/data_0> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/opcode_2> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/opcode_1> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/opcode_0> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/output_rw> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/data_0> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/data_1> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/data_2> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/data_3> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/data_4> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/data_5> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/data_6> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/MAR/data_7> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_11> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/output_rw> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_11> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_registros_Control/IR/data_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg2_5> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg2_4> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg2_3> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg2_2> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg2_1> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg2_0> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/opcode_3> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/input_PC_Branch_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/input_PC_Branch_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/input_PC_Branch_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/input_PC_Branch_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/input_PC_Branch_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg1_int_4> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg1_int_3> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg1_int_2> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg1_int_0> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Control_Unit/arg1_int_3> has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_15> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_14> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_13> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_12> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_11> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_10> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_9> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_8> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_7> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_6> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_5> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_4> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_3> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_2> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_1> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_register/data_0> (without init value) has a constant value of 0 in block <MicroProcesador>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <Inst_ALU/Inst_sumador/c> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RC_register/data_15> is unconnected in block <MicroProcesador>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RC_register/data_14> is unconnected in block <MicroProcesador>.
@@ -1557,8 +1553,8 @@ WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_ALU/Inst_sumador/SUM_
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RC_register/data_12> is unconnected in block <MicroProcesador>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RC_register/data_11> is unconnected in block <MicroProcesador>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RC_register/data_10> is unconnected in block <MicroProcesador>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_ALU/Inst_sumador/SUM_9> is unconnected in block <MicroProcesador>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RC_register/data_9> is unconnected in block <MicroProcesador>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_ALU/Inst_sumador/SUM_8> is unconnected in block <MicroProcesador>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RC_register/data_8> is unconnected in block <MicroProcesador>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RC_register/data_7> is unconnected in block <MicroProcesador>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RC_register/data_6> is unconnected in block <MicroProcesador>.
@@ -1606,21 +1602,18 @@ WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RA_register/data_9> is unc
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RA_register/data_8> is unconnected in block <MicroProcesador>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RA_register/data_7> is unconnected in block <MicroProcesador>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RA_register/data_6> is unconnected in block <MicroProcesador>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RA_register/data_5> is unconnected in block <MicroProcesador>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RA_register/data_3> is unconnected in block <MicroProcesador>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_Control_Unit/RA_demux_pos> is unconnected in block <MicroProcesador>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RA_register/data_1> is unconnected in block <MicroProcesador>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <RA_register/data_5> is unconnected in block <MicroProcesador>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_Control_Unit/RA_rw> is unconnected in block <MicroProcesador>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_Control_Unit/RA_clk> is unconnected in block <MicroProcesador>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_registros_Control/Inst_registros_Clk/output_PC_7> is unconnected in block <MicroProcesador>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_registros_Control/Inst_registros_Clk/output_PC_6> is unconnected in block <MicroProcesador>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_Control_Unit/increase_PC_0> is unconnected in block <MicroProcesador>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_ALU/Inst_decoder_Ops_ALU/clk_Sumador> is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_ALU/Inst_decoder_Ops_ALU/clk_Mod_Log> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_ALU/Inst_decoder_Ops_ALU/op_Mod_Log_1> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_ALU/Inst_decoder_Ops_ALU/op_Mod_Log_0> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/input_PC_Branch_5> of sequential type is unconnected in block <MicroProcesador>.
-WARNING:Xst:2677 - Node <Inst_Control_Unit/input_PC_Branch_1> of sequential type is unconnected in block <MicroProcesador>.
+WARNING:Xst:2677 - Node <Inst_Control_Unit/input_PC_Branch_0> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/ram_addr_7> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/ram_addr_6> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/ram_addr_5> of sequential type is unconnected in block <MicroProcesador>.
@@ -1660,7 +1653,9 @@ WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd61> of sequential typ
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd36> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd35> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd30> of sequential type is unconnected in block <MicroProcesador>.
+WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd28> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd26> of sequential type is unconnected in block <MicroProcesador>.
+WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd22> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd21> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd20> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd17> of sequential type is unconnected in block <MicroProcesador>.
@@ -1670,6 +1665,7 @@ WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd11> of sequential typ
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd10> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd7> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd6> of sequential type is unconnected in block <MicroProcesador>.
+WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd5> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd1> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd64> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd62> of sequential type is unconnected in block <MicroProcesador>.
@@ -1681,13 +1677,14 @@ WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd44> of sequential typ
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd43> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd42> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd41> of sequential type is unconnected in block <MicroProcesador>.
+WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd40> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd39> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd38> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd37> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd34> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd33> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd31> of sequential type is unconnected in block <MicroProcesador>.
-WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd24> of sequential type is unconnected in block <MicroProcesador>.
+WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd25> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd23> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd19> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd18> of sequential type is unconnected in block <MicroProcesador>.
@@ -1698,7 +1695,9 @@ WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd3> of sequential type
 WARNING:Xst:2677 - Node <Inst_Control_Unit/pr_state_FSM_FFd2> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/arg1_int_5> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/arg1_int_1> of sequential type is unconnected in block <MicroProcesador>.
+WARNING:Xst:2677 - Node <Inst_Control_Unit/arg1_int_0> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/increase_PC_1> of sequential type is unconnected in block <MicroProcesador>.
+WARNING:Xst:2677 - Node <Inst_Control_Unit/increase_PC_0> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/ALU_inst_2> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/ALU_inst_1> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_Control_Unit/ALU_inst_0> of sequential type is unconnected in block <MicroProcesador>.
@@ -3767,7 +3766,7 @@ WARNING:Xst:2677 - Node <Inst_registros_Control/Inst_registros_Clk/output_PC_5> 
 WARNING:Xst:2677 - Node <Inst_registros_Control/Inst_registros_Clk/output_PC_4> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_registros_Control/Inst_registros_Clk/output_PC_3> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_registros_Control/Inst_registros_Clk/output_PC_2> of sequential type is unconnected in block <MicroProcesador>.
-WARNING:Xst:2677 - Node <Inst_registros_Control/Inst_registros_Clk/output_PC_1> of sequential type is unconnected in block <MicroProcesador>.
+WARNING:Xst:2677 - Node <Inst_registros_Control/Inst_registros_Clk/output_PC_0> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_registros_Control/Inst_registros_Clk/pr_state_6> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_registros_Control/Inst_registros_Clk/pr_state_5> of sequential type is unconnected in block <MicroProcesador>.
 WARNING:Xst:2677 - Node <Inst_registros_Control/Inst_registros_Clk/pr_state_4> of sequential type is unconnected in block <MicroProcesador>.
@@ -3884,12 +3883,12 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 
 
-Total REAL time to Xst completion: 63.00 secs
-Total CPU time to Xst completion: 63.21 secs
+Total REAL time to Xst completion: 65.00 secs
+Total CPU time to Xst completion: 65.22 secs
  
 --> 
 
-Total memory usage is 612724 kilobytes
+Total memory usage is 612676 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings : 3121 (   0 filtered)

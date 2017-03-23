@@ -47,3 +47,9 @@ xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/
 xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/MicroProcesador/MicroProcesador.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/MicroProcesador/MicroProcesador.syr" 
 xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/MicroProcesador/MicroProcesador.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/MicroProcesador/MicroProcesador.syr" 
 xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/MicroProcesador/MicroProcesador.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/MicroProcesador/MicroProcesador.syr" 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/MicroProcesador/MicroProcesador.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/MicroProcesador/MicroProcesador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 MicroProcesador.ngc MicroProcesador.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MicroProcesador_map.ncd MicroProcesador.ngd MicroProcesador.pcf 
+par -w -intstyle ise -ol high -t 1 MicroProcesador_map.ncd MicroProcesador.ncd MicroProcesador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MicroProcesador.twx MicroProcesador.ncd -o MicroProcesador.twr MicroProcesador.pcf 
+bitgen -intstyle ise -f MicroProcesador.ut MicroProcesador.ncd 

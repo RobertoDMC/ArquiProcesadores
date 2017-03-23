@@ -82,8 +82,8 @@ signal arg2: std_logic_vector(5 downto 0):="000000";
 begin
 
 	process(pr_state, compare, carry, ram_input)
-	variable arg2_int: integer:=0;
-	variable arg1_int: integer range 0 to 255:=0;
+		variable arg2_int: integer:=0;
+		variable arg1_int: integer range 0 to 63:=0;
 	begin
 		case pr_state is
 -----------------------PROCESS TO MAKE CONTROL REGISTERS FUNCTION-----------------------------------
@@ -232,6 +232,8 @@ begin
 							when "000001"=>
 											nx_state<=strInRB0;
 							when others=> 
+											arg1_int:=to_integer(unsigned(arg1));
+											arg2_int:=to_integer(unsigned(arg2));
 											nx_state<=strInRam0;
 					end case;
 ----------------------------------------------------------------------------------------------------
@@ -310,25 +312,13 @@ begin
 ------------------------THE PROCESS TO STORE VALUE IN RAM(ADDRESS) of DATAIN(ARG2)---------------------------
 		--WRITE IN RAM IN POS ARG1---------------------
 		when strInRam0=>
-						arg1_int:=to_integer(unsigned(arg1));
-						arg2_int:=to_integer(unsigned(arg2));
-						ram_clk<='1';
-						ram_rw<='1';
-						ram_demux_data_pos1<='1';
-						ram_demux_dir_pos1<='1';
-						ram_data<=std_logic_vector(to_unsigned(arg2_int,16));
-						nx_state<=strInRam1;
-		-------------------------------------------------
-		when strInRam1=>
 						ram_clk<='1';
 						ram_rw<='1';
 						ram_demux_data_pos1<='1';
 						ram_demux_dir_pos1<='1';
 						ram_addr<=std_logic_vector(to_unsigned(arg1_int, 8));
 						ram_data<=std_logic_vector(to_unsigned(arg2_int,16));
-						nx_state<=addPCByone0;
-		-------------------------------------------------
-		
+						nx_state<=addPCByOne0;
 ----------------------------------------------------------------------------------------------------
 -------MOVE FROM RAM TO A REGISTER OR FROM RC TO RAM(ADDRESS)------------------------------------------------
 		when moveFromRam=>
@@ -354,11 +344,9 @@ begin
 		-------------------------------------------------
 		--WRITES RA -------------------------------------
 		when moveFromRamToRA1=>
-						arg2_int:=to_integer(unsigned(arg2));
 						ram_clk<='1';
 						ram_rw<='0';
 						ram_demux_dir_pos1<='1';
-						ram_addr<=std_logic_vector(to_unsigned(arg2_int,8));
 						ra_demux_pos<='0';
 						ra_clk<='1';
 						ra_rw<='1';

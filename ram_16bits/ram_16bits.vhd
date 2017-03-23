@@ -61,9 +61,9 @@ begin
 	ram_memory(0):="0001111111000010";---RAM(130)<--2 --OPERANDO
 	ram_memory(1):="0001111100000011";---RAM(131)<--3 --OPERANDO
 	ram_memory(2):="0001111110000010";---RAM(132)<--2 --VARIABLE CONTROL
-	ram_memory(3):="0001111101000001";---RAM(134)<--1 --AUXILIAR
+	ram_memory(255):="1111111111111111";---RAM(134)<--1 --AUXILIAR
+	ram_memory(3):="0010000000111111";
 	ram_memory(4):="0010000000111111";
-	ram_memory(5):="0010000000111111";
 ---------------------------------------
 	if(reset='1') then
 				ram_memory := (others =>(others =>'0'));
