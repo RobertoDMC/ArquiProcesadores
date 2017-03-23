@@ -38,6 +38,7 @@
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="micro_test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="micro_test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="micro_test_isim_beh.wdb"/>
@@ -47,44 +48,10 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1490235552" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1490235552">
+    <transform xil_pn:end_ts="1490244699" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1490244699">
       <status xil_pn:value="SuccessfullyRun"/>
     </transform>
-    <transform xil_pn:end_ts="1490241524" xil_pn:in_ck="8618871921325773893" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1490241524">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../../../../ElectronicaDigital/Xilinx/divisor_frecuencia_10hz/divisor_frecuencia_10hz.vhd"/>
-      <outfile xil_pn:name="../ALU/ALU.vhd"/>
-      <outfile xil_pn:name="../ControlUnit/Control_Unit.vhd"/>
-      <outfile xil_pn:name="../decoder_Ops_ALU/decoder_Ops_ALU.vhd"/>
-      <outfile xil_pn:name="../demux2_1/demux2_1.vhd"/>
-      <outfile xil_pn:name="../demux3_1/demux3_1.vhd"/>
-      <outfile xil_pn:name="../demux3_1_8bits/demux3_18bits.vhd"/>
-      <outfile xil_pn:name="../demux_ALU/demux_ALU.vhd"/>
-      <outfile xil_pn:name="../modulo_Logico/modulo_Logico.vhd"/>
-      <outfile xil_pn:name="../ram_16bits/ram_16bits.vhd"/>
-      <outfile xil_pn:name="../register_output/register_output.vhd"/>
-      <outfile xil_pn:name="../registro_16bits/registro_16bits.vhd"/>
-      <outfile xil_pn:name="../registro_8bits/registro_8bits.vhd"/>
-      <outfile xil_pn:name="../registros_Clk/registros_Clk.vhd"/>
-      <outfile xil_pn:name="../registros_Control/registros_Control.vhd"/>
-      <outfile xil_pn:name="../sumador/sumador.vhd"/>
-      <outfile xil_pn:name="MicroProcesador.vhd"/>
-      <outfile xil_pn:name="micro_test.vhd"/>
-    </transform>
-    <transform xil_pn:end_ts="1490235552" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5659084951723823345" xil_pn:start_ts="1490235552">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1490235552" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5225814784919411409" xil_pn:start_ts="1490235552">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1490235552" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8980020843879637801" xil_pn:start_ts="1490235552">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1490241524" xil_pn:in_ck="8618871921325773893" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1490241524">
+    <transform xil_pn:end_ts="1490247216" xil_pn:in_ck="8618871921325773893" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1490247216">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../../../ElectronicaDigital/Xilinx/divisor_frecuencia_10hz/divisor_frecuencia_10hz.vhd"/>
@@ -106,19 +73,55 @@
       <outfile xil_pn:name="MicroProcesador.vhd"/>
       <outfile xil_pn:name="micro_test.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1490241528" xil_pn:in_ck="8618871921325773893" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-207681072203008608" xil_pn:start_ts="1490241524">
+    <transform xil_pn:end_ts="1490244699" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5659084951723823345" xil_pn:start_ts="1490244699">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1490244699" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5225814784919411409" xil_pn:start_ts="1490244699">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1490244699" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8980020843879637801" xil_pn:start_ts="1490244699">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1490247216" xil_pn:in_ck="8618871921325773893" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1490247216">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../../../../ElectronicaDigital/Xilinx/divisor_frecuencia_10hz/divisor_frecuencia_10hz.vhd"/>
+      <outfile xil_pn:name="../ALU/ALU.vhd"/>
+      <outfile xil_pn:name="../ControlUnit/Control_Unit.vhd"/>
+      <outfile xil_pn:name="../decoder_Ops_ALU/decoder_Ops_ALU.vhd"/>
+      <outfile xil_pn:name="../demux2_1/demux2_1.vhd"/>
+      <outfile xil_pn:name="../demux3_1/demux3_1.vhd"/>
+      <outfile xil_pn:name="../demux3_1_8bits/demux3_18bits.vhd"/>
+      <outfile xil_pn:name="../demux_ALU/demux_ALU.vhd"/>
+      <outfile xil_pn:name="../modulo_Logico/modulo_Logico.vhd"/>
+      <outfile xil_pn:name="../ram_16bits/ram_16bits.vhd"/>
+      <outfile xil_pn:name="../register_output/register_output.vhd"/>
+      <outfile xil_pn:name="../registro_16bits/registro_16bits.vhd"/>
+      <outfile xil_pn:name="../registro_8bits/registro_8bits.vhd"/>
+      <outfile xil_pn:name="../registros_Clk/registros_Clk.vhd"/>
+      <outfile xil_pn:name="../registros_Control/registros_Control.vhd"/>
+      <outfile xil_pn:name="../sumador/sumador.vhd"/>
+      <outfile xil_pn:name="MicroProcesador.vhd"/>
+      <outfile xil_pn:name="micro_test.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1490247220" xil_pn:in_ck="8618871921325773893" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-207681072203008608" xil_pn:start_ts="1490247216">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="micro_test_beh.prj"/>
       <outfile xil_pn:name="micro_test_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1490241528" xil_pn:in_ck="-6084150380116666200" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1917852621250231795" xil_pn:start_ts="1490241528">
+    <transform xil_pn:end_ts="1490247220" xil_pn:in_ck="-6084150380116666200" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1917852621250231795" xil_pn:start_ts="1490247220">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="micro_test_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1490222915" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1490222915">
@@ -148,12 +151,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1490237509" xil_pn:in_ck="-6440789687785075300" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="6718582756967326728" xil_pn:start_ts="1490237441">
+    <transform xil_pn:end_ts="1490246942" xil_pn:in_ck="-6440789687785075300" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="6718582756967326728" xil_pn:start_ts="1490246876">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="MicroProcesador.lso"/>
       <outfile xil_pn:name="MicroProcesador.ngc"/>
       <outfile xil_pn:name="MicroProcesador.ngr"/>

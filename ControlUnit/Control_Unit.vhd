@@ -49,7 +49,7 @@ type estado is (init0,init1,init2,init3,init4,init5,init6,init7,init8,init9,init
 					 str, 
 					 strInRA0, strInRA1, strInRA2,
 					 strInRB0, strInRB1, strInRB2, 
-					 strInRam0,
+					 strInRam0, strInRam1,
 					 moveFromRam,
 					 moveFromRamToRA0, moveFromRamToRA1,
 					 moveFromRamToRB0, moveFromRamToRB1,
@@ -83,6 +83,7 @@ begin
 
 	process(pr_state, compare, carry, ram_input)
 	variable arg2_int: integer:=0;
+	variable arg1_int: integer range 0 to 255:=0;
 	begin
 		case pr_state is
 -----------------------PROCESS TO MAKE CONTROL REGISTERS FUNCTION-----------------------------------
@@ -307,17 +308,27 @@ begin
 		-------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 ------------------------THE PROCESS TO STORE VALUE IN RAM(ADDRESS) of DATAIN(ARG2)---------------------------
-		--WRITE IN RAM IN POS 000000---------------------
+		--WRITE IN RAM IN POS ARG1---------------------
 		when strInRam0=>
+						arg1_int:=to_integer(unsigned(arg1));
 						arg2_int:=to_integer(unsigned(arg2));
 						ram_clk<='1';
 						ram_rw<='1';
 						ram_demux_data_pos1<='1';
 						ram_demux_dir_pos1<='1';
-						ram_addr<="10000000";
 						ram_data<=std_logic_vector(to_unsigned(arg2_int,16));
-						nx_state<=addPCByOne0;
+						nx_state<=strInRam1;
 		-------------------------------------------------
+		when strInRam1=>
+						ram_clk<='1';
+						ram_rw<='1';
+						ram_demux_data_pos1<='1';
+						ram_demux_dir_pos1<='1';
+						ram_addr<=std_logic_vector(to_unsigned(arg1_int, 8));
+						ram_data<=std_logic_vector(to_unsigned(arg2_int,16));
+						nx_state<=addPCByone0;
+		-------------------------------------------------
+		
 ----------------------------------------------------------------------------------------------------
 -------MOVE FROM RAM TO A REGISTER OR FROM RC TO RAM(ADDRESS)------------------------------------------------
 		when moveFromRam=>
@@ -336,22 +347,19 @@ begin
 						arg2_int:=to_integer(unsigned(arg2));
 						ram_clk<='1';
 						ram_rw<='0';
-						--ram_demux_data_pos1<='1';
 						ram_demux_dir_pos1<='1';
 						ram_addr<=std_logic_vector(to_unsigned(arg2_int,8));
-						--ram_data<="0000000000000000";
-						nx_state<=moveFromRamToRA1;
 						ra_demux_pos<='0';
+						nx_state<=moveFromRamToRA1;
 		-------------------------------------------------
 		--WRITES RA -------------------------------------
 		when moveFromRamToRA1=>
 						arg2_int:=to_integer(unsigned(arg2));
 						ram_clk<='1';
 						ram_rw<='0';
-						--ram_demux_data_pos1<='1';
 						ram_demux_dir_pos1<='1';
 						ram_addr<=std_logic_vector(to_unsigned(arg2_int,8));
-						--ram_data<="0000000000000000";
+						ra_demux_pos<='0';
 						ra_clk<='1';
 						ra_rw<='1';
 						nx_state<=addPCByOne0;
@@ -363,22 +371,19 @@ begin
 						arg2_int:=to_integer(unsigned(arg2));
 						ram_clk<='1';
 						ram_rw<='0';
-						--ram_demux_data_pos1<='1';
 						ram_demux_dir_pos1<='1';
 						ram_addr<=std_logic_vector(to_unsigned(arg2_int,8));
-						--ram_data<="0000000000000000";
-						nx_state<=moveFromRamToRB1;
 						rb_demux_pos<='0';
+						nx_state<=moveFromRamToRB1;
 		-------------------------------------------------
 		--WRITES RA -------------------------------------
 		when moveFromRamToRB1=>
 						arg2_int:=to_integer(unsigned(arg2));
 						ram_clk<='1';
 						ram_rw<='0';
-						--ram_demux_data_pos1<='1';
 						ram_demux_dir_pos1<='1';
 						ram_addr<=std_logic_vector(to_unsigned(arg2_int,8));
-						--ram_data<="0000000000000000";
+						rb_demux_pos<='0';
 						rb_clk<='1';
 						rb_rw<='1';
 						nx_state<=addPCByOne0;
@@ -387,22 +392,23 @@ begin
 --------------------PROCESS TO MOVE FROM RC TO RAM(ADDRESS)-----------------------------------------
 		--READ RC----------------------------------------
 		when moveFromRCToRam0=>
-						ram_clk<='0';
-						ram_rw<='0';
+						ram_clk<='1';
+						ram_rw<='1';
 						ram_demux_dir_pos1<='1';
-						nx_state<=moveFromRCToRam1;
+						ram_demux_data_pos1<='0';
 						rc_clk<='1';
 						rc_rw<='0';
+						nx_state<=moveFromRCToRam1;
 		-------------------------------------------------
 		--WRITES IN RAM(ADDRESS)-------------------------
 		when moveFromRCToRam1=>
 						ram_clk<='1';
-						ram_rw<='0';
+						ram_rw<='1';
 						ram_demux_data_pos1<='0';
 						ram_demux_dir_pos1<='1';
 						ram_addr<="11111111";
-						rb_clk<='1';
-						rb_rw<='1';
+						rc_clk<='1';
+						rc_rw<='0';
 						nx_state<=addPCByOne0;
 		-------------------------------------------------
 ----------------------------------------------------------------------------------------------------
