@@ -2,9 +2,9 @@ Command line:
    micro_test_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  34505
+     -socket  35277
 
-Thu Mar 23 01:50:34 2017
+Thu Mar 23 18:24:40 2017
 
 
- Elaboration Time: 0.0625 sec
+ Elaboration Time: 0.046875 sec

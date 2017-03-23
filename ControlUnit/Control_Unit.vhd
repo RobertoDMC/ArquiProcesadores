@@ -44,7 +44,7 @@ end Control_Unit;
 
 architecture Behavioral of Control_Unit is
 type estado is (init0,init1,init2,init3,init4,init5,init6,init7,init8,init9,init10,init11, 
-					 getParams, decoder, reset_state,
+					 getParams, getParams1, decoder, reset_state,
 					 addPCByOne0,addPCByOne1,addPCByTwo0,addPCByTwo1,
 					 str, 
 					 strInRA0, strInRA1, strInRA2,
@@ -78,12 +78,12 @@ signal pr_state, nx_state: estado;
 signal opcode: std_logic_vector(3 downto 0):="0000";
 signal arg1: std_logic_vector(5 downto 0):="000000";
 signal arg2: std_logic_vector(5 downto 0):="000000";
-
+signal arg2_int: integer:=0;
+signal arg1_int: integer range 0 to 63:=0;
 begin
 
 	process(pr_state, compare, carry, ram_input)
-		variable arg2_int: integer:=0;
-		variable arg1_int: integer range 0 to 63:=0;
+		
 	begin
 		case pr_state is
 -----------------------PROCESS TO MAKE CONTROL REGISTERS FUNCTION-----------------------------------
@@ -138,6 +138,8 @@ begin
 						CR_clk<='1';
 						nx_state<=getParams;
 		-----------------------------------------------
+		
+		
 
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
@@ -146,6 +148,12 @@ begin
 						opcode<=ram_Input(15 downto 12);
 						arg1<=ram_Input(11 downto 6);
 						arg2<=ram_Input(5 downto 0);
+						nx_state<=getParams1;
+----------------------------------------------------------------------------------------------------
+--------SPLITS INSTRUCTION IN ITS PARTS-----OPCODE-------ARG1-----ARG2------------------------------
+		when getParams1 =>
+						arg1_int<=to_integer(unsigned(arg1));
+						arg2_int<=to_integer(unsigned(arg2));
 						nx_state<=decoder;
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
@@ -216,7 +224,7 @@ begin
 						rb_rw<='0';
 						rb_clk<='0';
 						ALU_clk<='0';
-						increase_PC<="01";
+						increase_PC<="10";
 						nx_state<=addPCByTwo1;
 		when addPCByTwo1 =>
 						CR_clk<='1';
@@ -232,15 +240,13 @@ begin
 							when "000001"=>
 											nx_state<=strInRB0;
 							when others=> 
-											arg1_int:=to_integer(unsigned(arg1));
-											arg2_int:=to_integer(unsigned(arg2));
 											nx_state<=strInRam0;
 					end case;
 ----------------------------------------------------------------------------------------------------
 ---------------------------------THE PROCESS TO STORE VALUE IN RA-----------------------------------
 		--WRITE IN RAM IN POS 000000---------------------
 		when strInRA0=>
-						arg2_int:=to_integer(unsigned(arg2));
+						--arg2_int<=to_integer(unsigned(arg2));
 						ram_clk<='1';
 						ram_rw<='1';
 						ram_demux_data_pos1<='1';
@@ -276,7 +282,7 @@ begin
 ---------------------------------THE PROCESS TO STORE VALUE IN RB-----------------------------------
 		--WRITE IN RAM IN POS 000001---------------------
 		when strInRB0=>
-						arg2_int:=to_integer(unsigned(arg2));
+						--arg2_int<=to_integer(unsigned(arg2));
 						ram_clk<='1';
 						ram_rw<='1';
 						ram_demux_data_pos1<='1';
@@ -334,12 +340,14 @@ begin
 --------------------PROCESS TO MOVE FROM RAM(ADDRESS) TO RA-----------------------------------------
 		--READ RAM POS 000000----------------------------
 		when moveFromRamToRA0=>
-						arg2_int:=to_integer(unsigned(arg2));
+						--arg2_int<=to_integer(unsigned(arg2));
 						ram_clk<='1';
 						ram_rw<='0';
 						ram_demux_dir_pos1<='1';
 						ram_addr<=std_logic_vector(to_unsigned(arg2_int,8));
 						ra_demux_pos<='0';
+						ra_clk<='1';
+						ra_rw<='1';
 						nx_state<=moveFromRamToRA1;
 		-------------------------------------------------
 		--WRITES RA -------------------------------------
@@ -356,7 +364,7 @@ begin
 --------------------PROCESS TO MOVE FROM RAM(ADDRESS) TO RB-----------------------------------------
 		--READ RAM POS 000000----------------------------
 		when moveFromRamToRB0=>
-						arg2_int:=to_integer(unsigned(arg2));
+						--arg2_int<=to_integer(unsigned(arg2));
 						ram_clk<='1';
 						ram_rw<='0';
 						ram_demux_dir_pos1<='1';
@@ -366,7 +374,7 @@ begin
 		-------------------------------------------------
 		--WRITES RA -------------------------------------
 		when moveFromRamToRB1=>
-						arg2_int:=to_integer(unsigned(arg2));
+						--arg2_int<=to_integer(unsigned(arg2));
 						ram_clk<='1';
 						ram_rw<='0';
 						ram_demux_dir_pos1<='1';
@@ -554,11 +562,11 @@ begin
 ----------------------------------------------------------------------------------------------------
 -------PROCESS TO CONTROL BRANCHING-----------------------------------------------------------------
 		when branch0=>
-						arg2_int:=to_integer(unsigned(arg1));
+						--arg2_int<=to_integer(unsigned(arg1));
 						CR_clk<='1';
 						input_PC_Branch<=std_logic_vector(to_unsigned(arg2_int,8));
 						enable_PC_Branch<='1';
-						nx_state<=init2;
+						nx_state<=init0;
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 -------PROCESS TO CONTROL JUMPS---------------------------------------------------------------------
@@ -617,6 +625,7 @@ begin
 						nx_state<=halt0;
 		----------------------------
 ----------------------------------------------------------------------------------------------------
+		when others=> nx_state<=halt0;
 		end case;
 	end process;
 

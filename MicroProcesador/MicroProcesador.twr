@@ -42,7 +42,7 @@ No constraints were found to generate data for the Data Sheet Report section.
 Use the Advanced Analysis (-a) option or generate global constraints for each
 clock, its pad to setup and clock to pad paths, and a pad to pad constraint.
 
-Analysis completed Thu Mar 23 01:47:59 2017 
+Analysis completed Thu Mar 23 17:58:36 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:

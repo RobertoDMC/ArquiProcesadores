@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Thu Mar 23 01:47:45 2017
+Mapped Date    : Thu Mar 23 17:58:23 2017
 
 Mapping design into LUTs...
 Running directed packing...
@@ -31,7 +31,7 @@ Logic Distribution:
   Number of bonded IOBs:                 16 out of     232    6%
 
 Peak Memory Usage:  259 MB
-Total REAL time to MAP completion:  2 secs 
+Total REAL time to MAP completion:  1 secs 
 Total CPU time to MAP completion:   1 secs 
 
 NOTES:

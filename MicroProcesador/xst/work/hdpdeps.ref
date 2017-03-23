@@ -1,124 +1,110 @@
-V3 65
+V3 59
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.vhd 2017/03/22.20:34:21 P.20131013
-EN work/ALU 1490248011 \
+EN work/ALU 1490307005 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/ALU/Behavioral 1490248012 \
+AR work/ALU/Behavioral 1490307006 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.vhd \
-      EN work/ALU 1490248011 CP decoder_Ops_ALU CP sumador CP modulo_Logico \
+      EN work/ALU 1490307005 CP decoder_Ops_ALU CP sumador CP modulo_Logico \
       CP demux_ALU
-FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd 2017/03/23.01:41:53 P.20131013
-EN work/Control_Unit 1490248007 \
+FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd 2017/03/23.18:09:32 P.20131013
+EN work/Control_Unit 1490307001 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/Control_Unit/Behavioral 1490248008 \
+AR work/Control_Unit/Behavioral 1490307002 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd \
-      EN work/Control_Unit 1490248007
+      EN work/Control_Unit 1490307001
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/decoder_Ops_ALU/decoder_Ops_ALU.vhd 2017/03/15.23:40:31 P.20131013
-EN work/decoder_Ops_ALU 1490247993 \
+EN work/decoder_Ops_ALU 1490306987 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/decoder_Ops_ALU/decoder_Ops_ALU.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/decoder_Ops_ALU/Behavioral 1490247994 \
+AR work/decoder_Ops_ALU/Behavioral 1490306988 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/decoder_Ops_ALU/decoder_Ops_ALU.vhd \
-      EN work/decoder_Ops_ALU 1490247993
+      EN work/decoder_Ops_ALU 1490306987
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux2_1/demux2_1.vhd 2017/03/22.18:23:38 P.20131013
-EN work/demux2_1 1490248019 \
+EN work/demux2_1 1490307013 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux2_1/demux2_1.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/demux2_1/Behavioral 1490248020 \
+AR work/demux2_1/Behavioral 1490307014 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux2_1/demux2_1.vhd \
-      EN work/demux2_1 1490248019
+      EN work/demux2_1 1490307013
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux3_1/demux3_1.vhd 2017/03/22.20:19:07 P.20131013
-EN work/demux3_1 1490248015 \
+EN work/demux3_1 1490307009 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux3_1/demux3_1.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/demux3_1/Behavioral 1490248016 \
+AR work/demux3_1/Behavioral 1490307010 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux3_1/demux3_1.vhd \
-      EN work/demux3_1 1490248015
+      EN work/demux3_1 1490307009
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux3_1_8bits/demux3_18bits.vhd 2017/03/22.20:19:02 P.20131013
-EN work/demux3_18bits 1490248017 \
+EN work/demux3_18bits 1490307011 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux3_1_8bits/demux3_18bits.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/demux3_18bits/Behavioral 1490248018 \
+AR work/demux3_18bits/Behavioral 1490307012 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux3_1_8bits/demux3_18bits.vhd \
-      EN work/demux3_18bits 1490248017
+      EN work/demux3_18bits 1490307011
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux_ALU/demux_ALU.vhd 2017/03/22.20:31:02 P.20131013
-EN work/demux_ALU 1490247999 \
+EN work/demux_ALU 1490306993 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux_ALU/demux_ALU.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/demux_ALU/Behavioral 1490248000 \
+AR work/demux_ALU/Behavioral 1490306994 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux_ALU/demux_ALU.vhd \
-      EN work/demux_ALU 1490247999
+      EN work/demux_ALU 1490306993
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/MicroProcesador/MicroProcesador.vhd 2017/03/22.22:43:06 P.20131013
-EN work/MicroProcesador 1490248021 \
+EN work/MicroProcesador 1490307015 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/MicroProcesador/MicroProcesador.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/MicroProcesador/Behavioral 1490248022 \
+AR work/MicroProcesador/Behavioral 1490307016 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/MicroProcesador/MicroProcesador.vhd \
-      EN work/MicroProcesador 1490248021 CP Control_Unit CP registros_Control \
+      EN work/MicroProcesador 1490307015 CP Control_Unit CP registros_Control \
       CP ALU CP ram_16bits CP demux3_1 CP demux3_18bits CP demux2_1 \
       CP registro_16bits
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/modulo_Logico/modulo_Logico.vhd 2017/03/21.19:50:48 P.20131013
-EN work/modulo_Logico 1490247997 \
+EN work/modulo_Logico 1490306991 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/modulo_Logico/modulo_Logico.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/modulo_Logico/Behavioral 1490247998 \
+AR work/modulo_Logico/Behavioral 1490306992 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/modulo_Logico/modulo_Logico.vhd \
-      EN work/modulo_Logico 1490247997
-FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ram_16bits/ram_16bits.vhd 2017/03/23.01:27:43 P.20131013
-EN work/ram_16bits 1490248013 \
+      EN work/modulo_Logico 1490306991
+FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ram_16bits/ram_16bits.vhd 2017/03/23.18:02:52 P.20131013
+EN work/ram_16bits 1490307007 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ram_16bits/ram_16bits.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/ram_16bits/Behavioral 1490248014 \
+AR work/ram_16bits/Behavioral 1490307008 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ram_16bits/ram_16bits.vhd \
-      EN work/ram_16bits 1490248013
-FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/register_output/register_output.vhd 2017/03/22.18:46:43 P.20131013
-EN work/register_output 1490236506 \
-      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/register_output/register_output.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/register_output/Behavioral 1490236507 \
-      FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/register_output/register_output.vhd \
-      EN work/register_output 1490236506
+      EN work/ram_16bits 1490307007
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Clk/registros_Clk.vhd 2017/03/21.17:44:31 P.20131013
-EN work/registros_Clk 1490248001 \
+EN work/registros_Clk 1490306995 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Clk/registros_Clk.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/registros_Clk/Behavioral 1490248002 \
+AR work/registros_Clk/Behavioral 1490306996 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Clk/registros_Clk.vhd \
-      EN work/registros_Clk 1490248001
+      EN work/registros_Clk 1490306995
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control.vhd 2017/03/21.18:15:55 P.20131013
-EN work/registros_Control 1490248009 \
+EN work/registros_Control 1490307003 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/registros_Control/Behavioral 1490248010 \
+AR work/registros_Control/Behavioral 1490307004 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control.vhd \
-      EN work/registros_Control 1490248009 CP registros_Clk CP registro_8bits \
+      EN work/registros_Control 1490307003 CP registros_Clk CP registro_8bits \
       CP registro_16bits
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_16bits/registro_16bits.vhd 2017/03/21.00:36:25 P.20131013
-EN work/registro_16bits 1490248005 \
+EN work/registro_16bits 1490306999 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_16bits/registro_16bits.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/registro_16bits/Behavioral 1490248006 \
+AR work/registro_16bits/Behavioral 1490307000 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_16bits/registro_16bits.vhd \
-      EN work/registro_16bits 1490248005
+      EN work/registro_16bits 1490306999
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_8bits/registro_8bits.vhd 2017/03/21.00:40:35 P.20131013
-EN work/registro_8bits 1490248003 \
+EN work/registro_8bits 1490306997 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_8bits/registro_8bits.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/registro_8bits/Behavioral 1490248004 \
+AR work/registro_8bits/Behavioral 1490306998 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_8bits/registro_8bits.vhd \
-      EN work/registro_8bits 1490248003
+      EN work/registro_8bits 1490306997
 FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/sumador/sumador.vhd 2017/03/21.19:50:43 P.20131013
-EN work/sumador 1490247995 \
+EN work/sumador 1490306989 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/sumador/sumador.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/sumador/Behavioral 1490247996 \
+AR work/sumador/Behavioral 1490306990 \
       FL C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/sumador/sumador.vhd \
-      EN work/sumador 1490247995
-FL C:/Users/Roberto/Desktop/UPB/ElectronicaDigital/Xilinx/divisor_frecuencia_10hz/divisor_frecuencia_10hz.vhd 2017/03/22.19:29:26 P.20131013
-EN work/divisor_frecuencia_10hz 1490229738 \
-      FL C:/Users/Roberto/Desktop/UPB/ElectronicaDigital/Xilinx/divisor_frecuencia_10hz/divisor_frecuencia_10hz.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/divisor_frecuencia_10hz/Behavioral 1490229739 \
-      FL C:/Users/Roberto/Desktop/UPB/ElectronicaDigital/Xilinx/divisor_frecuencia_10hz/divisor_frecuencia_10hz.vhd \
-      EN work/divisor_frecuencia_10hz 1490229738
+      EN work/sumador 1490306989
