@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-03-23T19:17:53</DateModified>
+  <DateModified>2017-03-23T21:15:28</DateModified>
   <ModuleName>implementacion</ModuleName>
   <SummaryTimeStamp>2017-03-23T19:15:36</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/iseconfig/implementacion.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion\</ImplementationReportsDirectory>
   <DateInitialized>2017-03-23T19:02:09</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

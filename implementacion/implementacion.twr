@@ -39,423 +39,407 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  596 paths analyzed, 35 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   8.511ns.
+ Minimum period is   7.668ns.
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_pantalla_proyectoFinal/E (SLICE_X34Y80.SR), 239 paths
+Paths for end point Inst_pantalla_proyectoFinal/E (SLICE_X32Y82.SR), 239 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     11.489ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_pantalla_proyectoFinal/cuenta_2 (FF)
+Slack (setup path):     12.332ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_pantalla_proyectoFinal/cuenta_6 (FF)
   Destination:          Inst_pantalla_proyectoFinal/E (FF)
   Requirement:          20.000ns
-  Data Path Delay:      8.511ns (Levels of Logic = 8)
+  Data Path Delay:      7.668ns (Levels of Logic = 6)
   Clock Path Skew:      0.000ns
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_2 to Inst_pantalla_proyectoFinal/E
+  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_6 to Inst_pantalla_proyectoFinal/E
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X32Y77.YQ      Tcko                  0.652   Inst_pantalla_proyectoFinal/cuenta<3>
-                                                       Inst_pantalla_proyectoFinal/cuenta_2
-    SLICE_X33Y76.F1      net (fanout=1)        0.497   Inst_pantalla_proyectoFinal/cuenta<2>
-    SLICE_X33Y76.COUT    Topcyf                1.162   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
-                                                       Inst_pantalla_proyectoFinal/cuenta<2>_rt
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<2>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<3>
-    SLICE_X33Y77.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<3>
-    SLICE_X33Y77.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/cuenta_addsub0000<4>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<4>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<5>
-    SLICE_X33Y78.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<5>
-    SLICE_X33Y78.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/cuenta_addsub0000<6>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<6>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<7>
-    SLICE_X33Y79.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<7>
-    SLICE_X33Y79.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/cuenta_addsub0000<8>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<8>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<9>
-    SLICE_X33Y80.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<9>
-    SLICE_X33Y80.Y       Tciny                 0.869   Inst_pantalla_proyectoFinal/cuenta_addsub0000<10>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<10>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_xor<11>
-    SLICE_X30Y81.F4      net (fanout=2)        0.403   Inst_pantalla_proyectoFinal/cuenta_addsub0000<11>
-    SLICE_X30Y81.X       Tilo                  0.759   N5
-                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_lut<5>_SW0
-    SLICE_X35Y80.G1      net (fanout=1)        0.487   N5
-    SLICE_X35Y80.COUT    Topcyg                1.001   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
+    SLICE_X33Y80.XQ      Tcko                  0.591   Inst_pantalla_proyectoFinal/cuenta<6>
+                                                       Inst_pantalla_proyectoFinal/cuenta_6
+    SLICE_X37Y79.G4      net (fanout=2)        0.696   Inst_pantalla_proyectoFinal/cuenta<6>
+    SLICE_X37Y79.COUT    Topcyg                1.001   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_lut<1>_INV_0
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+    SLICE_X37Y80.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+    SLICE_X37Y80.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<2>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y81.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<4>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y82.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y82.XB      Tcinxb                0.404   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X33Y81.G1      net (fanout=23)       1.883   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X33Y81.COUT    Topcyg                1.001   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
                                                        Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_lut<5>
                                                        Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
-    SLICE_X35Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
-    SLICE_X35Y81.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
+    SLICE_X33Y82.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
+    SLICE_X33Y82.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
                                                        Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<6>
                                                        Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
-    SLICE_X34Y80.SR      net (fanout=1)        1.299   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
-    SLICE_X34Y80.CLK     Tsrck                 0.910   Inst_pantalla_proyectoFinal/E1
+    SLICE_X32Y82.SR      net (fanout=1)        0.828   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
+    SLICE_X32Y82.CLK     Tsrck                 0.910   Inst_pantalla_proyectoFinal/E1
                                                        Inst_pantalla_proyectoFinal/E
     -------------------------------------------------  ---------------------------
-    Total                                      8.511ns (5.825ns logic, 2.686ns route)
-                                                       (68.4% logic, 31.6% route)
+    Total                                      7.668ns (4.261ns logic, 3.407ns route)
+                                                       (55.6% logic, 44.4% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     11.504ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_pantalla_proyectoFinal/cuenta_0 (FF)
-  Destination:          Inst_pantalla_proyectoFinal/E (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      8.496ns (Levels of Logic = 9)
-  Clock Path Skew:      0.000ns
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_0 to Inst_pantalla_proyectoFinal/E
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X32Y74.YQ      Tcko                  0.652   Inst_pantalla_proyectoFinal/cuenta<1>
-                                                       Inst_pantalla_proyectoFinal/cuenta_0
-    SLICE_X33Y75.F4      net (fanout=1)        0.364   Inst_pantalla_proyectoFinal/cuenta<0>
-    SLICE_X33Y75.COUT    Topcyf                1.162   Inst_pantalla_proyectoFinal/cuenta_addsub0000<0>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_lut<0>_INV_0
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<0>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<1>
-    SLICE_X33Y76.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<1>
-    SLICE_X33Y76.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<2>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<3>
-    SLICE_X33Y77.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<3>
-    SLICE_X33Y77.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/cuenta_addsub0000<4>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<4>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<5>
-    SLICE_X33Y78.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<5>
-    SLICE_X33Y78.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/cuenta_addsub0000<6>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<6>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<7>
-    SLICE_X33Y79.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<7>
-    SLICE_X33Y79.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/cuenta_addsub0000<8>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<8>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<9>
-    SLICE_X33Y80.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<9>
-    SLICE_X33Y80.Y       Tciny                 0.869   Inst_pantalla_proyectoFinal/cuenta_addsub0000<10>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<10>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_xor<11>
-    SLICE_X30Y81.F4      net (fanout=2)        0.403   Inst_pantalla_proyectoFinal/cuenta_addsub0000<11>
-    SLICE_X30Y81.X       Tilo                  0.759   N5
-                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_lut<5>_SW0
-    SLICE_X35Y80.G1      net (fanout=1)        0.487   N5
-    SLICE_X35Y80.COUT    Topcyg                1.001   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_lut<5>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
-    SLICE_X35Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
-    SLICE_X35Y81.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<6>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
-    SLICE_X34Y80.SR      net (fanout=1)        1.299   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
-    SLICE_X34Y80.CLK     Tsrck                 0.910   Inst_pantalla_proyectoFinal/E1
-                                                       Inst_pantalla_proyectoFinal/E
-    -------------------------------------------------  ---------------------------
-    Total                                      8.496ns (5.943ns logic, 2.553ns route)
-                                                       (70.0% logic, 30.0% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     11.657ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_pantalla_proyectoFinal/cuenta_1 (FF)
-  Destination:          Inst_pantalla_proyectoFinal/E (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      8.343ns (Levels of Logic = 9)
-  Clock Path Skew:      0.000ns
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_1 to Inst_pantalla_proyectoFinal/E
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X32Y74.XQ      Tcko                  0.592   Inst_pantalla_proyectoFinal/cuenta<1>
-                                                       Inst_pantalla_proyectoFinal/cuenta_1
-    SLICE_X33Y75.G2      net (fanout=1)        0.432   Inst_pantalla_proyectoFinal/cuenta<1>
-    SLICE_X33Y75.COUT    Topcyg                1.001   Inst_pantalla_proyectoFinal/cuenta_addsub0000<0>
-                                                       Inst_pantalla_proyectoFinal/cuenta<1>_rt
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<1>
-    SLICE_X33Y76.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<1>
-    SLICE_X33Y76.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<2>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<3>
-    SLICE_X33Y77.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<3>
-    SLICE_X33Y77.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/cuenta_addsub0000<4>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<4>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<5>
-    SLICE_X33Y78.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<5>
-    SLICE_X33Y78.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/cuenta_addsub0000<6>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<6>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<7>
-    SLICE_X33Y79.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<7>
-    SLICE_X33Y79.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/cuenta_addsub0000<8>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<8>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<9>
-    SLICE_X33Y80.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<9>
-    SLICE_X33Y80.Y       Tciny                 0.869   Inst_pantalla_proyectoFinal/cuenta_addsub0000<10>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<10>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_xor<11>
-    SLICE_X30Y81.F4      net (fanout=2)        0.403   Inst_pantalla_proyectoFinal/cuenta_addsub0000<11>
-    SLICE_X30Y81.X       Tilo                  0.759   N5
-                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_lut<5>_SW0
-    SLICE_X35Y80.G1      net (fanout=1)        0.487   N5
-    SLICE_X35Y80.COUT    Topcyg                1.001   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_lut<5>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
-    SLICE_X35Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
-    SLICE_X35Y81.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<6>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
-    SLICE_X34Y80.SR      net (fanout=1)        1.299   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
-    SLICE_X34Y80.CLK     Tsrck                 0.910   Inst_pantalla_proyectoFinal/E1
-                                                       Inst_pantalla_proyectoFinal/E
-    -------------------------------------------------  ---------------------------
-    Total                                      8.343ns (5.722ns logic, 2.621ns route)
-                                                       (68.6% logic, 31.4% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_pantalla_proyectoFinal/cuenta_2 (SLICE_X32Y77.G1), 12 paths
---------------------------------------------------------------------------------
-Slack (setup path):     14.817ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     12.365ns (requirement - (data path - clock path skew + uncertainty))
   Source:               Inst_pantalla_proyectoFinal/cuenta_5 (FF)
-  Destination:          Inst_pantalla_proyectoFinal/cuenta_2 (FF)
+  Destination:          Inst_pantalla_proyectoFinal/E (FF)
   Requirement:          20.000ns
-  Data Path Delay:      5.183ns (Levels of Logic = 5)
+  Data Path Delay:      7.635ns (Levels of Logic = 6)
   Clock Path Skew:      0.000ns
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_5 to Inst_pantalla_proyectoFinal/cuenta_2
+  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_5 to Inst_pantalla_proyectoFinal/E
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X32Y76.YQ      Tcko                  0.652   Inst_pantalla_proyectoFinal/cuenta<5>
+    SLICE_X34Y79.YQ      Tcko                  0.652   Inst_pantalla_proyectoFinal/cuenta<5>
                                                        Inst_pantalla_proyectoFinal/cuenta_5
-    SLICE_X31Y78.F1      net (fanout=2)        0.568   Inst_pantalla_proyectoFinal/cuenta<5>
-    SLICE_X31Y78.COUT    Topcyf                1.162   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+    SLICE_X37Y79.F3      net (fanout=2)        0.441   Inst_pantalla_proyectoFinal/cuenta<5>
+    SLICE_X37Y79.COUT    Topcyf                1.162   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
                                                        Inst_pantalla_proyectoFinal/cuenta<5>_rt
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<0>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
-    SLICE_X31Y79.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
-    SLICE_X31Y79.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y80.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+    SLICE_X37Y80.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<2>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
-    SLICE_X31Y80.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
-    SLICE_X31Y80.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y81.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<4>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
-    SLICE_X31Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
-    SLICE_X31Y81.XB      Tcinxb                0.404   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X37Y82.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y82.XB      Tcinxb                0.404   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
-    SLICE_X32Y77.G1      net (fanout=23)       1.269   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
-    SLICE_X32Y77.CLK     Tgck                  0.892   Inst_pantalla_proyectoFinal/cuenta<3>
-                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<2>1
-                                                       Inst_pantalla_proyectoFinal/cuenta_2
+    SLICE_X33Y81.G1      net (fanout=23)       1.883   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X33Y81.COUT    Topcyg                1.001   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_lut<5>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
+    SLICE_X33Y82.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
+    SLICE_X33Y82.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<6>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
+    SLICE_X32Y82.SR      net (fanout=1)        0.828   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
+    SLICE_X32Y82.CLK     Tsrck                 0.910   Inst_pantalla_proyectoFinal/E1
+                                                       Inst_pantalla_proyectoFinal/E
     -------------------------------------------------  ---------------------------
-    Total                                      5.183ns (3.346ns logic, 1.837ns route)
-                                                       (64.6% logic, 35.4% route)
+    Total                                      7.635ns (4.483ns logic, 3.152ns route)
+                                                       (58.7% logic, 41.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     14.898ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     12.423ns (requirement - (data path - clock path skew + uncertainty))
   Source:               Inst_pantalla_proyectoFinal/cuenta_6 (FF)
-  Destination:          Inst_pantalla_proyectoFinal/cuenta_2 (FF)
+  Destination:          Inst_pantalla_proyectoFinal/E (FF)
   Requirement:          20.000ns
-  Data Path Delay:      5.100ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.002ns (0.125 - 0.127)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_6 to Inst_pantalla_proyectoFinal/cuenta_2
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X35Y79.XQ      Tcko                  0.591   Inst_pantalla_proyectoFinal/cuenta<6>
-                                                       Inst_pantalla_proyectoFinal/cuenta_6
-    SLICE_X31Y78.G4      net (fanout=2)        0.707   Inst_pantalla_proyectoFinal/cuenta<6>
-    SLICE_X31Y78.COUT    Topcyg                1.001   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_lut<1>_INV_0
-                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
-    SLICE_X31Y79.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
-    SLICE_X31Y79.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<2>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
-    SLICE_X31Y80.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
-    SLICE_X31Y80.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<4>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
-    SLICE_X31Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
-    SLICE_X31Y81.XB      Tcinxb                0.404   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
-    SLICE_X32Y77.G1      net (fanout=23)       1.269   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
-    SLICE_X32Y77.CLK     Tgck                  0.892   Inst_pantalla_proyectoFinal/cuenta<3>
-                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<2>1
-                                                       Inst_pantalla_proyectoFinal/cuenta_2
-    -------------------------------------------------  ---------------------------
-    Total                                      5.100ns (3.124ns logic, 1.976ns route)
-                                                       (61.3% logic, 38.7% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     15.102ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_pantalla_proyectoFinal/cuenta_12 (FF)
-  Destination:          Inst_pantalla_proyectoFinal/cuenta_2 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      4.894ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.004ns (0.040 - 0.044)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_12 to Inst_pantalla_proyectoFinal/cuenta_2
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X32Y80.YQ      Tcko                  0.652   Inst_pantalla_proyectoFinal/cuenta<13>
-                                                       Inst_pantalla_proyectoFinal/cuenta_12
-    SLICE_X31Y80.G3      net (fanout=2)        0.676   Inst_pantalla_proyectoFinal/cuenta<12>
-    SLICE_X31Y80.COUT    Topcyg                1.001   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_lut<5>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
-    SLICE_X31Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
-    SLICE_X31Y81.XB      Tcinxb                0.404   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
-    SLICE_X32Y77.G1      net (fanout=23)       1.269   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
-    SLICE_X32Y77.CLK     Tgck                  0.892   Inst_pantalla_proyectoFinal/cuenta<3>
-                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<2>1
-                                                       Inst_pantalla_proyectoFinal/cuenta_2
-    -------------------------------------------------  ---------------------------
-    Total                                      4.894ns (2.949ns logic, 1.945ns route)
-                                                       (60.3% logic, 39.7% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_pantalla_proyectoFinal/cuenta_16 (SLICE_X32Y81.G1), 12 paths
---------------------------------------------------------------------------------
-Slack (setup path):     14.930ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_pantalla_proyectoFinal/cuenta_5 (FF)
-  Destination:          Inst_pantalla_proyectoFinal/cuenta_16 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      5.070ns (Levels of Logic = 5)
+  Data Path Delay:      7.577ns (Levels of Logic = 8)
   Clock Path Skew:      0.000ns
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_5 to Inst_pantalla_proyectoFinal/cuenta_16
+  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_6 to Inst_pantalla_proyectoFinal/E
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X32Y76.YQ      Tcko                  0.652   Inst_pantalla_proyectoFinal/cuenta<5>
+    SLICE_X33Y80.XQ      Tcko                  0.591   Inst_pantalla_proyectoFinal/cuenta<6>
+                                                       Inst_pantalla_proyectoFinal/cuenta_6
+    SLICE_X37Y79.G4      net (fanout=2)        0.696   Inst_pantalla_proyectoFinal/cuenta<6>
+    SLICE_X37Y79.COUT    Topcyg                1.001   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_lut<1>_INV_0
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+    SLICE_X37Y80.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+    SLICE_X37Y80.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<2>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y81.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<4>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y82.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y82.XB      Tcinxb                0.404   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X33Y79.F4      net (fanout=23)       1.395   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X33Y79.COUT    Topcyf                1.162   Inst_pantalla_proyectoFinal/cuenta<4>
+                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<4>1
+                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<0>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<1>
+    SLICE_X33Y80.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<1>
+    SLICE_X33Y80.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/cuenta<6>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<2>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<3>
+    SLICE_X33Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<3>
+    SLICE_X33Y81.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<4>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
+    SLICE_X33Y82.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<5>
+    SLICE_X33Y82.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<6>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
+    SLICE_X32Y82.SR      net (fanout=1)        0.828   Inst_pantalla_proyectoFinal/Mcompar_E_cmp_lt0000_cy<7>
+    SLICE_X32Y82.CLK     Tsrck                 0.910   Inst_pantalla_proyectoFinal/E1
+                                                       Inst_pantalla_proyectoFinal/E
+    -------------------------------------------------  ---------------------------
+    Total                                      7.577ns (4.658ns logic, 2.919ns route)
+                                                       (61.5% logic, 38.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_pantalla_proyectoFinal/cuenta_5 (SLICE_X34Y79.G2), 12 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.737ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_pantalla_proyectoFinal/cuenta_6 (FF)
+  Destination:          Inst_pantalla_proyectoFinal/cuenta_5 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.261ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.002ns (0.127 - 0.129)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_6 to Inst_pantalla_proyectoFinal/cuenta_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y80.XQ      Tcko                  0.591   Inst_pantalla_proyectoFinal/cuenta<6>
+                                                       Inst_pantalla_proyectoFinal/cuenta_6
+    SLICE_X37Y79.G4      net (fanout=2)        0.696   Inst_pantalla_proyectoFinal/cuenta<6>
+    SLICE_X37Y79.COUT    Topcyg                1.001   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_lut<1>_INV_0
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+    SLICE_X37Y80.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+    SLICE_X37Y80.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<2>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y81.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<4>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y82.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y82.XB      Tcinxb                0.404   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X34Y79.G2      net (fanout=23)       1.441   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X34Y79.CLK     Tgck                  0.892   Inst_pantalla_proyectoFinal/cuenta<5>
+                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<5>1
                                                        Inst_pantalla_proyectoFinal/cuenta_5
-    SLICE_X31Y78.F1      net (fanout=2)        0.568   Inst_pantalla_proyectoFinal/cuenta<5>
-    SLICE_X31Y78.COUT    Topcyf                1.162   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+    -------------------------------------------------  ---------------------------
+    Total                                      5.261ns (3.124ns logic, 2.137ns route)
+                                                       (59.4% logic, 40.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.772ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_pantalla_proyectoFinal/cuenta_5 (FF)
+  Destination:          Inst_pantalla_proyectoFinal/cuenta_5 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.228ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_5 to Inst_pantalla_proyectoFinal/cuenta_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X34Y79.YQ      Tcko                  0.652   Inst_pantalla_proyectoFinal/cuenta<5>
+                                                       Inst_pantalla_proyectoFinal/cuenta_5
+    SLICE_X37Y79.F3      net (fanout=2)        0.441   Inst_pantalla_proyectoFinal/cuenta<5>
+    SLICE_X37Y79.COUT    Topcyf                1.162   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
                                                        Inst_pantalla_proyectoFinal/cuenta<5>_rt
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<0>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
-    SLICE_X31Y79.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
-    SLICE_X31Y79.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y80.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+    SLICE_X37Y80.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<2>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
-    SLICE_X31Y80.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
-    SLICE_X31Y80.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y81.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<4>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
-    SLICE_X31Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
-    SLICE_X31Y81.XB      Tcinxb                0.404   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X37Y82.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y82.XB      Tcinxb                0.404   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
-    SLICE_X32Y81.G1      net (fanout=23)       1.156   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
-    SLICE_X32Y81.CLK     Tgck                  0.892   Inst_pantalla_proyectoFinal/cuenta<7>
-                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<16>1
-                                                       Inst_pantalla_proyectoFinal/cuenta_16
+    SLICE_X34Y79.G2      net (fanout=23)       1.441   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X34Y79.CLK     Tgck                  0.892   Inst_pantalla_proyectoFinal/cuenta<5>
+                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<5>1
+                                                       Inst_pantalla_proyectoFinal/cuenta_5
     -------------------------------------------------  ---------------------------
-    Total                                      5.070ns (3.346ns logic, 1.724ns route)
-                                                       (66.0% logic, 34.0% route)
+    Total                                      5.228ns (3.346ns logic, 1.882ns route)
+                                                       (64.0% logic, 36.0% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     15.013ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_pantalla_proyectoFinal/cuenta_6 (FF)
-  Destination:          Inst_pantalla_proyectoFinal/cuenta_16 (FF)
+Slack (setup path):     14.906ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_pantalla_proyectoFinal/cuenta_8 (FF)
+  Destination:          Inst_pantalla_proyectoFinal/cuenta_5 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      4.987ns (Levels of Logic = 5)
+  Data Path Delay:      5.094ns (Levels of Logic = 4)
   Clock Path Skew:      0.000ns
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_6 to Inst_pantalla_proyectoFinal/cuenta_16
+  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_8 to Inst_pantalla_proyectoFinal/cuenta_5
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X35Y79.XQ      Tcko                  0.591   Inst_pantalla_proyectoFinal/cuenta<6>
+    SLICE_X34Y78.YQ      Tcko                  0.652   Inst_pantalla_proyectoFinal/cuenta<9>
+                                                       Inst_pantalla_proyectoFinal/cuenta_8
+    SLICE_X37Y80.G1      net (fanout=2)        0.586   Inst_pantalla_proyectoFinal/cuenta<8>
+    SLICE_X37Y80.COUT    Topcyg                1.001   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_lut<3>_INV_0
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y81.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<4>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y82.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y82.XB      Tcinxb                0.404   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X34Y79.G2      net (fanout=23)       1.441   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X34Y79.CLK     Tgck                  0.892   Inst_pantalla_proyectoFinal/cuenta<5>
+                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<5>1
+                                                       Inst_pantalla_proyectoFinal/cuenta_5
+    -------------------------------------------------  ---------------------------
+    Total                                      5.094ns (3.067ns logic, 2.027ns route)
+                                                       (60.2% logic, 39.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_pantalla_proyectoFinal/cuenta_9 (SLICE_X34Y78.F3), 12 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.811ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_pantalla_proyectoFinal/cuenta_6 (FF)
+  Destination:          Inst_pantalla_proyectoFinal/cuenta_9 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.187ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.002ns (0.127 - 0.129)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_6 to Inst_pantalla_proyectoFinal/cuenta_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y80.XQ      Tcko                  0.591   Inst_pantalla_proyectoFinal/cuenta<6>
                                                        Inst_pantalla_proyectoFinal/cuenta_6
-    SLICE_X31Y78.G4      net (fanout=2)        0.707   Inst_pantalla_proyectoFinal/cuenta<6>
-    SLICE_X31Y78.COUT    Topcyg                1.001   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+    SLICE_X37Y79.G4      net (fanout=2)        0.696   Inst_pantalla_proyectoFinal/cuenta<6>
+    SLICE_X37Y79.COUT    Topcyg                1.001   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_lut<1>_INV_0
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
-    SLICE_X31Y79.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
-    SLICE_X31Y79.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y80.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+    SLICE_X37Y80.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<2>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
-    SLICE_X31Y80.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
-    SLICE_X31Y80.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y81.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<4>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
-    SLICE_X31Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
-    SLICE_X31Y81.XB      Tcinxb                0.404   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X37Y82.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y82.XB      Tcinxb                0.404   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
-    SLICE_X32Y81.G1      net (fanout=23)       1.156   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
-    SLICE_X32Y81.CLK     Tgck                  0.892   Inst_pantalla_proyectoFinal/cuenta<7>
-                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<16>1
-                                                       Inst_pantalla_proyectoFinal/cuenta_16
+    SLICE_X34Y78.F3      net (fanout=23)       1.367   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X34Y78.CLK     Tfck                  0.892   Inst_pantalla_proyectoFinal/cuenta<9>
+                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<9>1
+                                                       Inst_pantalla_proyectoFinal/cuenta_9
     -------------------------------------------------  ---------------------------
-    Total                                      4.987ns (3.124ns logic, 1.863ns route)
-                                                       (62.6% logic, 37.4% route)
+    Total                                      5.187ns (3.124ns logic, 2.063ns route)
+                                                       (60.2% logic, 39.8% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     15.219ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_pantalla_proyectoFinal/cuenta_12 (FF)
-  Destination:          Inst_pantalla_proyectoFinal/cuenta_16 (FF)
+Slack (setup path):     14.846ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_pantalla_proyectoFinal/cuenta_5 (FF)
+  Destination:          Inst_pantalla_proyectoFinal/cuenta_9 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      4.781ns (Levels of Logic = 3)
+  Data Path Delay:      5.154ns (Levels of Logic = 5)
   Clock Path Skew:      0.000ns
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_12 to Inst_pantalla_proyectoFinal/cuenta_16
+  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_5 to Inst_pantalla_proyectoFinal/cuenta_9
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X32Y80.YQ      Tcko                  0.652   Inst_pantalla_proyectoFinal/cuenta<13>
-                                                       Inst_pantalla_proyectoFinal/cuenta_12
-    SLICE_X31Y80.G3      net (fanout=2)        0.676   Inst_pantalla_proyectoFinal/cuenta<12>
-    SLICE_X31Y80.COUT    Topcyg                1.001   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
-                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_lut<5>
+    SLICE_X34Y79.YQ      Tcko                  0.652   Inst_pantalla_proyectoFinal/cuenta<5>
+                                                       Inst_pantalla_proyectoFinal/cuenta_5
+    SLICE_X37Y79.F3      net (fanout=2)        0.441   Inst_pantalla_proyectoFinal/cuenta<5>
+    SLICE_X37Y79.COUT    Topcyf                1.162   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+                                                       Inst_pantalla_proyectoFinal/cuenta<5>_rt
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<0>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+    SLICE_X37Y80.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<1>
+    SLICE_X37Y80.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<2>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y81.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<4>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
-    SLICE_X31Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
-    SLICE_X31Y81.XB      Tcinxb                0.404   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X37Y82.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y82.XB      Tcinxb                0.404   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
                                                        Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
-    SLICE_X32Y81.G1      net (fanout=23)       1.156   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
-    SLICE_X32Y81.CLK     Tgck                  0.892   Inst_pantalla_proyectoFinal/cuenta<7>
-                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<16>1
-                                                       Inst_pantalla_proyectoFinal/cuenta_16
+    SLICE_X34Y78.F3      net (fanout=23)       1.367   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X34Y78.CLK     Tfck                  0.892   Inst_pantalla_proyectoFinal/cuenta<9>
+                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<9>1
+                                                       Inst_pantalla_proyectoFinal/cuenta_9
     -------------------------------------------------  ---------------------------
-    Total                                      4.781ns (2.949ns logic, 1.832ns route)
-                                                       (61.7% logic, 38.3% route)
+    Total                                      5.154ns (3.346ns logic, 1.808ns route)
+                                                       (64.9% logic, 35.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.980ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_pantalla_proyectoFinal/cuenta_8 (FF)
+  Destination:          Inst_pantalla_proyectoFinal/cuenta_9 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.020ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_pantalla_proyectoFinal/cuenta_8 to Inst_pantalla_proyectoFinal/cuenta_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X34Y78.YQ      Tcko                  0.652   Inst_pantalla_proyectoFinal/cuenta<9>
+                                                       Inst_pantalla_proyectoFinal/cuenta_8
+    SLICE_X37Y80.G1      net (fanout=2)        0.586   Inst_pantalla_proyectoFinal/cuenta<8>
+    SLICE_X37Y80.COUT    Topcyg                1.001   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_lut<3>_INV_0
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<3>
+    SLICE_X37Y81.COUT    Tbyp                  0.118   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<4>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y82.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<5>
+    SLICE_X37Y82.XB      Tcinxb                0.404   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+                                                       Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X34Y78.F3      net (fanout=23)       1.367   Inst_pantalla_proyectoFinal/Mcompar_cuenta_cmp_lt0000_cy<6>
+    SLICE_X34Y78.CLK     Tfck                  0.892   Inst_pantalla_proyectoFinal/cuenta<9>
+                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<9>1
+                                                       Inst_pantalla_proyectoFinal/cuenta_9
+    -------------------------------------------------  ---------------------------
+    Total                                      5.020ns (3.067ns logic, 1.953ns route)
+                                                       (61.1% logic, 38.9% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_pantalla_proyectoFinal/cuenta_0 (SLICE_X32Y74.G4), 1 path
+Paths for end point Inst_pantalla_proyectoFinal/cuenta_0 (SLICE_X34Y74.G4), 1 path
 --------------------------------------------------------------------------------
 Slack (hold path):      2.290ns (requirement - (clock path skew + uncertainty - data path))
   Source:               Inst_pantalla_proyectoFinal/cuenta_0 (FF)
@@ -471,14 +455,14 @@ Slack (hold path):      2.290ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X32Y74.YQ      Tcko                  0.522   Inst_pantalla_proyectoFinal/cuenta<1>
+    SLICE_X34Y74.YQ      Tcko                  0.522   Inst_pantalla_proyectoFinal/cuenta<1>
                                                        Inst_pantalla_proyectoFinal/cuenta_0
-    SLICE_X33Y75.F4      net (fanout=1)        0.291   Inst_pantalla_proyectoFinal/cuenta<0>
-    SLICE_X33Y75.X       Topx                  0.848   Inst_pantalla_proyectoFinal/cuenta_addsub0000<0>
+    SLICE_X35Y75.F4      net (fanout=1)        0.291   Inst_pantalla_proyectoFinal/cuenta<0>
+    SLICE_X35Y75.X       Topx                  0.848   Inst_pantalla_proyectoFinal/cuenta_addsub0000<0>
                                                        Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_lut<0>_INV_0
                                                        Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_xor<0>
-    SLICE_X32Y74.G4      net (fanout=1)        0.069   Inst_pantalla_proyectoFinal/cuenta_addsub0000<0>
-    SLICE_X32Y74.CLK     Tckg        (-Th)    -0.560   Inst_pantalla_proyectoFinal/cuenta<1>
+    SLICE_X34Y74.G4      net (fanout=1)        0.069   Inst_pantalla_proyectoFinal/cuenta_addsub0000<0>
+    SLICE_X34Y74.CLK     Tckg        (-Th)    -0.560   Inst_pantalla_proyectoFinal/cuenta<1>
                                                        Inst_pantalla_proyectoFinal/cuenta_mux0000<0>1
                                                        Inst_pantalla_proyectoFinal/cuenta_0
     -------------------------------------------------  ---------------------------
@@ -487,7 +471,107 @@ Slack (hold path):      2.290ns (requirement - (clock path skew + uncertainty - 
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_pantalla_proyectoFinal/cuenta_2 (SLICE_X32Y77.G3), 3 paths
+Paths for end point Inst_pantalla_proyectoFinal/cuenta_14 (SLICE_X34Y82.G3), 15 paths
+--------------------------------------------------------------------------------
+Slack (hold path):      2.298ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_pantalla_proyectoFinal/cuenta_14 (FF)
+  Destination:          Inst_pantalla_proyectoFinal/cuenta_14 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      2.298ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_pantalla_proyectoFinal/cuenta_14 to Inst_pantalla_proyectoFinal/cuenta_14
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X34Y82.YQ      Tcko                  0.522   Inst_pantalla_proyectoFinal/cuenta<15>
+                                                       Inst_pantalla_proyectoFinal/cuenta_14
+    SLICE_X35Y82.F4      net (fanout=2)        0.333   Inst_pantalla_proyectoFinal/cuenta<14>
+    SLICE_X35Y82.X       Topx                  0.848   Inst_pantalla_proyectoFinal/cuenta_addsub0000<14>
+                                                       Inst_pantalla_proyectoFinal/cuenta<14>_rt
+                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_xor<14>
+    SLICE_X34Y82.G3      net (fanout=2)        0.035   Inst_pantalla_proyectoFinal/cuenta_addsub0000<14>
+    SLICE_X34Y82.CLK     Tckg        (-Th)    -0.560   Inst_pantalla_proyectoFinal/cuenta<15>
+                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<14>1
+                                                       Inst_pantalla_proyectoFinal/cuenta_14
+    -------------------------------------------------  ---------------------------
+    Total                                      2.298ns (1.930ns logic, 0.368ns route)
+                                                       (84.0% logic, 16.0% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      2.608ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_pantalla_proyectoFinal/cuenta_13 (FF)
+  Destination:          Inst_pantalla_proyectoFinal/cuenta_14 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      2.614ns (Levels of Logic = 3)
+  Clock Path Skew:      0.006ns (0.048 - 0.042)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_pantalla_proyectoFinal/cuenta_13 to Inst_pantalla_proyectoFinal/cuenta_14
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y80.XQ      Tcko                  0.474   Inst_pantalla_proyectoFinal/cuenta<13>
+                                                       Inst_pantalla_proyectoFinal/cuenta_13
+    SLICE_X35Y81.G2      net (fanout=2)        0.374   Inst_pantalla_proyectoFinal/cuenta<13>
+    SLICE_X35Y81.COUT    Topcyg                0.801   Inst_pantalla_proyectoFinal/cuenta_addsub0000<12>
+                                                       Inst_pantalla_proyectoFinal/cuenta<13>_rt
+                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<13>
+    SLICE_X35Y82.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<13>
+    SLICE_X35Y82.X       Tcinx                 0.370   Inst_pantalla_proyectoFinal/cuenta_addsub0000<14>
+                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_xor<14>
+    SLICE_X34Y82.G3      net (fanout=2)        0.035   Inst_pantalla_proyectoFinal/cuenta_addsub0000<14>
+    SLICE_X34Y82.CLK     Tckg        (-Th)    -0.560   Inst_pantalla_proyectoFinal/cuenta<15>
+                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<14>1
+                                                       Inst_pantalla_proyectoFinal/cuenta_14
+    -------------------------------------------------  ---------------------------
+    Total                                      2.614ns (2.205ns logic, 0.409ns route)
+                                                       (84.4% logic, 15.6% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      2.669ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_pantalla_proyectoFinal/cuenta_11 (FF)
+  Destination:          Inst_pantalla_proyectoFinal/cuenta_14 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      2.673ns (Levels of Logic = 4)
+  Clock Path Skew:      0.004ns (0.009 - 0.005)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_pantalla_proyectoFinal/cuenta_11 to Inst_pantalla_proyectoFinal/cuenta_14
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X34Y81.XQ      Tcko                  0.474   Inst_pantalla_proyectoFinal/cuenta<11>
+                                                       Inst_pantalla_proyectoFinal/cuenta_11
+    SLICE_X35Y80.G4      net (fanout=2)        0.339   Inst_pantalla_proyectoFinal/cuenta<11>
+    SLICE_X35Y80.COUT    Topcyg                0.801   Inst_pantalla_proyectoFinal/cuenta_addsub0000<10>
+                                                       Inst_pantalla_proyectoFinal/cuenta<11>_rt
+                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<11>
+    SLICE_X35Y81.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<11>
+    SLICE_X35Y81.COUT    Tbyp                  0.094   Inst_pantalla_proyectoFinal/cuenta_addsub0000<12>
+                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<12>
+                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<13>
+    SLICE_X35Y82.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<13>
+    SLICE_X35Y82.X       Tcinx                 0.370   Inst_pantalla_proyectoFinal/cuenta_addsub0000<14>
+                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_xor<14>
+    SLICE_X34Y82.G3      net (fanout=2)        0.035   Inst_pantalla_proyectoFinal/cuenta_addsub0000<14>
+    SLICE_X34Y82.CLK     Tckg        (-Th)    -0.560   Inst_pantalla_proyectoFinal/cuenta<15>
+                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<14>1
+                                                       Inst_pantalla_proyectoFinal/cuenta_14
+    -------------------------------------------------  ---------------------------
+    Total                                      2.673ns (2.299ns logic, 0.374ns route)
+                                                       (86.0% logic, 14.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_pantalla_proyectoFinal/cuenta_2 (SLICE_X34Y76.G3), 3 paths
 --------------------------------------------------------------------------------
 Slack (hold path):      2.345ns (requirement - (clock path skew + uncertainty - data path))
   Source:               Inst_pantalla_proyectoFinal/cuenta_2 (FF)
@@ -503,14 +587,14 @@ Slack (hold path):      2.345ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X32Y77.YQ      Tcko                  0.522   Inst_pantalla_proyectoFinal/cuenta<3>
+    SLICE_X34Y76.YQ      Tcko                  0.522   Inst_pantalla_proyectoFinal/cuenta<3>
                                                        Inst_pantalla_proyectoFinal/cuenta_2
-    SLICE_X33Y76.F1      net (fanout=1)        0.398   Inst_pantalla_proyectoFinal/cuenta<2>
-    SLICE_X33Y76.X       Topx                  0.848   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
+    SLICE_X35Y76.F1      net (fanout=1)        0.398   Inst_pantalla_proyectoFinal/cuenta<2>
+    SLICE_X35Y76.X       Topx                  0.848   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
                                                        Inst_pantalla_proyectoFinal/cuenta<2>_rt
                                                        Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_xor<2>
-    SLICE_X32Y77.G3      net (fanout=1)        0.017   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
-    SLICE_X32Y77.CLK     Tckg        (-Th)    -0.560   Inst_pantalla_proyectoFinal/cuenta<3>
+    SLICE_X34Y76.G3      net (fanout=1)        0.017   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
+    SLICE_X34Y76.CLK     Tckg        (-Th)    -0.560   Inst_pantalla_proyectoFinal/cuenta<3>
                                                        Inst_pantalla_proyectoFinal/cuenta_mux0000<2>1
                                                        Inst_pantalla_proyectoFinal/cuenta_2
     -------------------------------------------------  ---------------------------
@@ -518,11 +602,11 @@ Slack (hold path):      2.345ns (requirement - (clock path skew + uncertainty - 
                                                        (82.3% logic, 17.7% route)
 
 --------------------------------------------------------------------------------
-Slack (hold path):      2.569ns (requirement - (clock path skew + uncertainty - data path))
+Slack (hold path):      2.650ns (requirement - (clock path skew + uncertainty - data path))
   Source:               Inst_pantalla_proyectoFinal/cuenta_1 (FF)
   Destination:          Inst_pantalla_proyectoFinal/cuenta_2 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      2.567ns (Levels of Logic = 3)
+  Data Path Delay:      2.648ns (Levels of Logic = 3)
   Clock Path Skew:      -0.002ns (0.002 - 0.004)
   Source Clock:         clk_BUFGP rising at 20.000ns
   Destination Clock:    clk_BUFGP rising at 20.000ns
@@ -532,22 +616,22 @@ Slack (hold path):      2.569ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X32Y74.XQ      Tcko                  0.474   Inst_pantalla_proyectoFinal/cuenta<1>
+    SLICE_X34Y74.XQ      Tcko                  0.474   Inst_pantalla_proyectoFinal/cuenta<1>
                                                        Inst_pantalla_proyectoFinal/cuenta_1
-    SLICE_X33Y75.G2      net (fanout=1)        0.345   Inst_pantalla_proyectoFinal/cuenta<1>
-    SLICE_X33Y75.COUT    Topcyg                0.801   Inst_pantalla_proyectoFinal/cuenta_addsub0000<0>
+    SLICE_X35Y75.G1      net (fanout=1)        0.426   Inst_pantalla_proyectoFinal/cuenta<1>
+    SLICE_X35Y75.COUT    Topcyg                0.801   Inst_pantalla_proyectoFinal/cuenta_addsub0000<0>
                                                        Inst_pantalla_proyectoFinal/cuenta<1>_rt
                                                        Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<1>
-    SLICE_X33Y76.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<1>
-    SLICE_X33Y76.X       Tcinx                 0.370   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
+    SLICE_X35Y76.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<1>
+    SLICE_X35Y76.X       Tcinx                 0.370   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
                                                        Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_xor<2>
-    SLICE_X32Y77.G3      net (fanout=1)        0.017   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
-    SLICE_X32Y77.CLK     Tckg        (-Th)    -0.560   Inst_pantalla_proyectoFinal/cuenta<3>
+    SLICE_X34Y76.G3      net (fanout=1)        0.017   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
+    SLICE_X34Y76.CLK     Tckg        (-Th)    -0.560   Inst_pantalla_proyectoFinal/cuenta<3>
                                                        Inst_pantalla_proyectoFinal/cuenta_mux0000<2>1
                                                        Inst_pantalla_proyectoFinal/cuenta_2
     -------------------------------------------------  ---------------------------
-    Total                                      2.567ns (2.205ns logic, 0.362ns route)
-                                                       (85.9% logic, 14.1% route)
+    Total                                      2.648ns (2.205ns logic, 0.443ns route)
+                                                       (83.3% logic, 16.7% route)
 
 --------------------------------------------------------------------------------
 Slack (hold path):      2.692ns (requirement - (clock path skew + uncertainty - data path))
@@ -564,118 +648,23 @@ Slack (hold path):      2.692ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X32Y74.YQ      Tcko                  0.522   Inst_pantalla_proyectoFinal/cuenta<1>
+    SLICE_X34Y74.YQ      Tcko                  0.522   Inst_pantalla_proyectoFinal/cuenta<1>
                                                        Inst_pantalla_proyectoFinal/cuenta_0
-    SLICE_X33Y75.F4      net (fanout=1)        0.291   Inst_pantalla_proyectoFinal/cuenta<0>
-    SLICE_X33Y75.COUT    Topcyf                0.930   Inst_pantalla_proyectoFinal/cuenta_addsub0000<0>
+    SLICE_X35Y75.F4      net (fanout=1)        0.291   Inst_pantalla_proyectoFinal/cuenta<0>
+    SLICE_X35Y75.COUT    Topcyf                0.930   Inst_pantalla_proyectoFinal/cuenta_addsub0000<0>
                                                        Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_lut<0>_INV_0
                                                        Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<0>
                                                        Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<1>
-    SLICE_X33Y76.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<1>
-    SLICE_X33Y76.X       Tcinx                 0.370   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
+    SLICE_X35Y76.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<1>
+    SLICE_X35Y76.X       Tcinx                 0.370   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
                                                        Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_xor<2>
-    SLICE_X32Y77.G3      net (fanout=1)        0.017   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
-    SLICE_X32Y77.CLK     Tckg        (-Th)    -0.560   Inst_pantalla_proyectoFinal/cuenta<3>
+    SLICE_X34Y76.G3      net (fanout=1)        0.017   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
+    SLICE_X34Y76.CLK     Tckg        (-Th)    -0.560   Inst_pantalla_proyectoFinal/cuenta<3>
                                                        Inst_pantalla_proyectoFinal/cuenta_mux0000<2>1
                                                        Inst_pantalla_proyectoFinal/cuenta_2
     -------------------------------------------------  ---------------------------
     Total                                      2.690ns (2.382ns logic, 0.308ns route)
                                                        (88.6% logic, 11.4% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_pantalla_proyectoFinal/cuenta_3 (SLICE_X32Y77.F2), 4 paths
---------------------------------------------------------------------------------
-Slack (hold path):      2.366ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_pantalla_proyectoFinal/cuenta_3 (FF)
-  Destination:          Inst_pantalla_proyectoFinal/cuenta_3 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      2.366ns (Levels of Logic = 2)
-  Clock Path Skew:      0.000ns
-  Source Clock:         clk_BUFGP rising at 20.000ns
-  Destination Clock:    clk_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path: Inst_pantalla_proyectoFinal/cuenta_3 to Inst_pantalla_proyectoFinal/cuenta_3
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X32Y77.XQ      Tcko                  0.474   Inst_pantalla_proyectoFinal/cuenta<3>
-                                                       Inst_pantalla_proyectoFinal/cuenta_3
-    SLICE_X33Y76.G4      net (fanout=1)        0.289   Inst_pantalla_proyectoFinal/cuenta<3>
-    SLICE_X33Y76.Y       Topgy                 0.985   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
-                                                       Inst_pantalla_proyectoFinal/cuenta<3>_rt
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_xor<3>
-    SLICE_X32Y77.F2      net (fanout=1)        0.058   Inst_pantalla_proyectoFinal/cuenta_addsub0000<3>
-    SLICE_X32Y77.CLK     Tckf        (-Th)    -0.560   Inst_pantalla_proyectoFinal/cuenta<3>
-                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<3>1
-                                                       Inst_pantalla_proyectoFinal/cuenta_3
-    -------------------------------------------------  ---------------------------
-    Total                                      2.366ns (2.019ns logic, 0.347ns route)
-                                                       (85.3% logic, 14.7% route)
-
---------------------------------------------------------------------------------
-Slack (hold path):      2.851ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_pantalla_proyectoFinal/cuenta_2 (FF)
-  Destination:          Inst_pantalla_proyectoFinal/cuenta_3 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      2.851ns (Levels of Logic = 2)
-  Clock Path Skew:      0.000ns
-  Source Clock:         clk_BUFGP rising at 20.000ns
-  Destination Clock:    clk_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path: Inst_pantalla_proyectoFinal/cuenta_2 to Inst_pantalla_proyectoFinal/cuenta_3
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X32Y77.YQ      Tcko                  0.522   Inst_pantalla_proyectoFinal/cuenta<3>
-                                                       Inst_pantalla_proyectoFinal/cuenta_2
-    SLICE_X33Y76.F1      net (fanout=1)        0.398   Inst_pantalla_proyectoFinal/cuenta<2>
-    SLICE_X33Y76.Y       Topy                  1.313   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
-                                                       Inst_pantalla_proyectoFinal/cuenta<2>_rt
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<2>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_xor<3>
-    SLICE_X32Y77.F2      net (fanout=1)        0.058   Inst_pantalla_proyectoFinal/cuenta_addsub0000<3>
-    SLICE_X32Y77.CLK     Tckf        (-Th)    -0.560   Inst_pantalla_proyectoFinal/cuenta<3>
-                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<3>1
-                                                       Inst_pantalla_proyectoFinal/cuenta_3
-    -------------------------------------------------  ---------------------------
-    Total                                      2.851ns (2.395ns logic, 0.456ns route)
-                                                       (84.0% logic, 16.0% route)
-
---------------------------------------------------------------------------------
-Slack (hold path):      2.935ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_pantalla_proyectoFinal/cuenta_1 (FF)
-  Destination:          Inst_pantalla_proyectoFinal/cuenta_3 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      2.933ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.002ns (0.002 - 0.004)
-  Source Clock:         clk_BUFGP rising at 20.000ns
-  Destination Clock:    clk_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path: Inst_pantalla_proyectoFinal/cuenta_1 to Inst_pantalla_proyectoFinal/cuenta_3
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X32Y74.XQ      Tcko                  0.474   Inst_pantalla_proyectoFinal/cuenta<1>
-                                                       Inst_pantalla_proyectoFinal/cuenta_1
-    SLICE_X33Y75.G2      net (fanout=1)        0.345   Inst_pantalla_proyectoFinal/cuenta<1>
-    SLICE_X33Y75.COUT    Topcyg                0.801   Inst_pantalla_proyectoFinal/cuenta_addsub0000<0>
-                                                       Inst_pantalla_proyectoFinal/cuenta<1>_rt
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<1>
-    SLICE_X33Y76.CIN     net (fanout=1)        0.000   Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<1>
-    SLICE_X33Y76.Y       Tciny                 0.695   Inst_pantalla_proyectoFinal/cuenta_addsub0000<2>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_cy<2>
-                                                       Inst_pantalla_proyectoFinal/Madd_cuenta_addsub0000_xor<3>
-    SLICE_X32Y77.F2      net (fanout=1)        0.058   Inst_pantalla_proyectoFinal/cuenta_addsub0000<3>
-    SLICE_X32Y77.CLK     Tckf        (-Th)    -0.560   Inst_pantalla_proyectoFinal/cuenta<3>
-                                                       Inst_pantalla_proyectoFinal/cuenta_mux0000<3>1
-                                                       Inst_pantalla_proyectoFinal/cuenta_3
-    -------------------------------------------------  ---------------------------
-    Total                                      2.933ns (2.530ns logic, 0.403ns route)
-                                                       (86.3% logic, 13.7% route)
 
 --------------------------------------------------------------------------------
 
@@ -687,7 +676,7 @@ Slack: 18.348ns (period - (min low pulse limit / (low pulse / period)))
   Low pulse limit: 0.826ns (Tcl)
   Physical resource: Inst_pantalla_proyectoFinal/cuenta<13>/CLK
   Logical resource: Inst_pantalla_proyectoFinal/cuenta_13/CK
-  Location pin: SLICE_X32Y80.CLK
+  Location pin: SLICE_X36Y80.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 Slack: 18.348ns (period - (min high pulse limit / (high pulse / period)))
@@ -696,7 +685,7 @@ Slack: 18.348ns (period - (min high pulse limit / (high pulse / period)))
   High pulse limit: 0.826ns (Tch)
   Physical resource: Inst_pantalla_proyectoFinal/cuenta<13>/CLK
   Logical resource: Inst_pantalla_proyectoFinal/cuenta_13/CK
-  Location pin: SLICE_X32Y80.CLK
+  Location pin: SLICE_X36Y80.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 Slack: 18.348ns (period - min period limit)
@@ -704,7 +693,7 @@ Slack: 18.348ns (period - min period limit)
   Min period limit: 1.652ns (605.327MHz) (Tcp)
   Physical resource: Inst_pantalla_proyectoFinal/cuenta<13>/CLK
   Logical resource: Inst_pantalla_proyectoFinal/cuenta_13/CK
-  Location pin: SLICE_X32Y80.CLK
+  Location pin: SLICE_X36Y80.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 
@@ -721,7 +710,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    8.511|         |         |         |
+clk            |    7.668|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -733,13 +722,13 @@ Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 Constraints cover 596 paths, 0 nets, and 108 connections
 
 Design statistics:
-   Minimum period:   8.511ns{1}   (Maximum frequency: 117.495MHz)
+   Minimum period:   7.668ns{1}   (Maximum frequency: 130.412MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Thu Mar 23 21:12:57 2017 
+Analysis completed Thu Mar 23 21:18:02 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
