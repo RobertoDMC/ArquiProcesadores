@@ -1,0 +1,52 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion_test_isim_beh.exe" -prj "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion_test_beh.prj" "work.implementacion_test" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/../sumador/sumador.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/../registro_8bits/registro_8bits.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/../registro_16bits/registro_16bits.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/../registros_Clk/registros_Clk.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/../modulo_Logico/modulo_Logico.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/../demux_ALU/demux_ALU.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/../decoder_Ops_ALU/decoder_Ops_ALU.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/../registros_Control/registros_Control.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/../ram_16bits/ram_16bits.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/../demux3_1_8bits/demux3_18bits.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/../demux3_1/demux3_1.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/../demux2_1/demux2_1.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/../ControlUnit/Control_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/../ALU/ALU.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/../../../../ElectronicaDigital/Xilinx/pantalla_proyectoFinal/pantalla_proyectoFinal.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/../MicroProcesador/MicroProcesador.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.vhd" into library work
+Parsing VHDL file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion_test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity Control_Unit [control_unit_default]
+Compiling architecture behavioral of entity registros_Clk [registros_clk_default]
+Compiling architecture behavioral of entity registro_8bits [registro_8bits_default]
+Compiling architecture behavioral of entity registro_16bits [registro_16bits_default]
+Compiling architecture behavioral of entity registros_Control [registros_control_default]
+Compiling architecture behavioral of entity decoder_Ops_ALU [decoder_ops_alu_default]
+Compiling architecture behavioral of entity sumador [sumador_default]
+Compiling architecture behavioral of entity modulo_Logico [modulo_logico_default]
+Compiling architecture behavioral of entity demux_ALU [demux_alu_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity ram_16bits [ram_16bits_default]
+Compiling architecture behavioral of entity demux3_1 [demux3_1_default]
+Compiling architecture behavioral of entity demux3_18bits [demux3_18bits_default]
+Compiling architecture behavioral of entity demux2_1 [demux2_1_default]
+Compiling architecture behavioral of entity MicroProcesador [microprocesador_default]
+Compiling architecture behavioral of entity pantalla_proyectoFinal [pantalla_proyectofinal_default]
+Compiling architecture behavioral of entity implementacion [implementacion_default]
+Compiling architecture behavior of entity implementacion_test
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 38 VHDL Units
+Built simulation executable C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion_test_isim_beh.exe
+Fuse Memory Usage: 35188 KB
+Fuse CPU Usage: 796 ms

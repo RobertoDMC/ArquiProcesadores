@@ -1,0 +1,57 @@
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.syr" 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.syr" 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc implementacion_constraint.ucf -p xc3s500e-fg320-4 implementacion.ngc implementacion.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o implementacion_map.ncd implementacion.ngd implementacion.pcf 
+par -w -intstyle ise -ol high -t 1 implementacion_map.ncd implementacion.ncd implementacion.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml implementacion.twx implementacion.ncd -o implementacion.twr implementacion.pcf -ucf implementacion_constraint.ucf 
+bitgen -intstyle ise -f implementacion.ut implementacion.ncd 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc implementacion_constraint.ucf -p xc3s500e-fg320-4 implementacion.ngc implementacion.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o implementacion_map.ncd implementacion.ngd implementacion.pcf 
+par -w -intstyle ise -ol high -t 1 implementacion_map.ncd implementacion.ncd implementacion.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml implementacion.twx implementacion.ncd -o implementacion.twr implementacion.pcf -ucf implementacion_constraint.ucf 
+bitgen -intstyle ise -f implementacion.ut implementacion.ncd 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc implementacion_constraint.ucf -p xc3s500e-fg320-4 implementacion.ngc implementacion.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o implementacion_map.ncd implementacion.ngd implementacion.pcf 
+par -w -intstyle ise -ol high -t 1 implementacion_map.ncd implementacion.ncd implementacion.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml implementacion.twx implementacion.ncd -o implementacion.twr implementacion.pcf -ucf implementacion_constraint.ucf 
+bitgen -intstyle ise -f implementacion.ut implementacion.ncd 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc implementacion_constraint.ucf -p xc3s500e-fg320-4 implementacion.ngc implementacion.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o implementacion_map.ncd implementacion.ngd implementacion.pcf 
+par -w -intstyle ise -ol high -t 1 implementacion_map.ncd implementacion.ncd implementacion.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml implementacion.twx implementacion.ncd -o implementacion.twr implementacion.pcf -ucf implementacion_constraint.ucf 
+bitgen -intstyle ise -f implementacion.ut implementacion.ncd 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc implementacion_constraint.ucf -p xc3s500e-fg320-4 implementacion.ngc implementacion.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o implementacion_map.ncd implementacion.ngd implementacion.pcf 
+par -w -intstyle ise -ol high -t 1 implementacion_map.ncd implementacion.ncd implementacion.pcf 
+bitgen -intstyle ise -f implementacion.ut implementacion.ncd 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc implementacion_constraint.ucf -p xc3s500e-fg320-4 implementacion.ngc implementacion.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o implementacion_map.ncd implementacion.ngd implementacion.pcf 
+par -w -intstyle ise -ol high -t 1 implementacion_map.ncd implementacion.ncd implementacion.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml implementacion.twx implementacion.ncd -o implementacion.twr implementacion.pcf -ucf implementacion_constraint.ucf 
+bitgen -intstyle ise -f implementacion.ut implementacion.ncd 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc implementacion_constraint.ucf -p xc3s500e-fg320-4 implementacion.ngc implementacion.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o implementacion_map.ncd implementacion.ngd implementacion.pcf 
+par -w -intstyle ise -ol high -t 1 implementacion_map.ncd implementacion.ncd implementacion.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml implementacion.twx implementacion.ncd -o implementacion.twr implementacion.pcf -ucf implementacion_constraint.ucf 
+bitgen -intstyle ise -f implementacion.ut implementacion.ncd 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc implementacion_constraint.ucf -p xc3s500e-fg320-4 implementacion.ngc implementacion.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o implementacion_map.ncd implementacion.ngd implementacion.pcf 
+par -w -intstyle ise -ol high -t 1 implementacion_map.ncd implementacion.ncd implementacion.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml implementacion.twx implementacion.ncd -o implementacion.twr implementacion.pcf -ucf implementacion_constraint.ucf 
+bitgen -intstyle ise -f implementacion.ut implementacion.ncd 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.syr" 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc implementacion_constraint.ucf -p xc3s500e-fg320-4 implementacion.ngc implementacion.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o implementacion_map.ncd implementacion.ngd implementacion.pcf 
+par -w -intstyle ise -ol high -t 1 implementacion_map.ncd implementacion.ncd implementacion.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml implementacion.twx implementacion.ncd -o implementacion.twr implementacion.pcf -ucf implementacion_constraint.ucf 
+bitgen -intstyle ise -f implementacion.ut implementacion.ncd 
+xst -intstyle ise -ifn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.xst" -ofn "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.syr" 

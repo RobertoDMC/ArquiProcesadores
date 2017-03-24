@@ -12,4 +12,18 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 at 45 ns(4), Instance /micro_test/uut/Inst_ram_16bits/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# run 1700ns
+# run 5000ns
+# run 5000ns
+# run 5000ns
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 45 ns(4), Instance /micro_test/uut/Inst_ram_16bits/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# run 5000ns
+# run 5000ns
+# run 5000ns

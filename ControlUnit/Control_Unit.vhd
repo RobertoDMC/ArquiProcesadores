@@ -105,6 +105,7 @@ begin
 		-----------------------------------------------
 		------LEER VALOR DEL MAR-----------------------
 		when init4 =>
+						enable_PC_Branch<='0';
 						CR_clk<='0';
 						nx_state<=init5;
 		when init5 =>
@@ -392,6 +393,7 @@ begin
 						ram_rw<='1';
 						ram_demux_dir_pos1<='1';
 						ram_demux_data_pos1<='0';
+						ram_addr<=std_logic_vector(to_unsigned(arg2_int,8));
 						rc_clk<='1';
 						rc_rw<='0';
 						nx_state<=moveFromRCToRam1;
@@ -402,7 +404,7 @@ begin
 						ram_rw<='1';
 						ram_demux_data_pos1<='0';
 						ram_demux_dir_pos1<='1';
-						ram_addr<="11111111";
+						ram_addr<=std_logic_vector(to_unsigned(arg2_int,8));
 						rc_clk<='1';
 						rc_rw<='0';
 						nx_state<=addPCByOne0;

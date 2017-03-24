@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: MicroProcesador.prj
 
@@ -119,15 +119,13 @@ Architecture behavioral of Entity registro_8bits is up to date.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registro_16bits/registro_16bits.vhd" in Library work.
 Architecture behavioral of Entity registro_16bits is up to date.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ControlUnit/Control_Unit.vhd" in Library work.
-Entity <control_unit> compiled.
-Entity <control_unit> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity control_unit is up to date.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/registros_Control/registros_Control.vhd" in Library work.
 Architecture behavioral of Entity registros_control is up to date.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ALU/ALU.vhd" in Library work.
 Architecture behavioral of Entity alu is up to date.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/ram_16bits/ram_16bits.vhd" in Library work.
-Entity <ram_16bits> compiled.
-Entity <ram_16bits> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity ram_16bits is up to date.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux3_1/demux3_1.vhd" in Library work.
 Architecture behavioral of Entity demux3_1 is up to date.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux3_1_8bits/demux3_18bits.vhd" in Library work.
@@ -135,7 +133,8 @@ Architecture behavioral of Entity demux3_18bits is up to date.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/demux2_1/demux2_1.vhd" in Library work.
 Architecture behavioral of Entity demux2_1 is up to date.
 Compiling vhdl file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/MicroProcesador/MicroProcesador.vhd" in Library work.
-Architecture behavioral of Entity microprocesador is up to date.
+Entity <microprocesador> compiled.
+Entity <microprocesador> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -5512,12 +5511,12 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 
 
-Total REAL time to Xst completion: 136.00 secs
-Total CPU time to Xst completion: 136.77 secs
+Total REAL time to Xst completion: 120.00 secs
+Total CPU time to Xst completion: 120.17 secs
  
 --> 
 
-Total memory usage is 823208 kilobytes
+Total memory usage is 838852 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings : 4874 (   0 filtered)

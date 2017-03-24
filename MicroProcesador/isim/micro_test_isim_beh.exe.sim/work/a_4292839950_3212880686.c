@@ -41,7 +41,7 @@ static void work_a_4292839950_3212880686_p_0(char *t0)
     char *t10;
     char *t11;
 
-LAB0:    xsi_set_current_line(160, ng0);
+LAB0:    xsi_set_current_line(159, ng0);
 
 LAB3:    t1 = (t0 + 1512U);
     t2 = *((char **)t1);
@@ -50,7 +50,7 @@ LAB3:    t1 = (t0 + 1512U);
     t4 = *((char **)t1);
     t5 = *((unsigned char *)t4);
     t6 = ieee_p_2592010699_sub_1605435078_503743352(IEEE_P_2592010699, t3, t5);
-    t1 = (t0 + 9312);
+    t1 = (t0 + 9472);
     t7 = (t1 + 56U);
     t8 = *((char **)t7);
     t9 = (t8 + 56U);
@@ -58,7 +58,7 @@ LAB3:    t1 = (t0 + 1512U);
     *((unsigned char *)t10) = t6;
     xsi_driver_first_trans_fast(t1);
 
-LAB2:    t11 = (t0 + 9232);
+LAB2:    t11 = (t0 + 9392);
     *((int *)t11) = 1;
 
 LAB1:    return;

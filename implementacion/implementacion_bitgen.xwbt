@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\ProyectoFinal\implementacion\implementacion.ncd
+OUTFILE=C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\ProyectoFinal\implementacion\implementacion.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\ProyectoFinal\implementacion
+LICENSE=WebPack
+USER_INFO=211266409_0_0_456

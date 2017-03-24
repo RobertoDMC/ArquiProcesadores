@@ -133,8 +133,7 @@ architecture Behavioral of MicroProcesador is
 	
 		COMPONENT divisor_frecuencia_10hz
 	PORT(
-		clk : IN std_logic;
-		doi : IN std_logic;          
+		clk : IN std_logic;          
 		clk1 : OUT std_logic
 		);
 	END COMPONENT;
@@ -150,12 +149,12 @@ signal ALU_inst: std_logic_vector(2 downto 0);
 signal input_PC_Branch: std_logic_vector(7 downto 0);
 signal increase_PC: std_logic_vector(1 downto 0);
 signal clk_CU:std_logic;
+signal clk_df:std_logic;
 begin
 
 	--Inst_divisor_frecuencia_10hz: divisor_frecuencia_10hz PORT MAP(
 	--	clk => clk,
-	--	doi => doi,
-	--	clk1 => clk_cu
+	--	clk1 => clk_df
 	--);
 	clk_cu<=doi and clk;
 
