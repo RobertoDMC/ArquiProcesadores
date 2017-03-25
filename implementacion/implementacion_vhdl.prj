@@ -5,6 +5,7 @@ vhdl work "C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\Proyec
 vhdl work "C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\ProyectoFinal\modulo_Logico\modulo_Logico.vhd"
 vhdl work "C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\ProyectoFinal\demux_ALU\demux_ALU.vhd"
 vhdl work "C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\ProyectoFinal\decoder_Ops_ALU\decoder_Ops_ALU.vhd"
+vhdl work "C:\Users\Roberto\Desktop\UPB\ElectronicaDigital\Xilinx\divisor_frecuencia_10hz\divisor_frecuencia_10hz.vhd"
 vhdl work "C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\ProyectoFinal\registros_Control\registros_Control.vhd"
 vhdl work "C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\ProyectoFinal\ram_16bits\ram_16bits.vhd"
 vhdl work "C:\Users\Roberto\Desktop\UPB\ArquitecturaDeProcesadores\Xilinx\ProyectoFinal\demux3_1_8bits\demux3_18bits.vhd"

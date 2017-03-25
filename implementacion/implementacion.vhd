@@ -47,7 +47,7 @@ begin
 		data => "0000000000000000",
 		direccion => "00000000",
 		clk => clk,
-		doi => doi,
+		doi => '1',
 		output => output
 	);
 	

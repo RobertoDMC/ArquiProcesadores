@@ -9,19 +9,19 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Fri Mar 24 19:12:29 2017
+Mapped Date    : Fri Mar 24 20:18:30 2017
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    2
 Logic Utilization:
-  Number of Slice Flip Flops:            38 out of   9,312    1%
+  Number of Slice Flip Flops:            39 out of   9,312    1%
   Number of 4 input LUTs:                37 out of   9,312    1%
 Logic Distribution:
-  Number of occupied Slices:             42 out of   4,656    1%
-    Number of Slices containing only related logic:      42 out of      42 100%
-    Number of Slices containing unrelated logic:          0 out of      42   0%
+  Number of occupied Slices:             43 out of   4,656    1%
+    Number of Slices containing only related logic:      43 out of      43 100%
+    Number of Slices containing unrelated logic:          0 out of      43   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
   Total Number of 4 input LUTs:          55 out of   9,312    1%
     Number used as logic:                37
@@ -31,13 +31,14 @@ Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
   Number of bonded IOBs:                 12 out of     232    5%
+    IOB Latches:                          5
   Number of BUFGMUXs:                     2 out of      24    8%
 
-Average Fanout of Non-Clock Nets:                2.04
+Average Fanout of Non-Clock Nets:                2.05
 
 Peak Memory Usage:  259 MB
-Total REAL time to MAP completion:  4 secs 
-Total CPU time to MAP completion:   2 secs 
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
 
 NOTES:
 
@@ -119,12 +120,12 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| DB<0>                              | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
-| DB<1>                              | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
-| DB<2>                              | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
-| DB<3>                              | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| DB<0>                              | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW | OFF1         |          | 0 / 0    |
+| DB<1>                              | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW | OFF1         |          | 0 / 0    |
+| DB<2>                              | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW | OFF1         |          | 0 / 0    |
+| DB<3>                              | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW | OFF1         |          | 0 / 0    |
 | E                                  | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
-| RS                                 | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
+| RS                                 | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW | OFF1         |          | 0 / 0    |
 | RW                                 | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
 | SF_CE0                             | IOB              | OUTPUT    | LVTTL                |       | 2        | SLOW |              |          | 0 / 0    |
 | clk                                | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |

@@ -9,10 +9,6 @@ assignFile -p 1 -file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/X
 BlankCheck -p 2 
 BlankCheck -p 3 
 Program -p 1 
-assignFile -p 1 -file "C:/Users/Roberto/Desktop/UPB/ArquitecturaDeProcesadores/Xilinx/ProyectoFinal/implementacion/implementacion.bit"
-BlankCheck -p 2 
-BlankCheck -p 3 
-Program -p 1 
 setMode -bs
 setMode -bs
 setMode -ss
